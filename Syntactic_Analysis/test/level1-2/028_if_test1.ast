@@ -1,0 +1,37 @@
+program
+    Sequence
+        FunctionDefine function name: ifElse, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            DeclStmt
+                            DefNode	Variable	NonArray
+                                Id	name: a	scope: 2	type: int
+                                null
+                            AssignStmt
+                                Id	name: a	scope: 2	type: int
+                                IntegerLiteral	value: 5	type: int
+                        IfElseStmt
+                            BinaryExpr	op: equal
+                                Id	name: a	scope: 2	type: int
+                                IntegerLiteral	value: 5	type: int
+                            CompoundStmt
+                                AssignStmt
+                                    Id	name: a	scope: 2	type: int
+                                    IntegerLiteral	value: 25	type: int
+                            CompoundStmt
+                                AssignStmt
+                                    Id	name: a	scope: 2	type: int
+                                    BinaryExpr	op: multi
+                                        Id	name: a	scope: 2	type: int
+                                        IntegerLiteral	value: 2	type: int
+                    ReturnStmt
+                        Id	name: a	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                ReturnStmt
+                    FuncCallNode	funcName: ifElse	 funcType: int()	scope: 0
+                        FuncCallParamsNode NULL

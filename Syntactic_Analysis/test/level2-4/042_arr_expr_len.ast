@@ -1,0 +1,66 @@
+program
+    Sequence
+        Sequence
+            DeclStmt
+            DefNode	Const	NonArray
+                Id	name: N	scope: 0	type: const int
+                SingleExpr	op: sub
+                    IntegerLiteral	value: 1	type: int
+            DeclStmt
+            DefNode	Variable	Array
+                Id	name: arr	scope: 0	type: int array
+                    ExprStmtNode
+                        BinaryExpr	op: sub
+                            BinaryExpr	op: add
+                                Id	name: N	scope: 0	type: const int
+                                BinaryExpr	op: multi
+                                    IntegerLiteral	value: 2	type: int
+                                    IntegerLiteral	value: 4	type: int
+                            BinaryExpr	op: divide
+                                IntegerLiteral	value: 99	type: int
+                                IntegerLiteral	value: 99	type: int
+                DeclValNode	Variable
+                    DeclValNode	Variable
+                        IntegerLiteral	value: 1	type: int
+                    DeclValNode	Variable
+                        IntegerLiteral	value: 2	type: int
+                    DeclValNode	Variable
+                        IntegerLiteral	value: 33	type: int
+                    DeclValNode	Variable
+                        IntegerLiteral	value: 4	type: int
+                    DeclValNode	Variable
+                        IntegerLiteral	value: 5	type: int
+                    DeclValNode	Variable
+                        IntegerLiteral	value: 6	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: i	scope: 2	type: int
+                            IntegerLiteral	value: 0	type: int
+                        DefNode	Variable	NonArray
+                            Id	name: sum	scope: 2	type: int
+                            IntegerLiteral	value: 0	type: int
+                        WhileStmt
+                            BinaryExpr	op: less
+                                Id	name: i	scope: 2	type: int
+                                IntegerLiteral	value: 6	type: int
+                            CompoundStmt
+                                Sequence
+                                    AssignStmt
+                                        Id	name: sum	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: sum	scope: 2	type: int
+                                            Id	name: arr	scope: 0	type: int array
+                                                ExprStmtNode
+                                                    Id	name: i	scope: 2	type: int
+                                    AssignStmt
+                                        Id	name: i	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: i	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                    ReturnStmt
+                        Id	name: sum	scope: 2	type: int

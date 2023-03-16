@@ -1,0 +1,48 @@
+program
+    Sequence
+        FunctionDefine function name: ififElse, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: a	scope: 2	type: int
+                                        null
+                                    AssignStmt
+                                        Id	name: a	scope: 2	type: int
+                                        IntegerLiteral	value: 5	type: int
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: b	scope: 2	type: int
+                                    null
+                            AssignStmt
+                                Id	name: b	scope: 2	type: int
+                                IntegerLiteral	value: 10	type: int
+                        IfStmt
+                            BinaryExpr	op: equal
+                                Id	name: a	scope: 2	type: int
+                                IntegerLiteral	value: 5	type: int
+                            IfElseStmt
+                                BinaryExpr	op: equal
+                                    Id	name: b	scope: 2	type: int
+                                    IntegerLiteral	value: 10	type: int
+                                AssignStmt
+                                    Id	name: a	scope: 2	type: int
+                                    IntegerLiteral	value: 25	type: int
+                                AssignStmt
+                                    Id	name: a	scope: 2	type: int
+                                    BinaryExpr	op: add
+                                        Id	name: a	scope: 2	type: int
+                                        IntegerLiteral	value: 15	type: int
+                    ReturnStmt
+                        Id	name: a	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                ReturnStmt
+                    FuncCallNode	funcName: ififElse	 funcType: int()	scope: 0
+                        FuncCallParamsNode NULL

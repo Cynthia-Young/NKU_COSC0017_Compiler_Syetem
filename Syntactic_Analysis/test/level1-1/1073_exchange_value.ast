@@ -1,0 +1,76 @@
+program
+    Sequence
+        DeclStmt
+        DefNode	Variable	NonArray
+            Id	name: n	scope: 0	type: int
+            null
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            Sequence
+                                                                Sequence
+                                                                    Sequence
+                                                                        DeclStmt
+                                                                        DefNode	Variable	NonArray
+                                                                            Id	name: i	scope: 2	type: int
+                                                                            null
+                                                                        DeclStmt
+                                                                        DefNode	Variable	NonArray
+                                                                            Id	name: j	scope: 2	type: int
+                                                                            null
+                                                                    AssignStmt
+                                                                        Id	name: i	scope: 2	type: int
+                                                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                                            FuncCallParamsNode NULL
+                                                                AssignStmt
+                                                                    Id	name: j	scope: 2	type: int
+                                                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                                        FuncCallParamsNode NULL
+                                                            DeclStmt
+                                                            DefNode	Variable	NonArray
+                                                                Id	name: temp	scope: 2	type: int
+                                                                null
+                                                        AssignStmt
+                                                            Id	name: temp	scope: 2	type: int
+                                                            Id	name: i	scope: 2	type: int
+                                                    AssignStmt
+                                                        Id	name: i	scope: 2	type: int
+                                                        Id	name: j	scope: 2	type: int
+                                                AssignStmt
+                                                    Id	name: j	scope: 2	type: int
+                                                    Id	name: temp	scope: 2	type: int
+                                            ExprStmtNode
+                                                FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: i	scope: 2	type: int
+                                        AssignStmt
+                                            Id	name: temp	scope: 2	type: int
+                                            IntegerLiteral	value: 10	type: int
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: temp	scope: 2	type: int
+                                ExprStmtNode
+                                    FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                        FuncCallParamsNode
+                                            Id	name: j	scope: 2	type: int
+                            AssignStmt
+                                Id	name: temp	scope: 2	type: int
+                                IntegerLiteral	value: 10	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    Id	name: temp	scope: 2	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

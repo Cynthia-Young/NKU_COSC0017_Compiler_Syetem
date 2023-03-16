@@ -1,0 +1,2094 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: k	scope: 0	type: int
+                            null
+                        FunctionDefine function name: params_f40, type: float(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)
+                            FuncDefParamsNode
+                                Id	name: x0	scope: 1	type: float
+                                Id	name: x1	scope: 1	type: float
+                                Id	name: x2	scope: 1	type: float
+                                Id	name: x3	scope: 1	type: float
+                                Id	name: x4	scope: 1	type: float
+                                Id	name: x5	scope: 1	type: float
+                                Id	name: x6	scope: 1	type: float
+                                Id	name: x7	scope: 1	type: float
+                                Id	name: x8	scope: 1	type: float
+                                Id	name: x9	scope: 1	type: float
+                                Id	name: x10	scope: 1	type: float
+                                Id	name: x11	scope: 1	type: float
+                                Id	name: x12	scope: 1	type: float
+                                Id	name: x13	scope: 1	type: float
+                                Id	name: x14	scope: 1	type: float
+                                Id	name: x15	scope: 1	type: float
+                                Id	name: x16	scope: 1	type: float
+                                Id	name: x17	scope: 1	type: float
+                                Id	name: x18	scope: 1	type: float
+                                Id	name: x19	scope: 1	type: float
+                                Id	name: x20	scope: 1	type: float
+                                Id	name: x21	scope: 1	type: float
+                                Id	name: x22	scope: 1	type: float
+                                Id	name: x23	scope: 1	type: float
+                                Id	name: x24	scope: 1	type: float
+                                Id	name: x25	scope: 1	type: float
+                                Id	name: x26	scope: 1	type: float
+                                Id	name: x27	scope: 1	type: float
+                                Id	name: x28	scope: 1	type: float
+                                Id	name: x29	scope: 1	type: float
+                                Id	name: x30	scope: 1	type: float
+                                Id	name: x31	scope: 1	type: float
+                                Id	name: x32	scope: 1	type: float
+                                Id	name: x33	scope: 1	type: float
+                                Id	name: x34	scope: 1	type: float
+                                Id	name: x35	scope: 1	type: float
+                                Id	name: x36	scope: 1	type: float
+                                Id	name: x37	scope: 1	type: float
+                                Id	name: x38	scope: 1	type: float
+                                Id	name: x39	scope: 1	type: float
+                            CompoundStmt
+                                IfElseStmt
+                                    BinaryExpr	op: unequal
+                                        Id	name: x39	scope: 1	type: float
+                                        IntegerLiteral	value: 0	type: int
+                                    CompoundStmt
+                                        Sequence
+                                            Sequence
+                                                DeclStmt
+                                                DefNode	Variable	Array
+                                                    Id	name: arr	scope: 3	type: float array
+                                                        ExprStmtNode
+                                                            IntegerLiteral	value: 10	type: int
+                                                    DeclValNode	Variable
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x0	scope: 1	type: float
+                                                                        Id	name: x1	scope: 1	type: float
+                                                                    Id	name: x2	scope: 1	type: float
+                                                                Id	name: x3	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x4	scope: 1	type: float
+                                                                        Id	name: x5	scope: 1	type: float
+                                                                    Id	name: x6	scope: 1	type: float
+                                                                Id	name: x7	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x8	scope: 1	type: float
+                                                                        Id	name: x9	scope: 1	type: float
+                                                                    Id	name: x10	scope: 1	type: float
+                                                                Id	name: x11	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x12	scope: 1	type: float
+                                                                        Id	name: x13	scope: 1	type: float
+                                                                    Id	name: x14	scope: 1	type: float
+                                                                Id	name: x15	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x16	scope: 1	type: float
+                                                                        Id	name: x17	scope: 1	type: float
+                                                                    Id	name: x18	scope: 1	type: float
+                                                                Id	name: x19	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x20	scope: 1	type: float
+                                                                        Id	name: x21	scope: 1	type: float
+                                                                    Id	name: x22	scope: 1	type: float
+                                                                Id	name: x23	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x24	scope: 1	type: float
+                                                                        Id	name: x25	scope: 1	type: float
+                                                                    Id	name: x26	scope: 1	type: float
+                                                                Id	name: x27	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x28	scope: 1	type: float
+                                                                        Id	name: x29	scope: 1	type: float
+                                                                    Id	name: x30	scope: 1	type: float
+                                                                Id	name: x31	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x32	scope: 1	type: float
+                                                                        Id	name: x33	scope: 1	type: float
+                                                                    Id	name: x34	scope: 1	type: float
+                                                                Id	name: x35	scope: 1	type: float
+                                                        DeclValNode	Variable
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x36	scope: 1	type: float
+                                                                        Id	name: x37	scope: 1	type: float
+                                                                    Id	name: x38	scope: 1	type: float
+                                                                Id	name: x39	scope: 1	type: float
+                                                ExprStmtNode
+                                                    FuncCallNode	funcName: putfarray	 funcType: void(int, float array)	scope: 0
+                                                        FuncCallParamsNode
+                                                            IntegerLiteral	value: 10	type: int
+                                                            Id	name: arr	scope: 3	type: float array
+                                            ReturnStmt
+                                                Id	name: arr	scope: 3	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                    CompoundStmt
+                                        ReturnStmt
+                                            FuncCallNode	funcName: params_f40	 funcType: float(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)	scope: 0
+                                                FuncCallParamsNode
+                                                    Id	name: x1	scope: 1	type: float
+                                                    Id	name: x2	scope: 1	type: float
+                                                    Id	name: x3	scope: 1	type: float
+                                                    Id	name: x4	scope: 1	type: float
+                                                    Id	name: x5	scope: 1	type: float
+                                                    Id	name: x6	scope: 1	type: float
+                                                    Id	name: x7	scope: 1	type: float
+                                                    Id	name: x8	scope: 1	type: float
+                                                    Id	name: x9	scope: 1	type: float
+                                                    Id	name: x10	scope: 1	type: float
+                                                    Id	name: x11	scope: 1	type: float
+                                                    Id	name: x12	scope: 1	type: float
+                                                    Id	name: x13	scope: 1	type: float
+                                                    Id	name: x14	scope: 1	type: float
+                                                    Id	name: x15	scope: 1	type: float
+                                                    Id	name: x16	scope: 1	type: float
+                                                    Id	name: x17	scope: 1	type: float
+                                                    Id	name: x18	scope: 1	type: float
+                                                    Id	name: x19	scope: 1	type: float
+                                                    Id	name: x20	scope: 1	type: float
+                                                    Id	name: x21	scope: 1	type: float
+                                                    Id	name: x22	scope: 1	type: float
+                                                    Id	name: x23	scope: 1	type: float
+                                                    Id	name: x24	scope: 1	type: float
+                                                    Id	name: x25	scope: 1	type: float
+                                                    Id	name: x26	scope: 1	type: float
+                                                    Id	name: x27	scope: 1	type: float
+                                                    Id	name: x28	scope: 1	type: float
+                                                    Id	name: x29	scope: 1	type: float
+                                                    Id	name: x30	scope: 1	type: float
+                                                    Id	name: x31	scope: 1	type: float
+                                                    Id	name: x32	scope: 1	type: float
+                                                    Id	name: x33	scope: 1	type: float
+                                                    Id	name: x34	scope: 1	type: float
+                                                    Id	name: x35	scope: 1	type: float
+                                                    Id	name: x36	scope: 1	type: float
+                                                    Id	name: x37	scope: 1	type: float
+                                                    Id	name: x38	scope: 1	type: float
+                                                    Id	name: x39	scope: 1	type: float
+                                                    BinaryExpr	op: add
+                                                        BinaryExpr	op: add
+                                                            Id	name: x0	scope: 1	type: float
+                                                            Id	name: x1	scope: 1	type: float
+                                                        Id	name: x2	scope: 1	type: float
+                    FunctionDefine function name: params_f40_i24, type: float(int, int, int, float, int, int, int, float, float, float, int, float, float, int, float, int, float, float, float, float, float, float, int, float, int, int, float, float, float, float, float, int, float, int, float, float, float, float, int, int, float, float, float, int, float, int, int, float, float, float, float, int, int, int, float, float, float, float, float, float, int, float, int, float)
+                        FuncDefParamsNode
+                            Id	name: i23	scope: 1	type: int
+                            Id	name: i2	scope: 1	type: int
+                            Id	name: i6	scope: 1	type: int
+                            Id	name: x4	scope: 1	type: float
+                            Id	name: i1	scope: 1	type: int
+                            Id	name: i4	scope: 1	type: int
+                            Id	name: i5	scope: 1	type: int
+                            Id	name: x8	scope: 1	type: float
+                            Id	name: x15	scope: 1	type: float
+                            Id	name: x7	scope: 1	type: float
+                            Id	name: i22	scope: 1	type: int
+                            Id	name: x3	scope: 1	type: float
+                            Id	name: x28	scope: 1	type: float
+                            Id	name: i0	scope: 1	type: int
+                            Id	name: x37	scope: 1	type: float
+                            Id	name: i19	scope: 1	type: int
+                            Id	name: x30	scope: 1	type: float
+                            Id	name: x12	scope: 1	type: float
+                            Id	name: x1	scope: 1	type: float
+                            Id	name: x11	scope: 1	type: float
+                            Id	name: x38	scope: 1	type: float
+                            Id	name: x6	scope: 1	type: float
+                            Id	name: i7	scope: 1	type: int
+                            Id	name: x32	scope: 1	type: float
+                            Id	name: i10	scope: 1	type: int
+                            Id	name: i13	scope: 1	type: int
+                            Id	name: x20	scope: 1	type: float
+                            Id	name: x33	scope: 1	type: float
+                            Id	name: x23	scope: 1	type: float
+                            Id	name: x9	scope: 1	type: float
+                            Id	name: x25	scope: 1	type: float
+                            Id	name: i8	scope: 1	type: int
+                            Id	name: x39	scope: 1	type: float
+                            Id	name: i17	scope: 1	type: int
+                            Id	name: x21	scope: 1	type: float
+                            Id	name: x16	scope: 1	type: float
+                            Id	name: x5	scope: 1	type: float
+                            Id	name: x34	scope: 1	type: float
+                            Id	name: i18	scope: 1	type: int
+                            Id	name: i9	scope: 1	type: int
+                            Id	name: x14	scope: 1	type: float
+                            Id	name: x10	scope: 1	type: float
+                            Id	name: x0	scope: 1	type: float
+                            Id	name: i12	scope: 1	type: int
+                            Id	name: x31	scope: 1	type: float
+                            Id	name: i11	scope: 1	type: int
+                            Id	name: i16	scope: 1	type: int
+                            Id	name: x27	scope: 1	type: float
+                            Id	name: x24	scope: 1	type: float
+                            Id	name: x13	scope: 1	type: float
+                            Id	name: x29	scope: 1	type: float
+                            Id	name: i3	scope: 1	type: int
+                            Id	name: i21	scope: 1	type: int
+                            Id	name: i20	scope: 1	type: int
+                            Id	name: x18	scope: 1	type: float
+                            Id	name: x19	scope: 1	type: float
+                            Id	name: x22	scope: 1	type: float
+                            Id	name: x26	scope: 1	type: float
+                            Id	name: x36	scope: 1	type: float
+                            Id	name: x17	scope: 1	type: float
+                            Id	name: i15	scope: 1	type: int
+                            Id	name: x2	scope: 1	type: float
+                            Id	name: i14	scope: 1	type: int
+                            Id	name: x35	scope: 1	type: float
+                        CompoundStmt
+                            IfElseStmt
+                                BinaryExpr	op: unequal
+                                    Id	name: i23	scope: 1	type: int
+                                    IntegerLiteral	value: 0	type: int
+                                CompoundStmt
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            DeclStmt
+                                                            DefNode	Variable	Array
+                                                                Id	name: arr	scope: 3	type: float array
+                                                                    ExprStmtNode
+                                                                        IntegerLiteral	value: 10	type: int
+                                                                DeclValNode	Variable
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x0	scope: 1	type: float
+                                                                                    Id	name: x1	scope: 1	type: float
+                                                                                Id	name: x2	scope: 1	type: float
+                                                                            Id	name: x3	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x4	scope: 1	type: float
+                                                                                    Id	name: x5	scope: 1	type: float
+                                                                                Id	name: x6	scope: 1	type: float
+                                                                            Id	name: x7	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x8	scope: 1	type: float
+                                                                                    Id	name: x9	scope: 1	type: float
+                                                                                Id	name: x10	scope: 1	type: float
+                                                                            Id	name: x11	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x12	scope: 1	type: float
+                                                                                    Id	name: x13	scope: 1	type: float
+                                                                                Id	name: x14	scope: 1	type: float
+                                                                            Id	name: x15	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x16	scope: 1	type: float
+                                                                                    Id	name: x17	scope: 1	type: float
+                                                                                Id	name: x18	scope: 1	type: float
+                                                                            Id	name: x19	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x20	scope: 1	type: float
+                                                                                    Id	name: x21	scope: 1	type: float
+                                                                                Id	name: x22	scope: 1	type: float
+                                                                            Id	name: x23	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x24	scope: 1	type: float
+                                                                                    Id	name: x25	scope: 1	type: float
+                                                                                Id	name: x26	scope: 1	type: float
+                                                                            Id	name: x27	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x28	scope: 1	type: float
+                                                                                    Id	name: x29	scope: 1	type: float
+                                                                                Id	name: x30	scope: 1	type: float
+                                                                            Id	name: x31	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x32	scope: 1	type: float
+                                                                                    Id	name: x33	scope: 1	type: float
+                                                                                Id	name: x34	scope: 1	type: float
+                                                                            Id	name: x35	scope: 1	type: float
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: x36	scope: 1	type: float
+                                                                                    Id	name: x37	scope: 1	type: float
+                                                                                Id	name: x38	scope: 1	type: float
+                                                                            Id	name: x39	scope: 1	type: float
+                                                            DeclStmt
+                                                            DefNode	Variable	Array
+                                                                Id	name: arr2	scope: 3	type: int array
+                                                                    ExprStmtNode
+                                                                        IntegerLiteral	value: 8	type: int
+                                                                DeclValNode	Variable
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: i0	scope: 1	type: int
+                                                                                Id	name: i1	scope: 1	type: int
+                                                                            Id	name: i2	scope: 1	type: int
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: i3	scope: 1	type: int
+                                                                                Id	name: i4	scope: 1	type: int
+                                                                            Id	name: i5	scope: 1	type: int
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: i6	scope: 1	type: int
+                                                                                Id	name: i7	scope: 1	type: int
+                                                                            Id	name: i8	scope: 1	type: int
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: i9	scope: 1	type: int
+                                                                                Id	name: i10	scope: 1	type: int
+                                                                            Id	name: i11	scope: 1	type: int
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: i12	scope: 1	type: int
+                                                                                Id	name: i13	scope: 1	type: int
+                                                                            Id	name: i14	scope: 1	type: int
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: i15	scope: 1	type: int
+                                                                                Id	name: i16	scope: 1	type: int
+                                                                            Id	name: i17	scope: 1	type: int
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: i18	scope: 1	type: int
+                                                                                Id	name: i19	scope: 1	type: int
+                                                                            Id	name: i20	scope: 1	type: int
+                                                                    DeclValNode	Variable
+                                                                        BinaryExpr	op: add
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: i21	scope: 1	type: int
+                                                                                Id	name: i22	scope: 1	type: int
+                                                                            Id	name: i23	scope: 1	type: int
+                                                        ExprStmtNode
+                                                            FuncCallNode	funcName: putfarray	 funcType: void(int, float array)	scope: 0
+                                                                FuncCallParamsNode
+                                                                    IntegerLiteral	value: 10	type: int
+                                                                    Id	name: arr	scope: 3	type: float array
+                                                    ExprStmtNode
+                                                        FuncCallNode	funcName: putarray	 funcType: void(int, int array)	scope: 0
+                                                            FuncCallParamsNode
+                                                                IntegerLiteral	value: 8	type: int
+                                                                Id	name: arr2	scope: 3	type: int array
+                                                DeclStmt
+                                                DefNode	Variable	NonArray
+                                                    Id	name: i	scope: 3	type: int
+                                                    IntegerLiteral	value: 0	type: int
+                                            WhileStmt
+                                                BinaryExpr	op: less
+                                                    Id	name: i	scope: 3	type: int
+                                                    IntegerLiteral	value: 8	type: int
+                                                CompoundStmt
+                                                    Sequence
+                                                        AssignStmt
+                                                            Id	name: arr2	scope: 3	type: int array
+                                                                ExprStmtNode
+                                                                    Id	name: i	scope: 3	type: int
+                                                            BinaryExpr	op: sub
+                                                                Id	name: arr2	scope: 3	type: int array
+                                                                    ExprStmtNode
+                                                                        Id	name: i	scope: 3	type: int
+                                                                Id	name: arr	scope: 3	type: float array
+                                                                    ExprStmtNode
+                                                                        Id	name: i	scope: 3	type: int
+                                                        AssignStmt
+                                                            Id	name: i	scope: 3	type: int
+                                                            BinaryExpr	op: add
+                                                                Id	name: i	scope: 3	type: int
+                                                                IntegerLiteral	value: 1	type: int
+                                        ReturnStmt
+                                            Id	name: arr2	scope: 3	type: int array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                CompoundStmt
+                                    ReturnStmt
+                                        FuncCallNode	funcName: params_f40_i24	 funcType: float(int, int, int, float, int, int, int, float, float, float, int, float, float, int, float, int, float, float, float, float, float, float, int, float, int, int, float, float, float, float, float, int, float, int, float, float, float, float, int, int, float, float, float, int, float, int, int, float, float, float, float, int, int, int, float, float, float, float, float, float, int, float, int, float)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: i1	scope: 1	type: int
+                                                Id	name: i2	scope: 1	type: int
+                                                Id	name: i6	scope: 1	type: int
+                                                Id	name: x4	scope: 1	type: float
+                                                Id	name: i1	scope: 1	type: int
+                                                Id	name: i4	scope: 1	type: int
+                                                Id	name: i5	scope: 1	type: int
+                                                Id	name: x8	scope: 1	type: float
+                                                Id	name: x15	scope: 1	type: float
+                                                Id	name: x7	scope: 1	type: float
+                                                Id	name: i22	scope: 1	type: int
+                                                Id	name: x3	scope: 1	type: float
+                                                Id	name: x28	scope: 1	type: float
+                                                Id	name: i0	scope: 1	type: int
+                                                Id	name: x37	scope: 1	type: float
+                                                Id	name: i19	scope: 1	type: int
+                                                Id	name: x30	scope: 1	type: float
+                                                Id	name: x12	scope: 1	type: float
+                                                Id	name: x1	scope: 1	type: float
+                                                Id	name: x11	scope: 1	type: float
+                                                Id	name: x38	scope: 1	type: float
+                                                Id	name: x6	scope: 1	type: float
+                                                Id	name: i7	scope: 1	type: int
+                                                Id	name: x32	scope: 1	type: float
+                                                Id	name: i10	scope: 1	type: int
+                                                Id	name: i13	scope: 1	type: int
+                                                Id	name: x20	scope: 1	type: float
+                                                Id	name: x33	scope: 1	type: float
+                                                Id	name: x23	scope: 1	type: float
+                                                Id	name: x9	scope: 1	type: float
+                                                Id	name: x25	scope: 1	type: float
+                                                Id	name: i8	scope: 1	type: int
+                                                Id	name: x39	scope: 1	type: float
+                                                Id	name: i17	scope: 1	type: int
+                                                Id	name: x21	scope: 1	type: float
+                                                Id	name: x16	scope: 1	type: float
+                                                Id	name: x5	scope: 1	type: float
+                                                Id	name: x34	scope: 1	type: float
+                                                Id	name: i18	scope: 1	type: int
+                                                Id	name: i9	scope: 1	type: int
+                                                Id	name: x14	scope: 1	type: float
+                                                Id	name: x10	scope: 1	type: float
+                                                Id	name: x0	scope: 1	type: float
+                                                Id	name: i12	scope: 1	type: int
+                                                Id	name: x31	scope: 1	type: float
+                                                Id	name: i11	scope: 1	type: int
+                                                Id	name: i16	scope: 1	type: int
+                                                Id	name: x27	scope: 1	type: float
+                                                Id	name: x24	scope: 1	type: float
+                                                Id	name: x13	scope: 1	type: float
+                                                Id	name: x29	scope: 1	type: float
+                                                Id	name: i3	scope: 1	type: int
+                                                Id	name: i21	scope: 1	type: int
+                                                Id	name: i20	scope: 1	type: int
+                                                Id	name: x18	scope: 1	type: float
+                                                Id	name: x19	scope: 1	type: float
+                                                Id	name: x22	scope: 1	type: float
+                                                Id	name: x26	scope: 1	type: float
+                                                Id	name: x36	scope: 1	type: float
+                                                Id	name: x17	scope: 1	type: float
+                                                Id	name: i15	scope: 1	type: int
+                                                Id	name: x2	scope: 1	type: float
+                                                Id	name: i14	scope: 1	type: int
+                                                Id	name: x35	scope: 1	type: float
+                FunctionDefine function name: params_fa40, type: float(float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array)
+                    FuncDefParamsNode
+                        Id	name: x0	scope: 1	type: float array
+                        Id	name: x1	scope: 1	type: float array
+                        Id	name: x2	scope: 1	type: float array
+                        Id	name: x3	scope: 1	type: float array
+                        Id	name: x4	scope: 1	type: float array
+                        Id	name: x5	scope: 1	type: float array
+                        Id	name: x6	scope: 1	type: float array
+                        Id	name: x7	scope: 1	type: float array
+                        Id	name: x8	scope: 1	type: float array
+                        Id	name: x9	scope: 1	type: float array
+                        Id	name: x10	scope: 1	type: float array
+                        Id	name: x11	scope: 1	type: float array
+                        Id	name: x12	scope: 1	type: float array
+                        Id	name: x13	scope: 1	type: float array
+                        Id	name: x14	scope: 1	type: float array
+                        Id	name: x15	scope: 1	type: float array
+                        Id	name: x16	scope: 1	type: float array
+                        Id	name: x17	scope: 1	type: float array
+                        Id	name: x18	scope: 1	type: float array
+                        Id	name: x19	scope: 1	type: float array
+                        Id	name: x20	scope: 1	type: float array
+                        Id	name: x21	scope: 1	type: float array
+                        Id	name: x22	scope: 1	type: float array
+                        Id	name: x23	scope: 1	type: float array
+                        Id	name: x24	scope: 1	type: float array
+                        Id	name: x25	scope: 1	type: float array
+                        Id	name: x26	scope: 1	type: float array
+                        Id	name: x27	scope: 1	type: float array
+                        Id	name: x28	scope: 1	type: float array
+                        Id	name: x29	scope: 1	type: float array
+                        Id	name: x30	scope: 1	type: float array
+                        Id	name: x31	scope: 1	type: float array
+                        Id	name: x32	scope: 1	type: float array
+                        Id	name: x33	scope: 1	type: float array
+                        Id	name: x34	scope: 1	type: float array
+                        Id	name: x35	scope: 1	type: float array
+                        Id	name: x36	scope: 1	type: float array
+                        Id	name: x37	scope: 1	type: float array
+                        Id	name: x38	scope: 1	type: float array
+                        Id	name: x39	scope: 1	type: float array
+                    CompoundStmt
+                        Sequence
+                            DeclStmt
+                            DefNode	Variable	Array
+                                Id	name: arr	scope: 2	type: float array
+                                    ExprStmtNode
+                                        IntegerLiteral	value: 10	type: int
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x0	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x1	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x2	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x3	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x4	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x5	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x6	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x7	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x8	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x9	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x10	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x11	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x12	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x13	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x14	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x15	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x16	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x17	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x18	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x19	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x20	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x21	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x22	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x23	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x24	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x25	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x26	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x27	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x28	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x29	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x30	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x31	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x32	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x33	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x34	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x35	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x36	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x37	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x38	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x39	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                            IfElseStmt
+                                BinaryExpr	op: unequal
+                                    BinaryExpr	op: unequal
+                                        BinaryExpr	op: unequal
+                                            BinaryExpr	op: unequal
+                                                Id	name: x39	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                            IntegerLiteral	value: 0	type: int
+                                        IntegerLiteral	value: 0	type: float
+                                    IntegerLiteral	value: 0	type: float
+                                CompoundStmt
+                                    Sequence
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putfarray	 funcType: void(int, float array)	scope: 0
+                                                FuncCallParamsNode
+                                                    IntegerLiteral	value: 10	type: int
+                                                    Id	name: arr	scope: 2	type: float array
+                                        ReturnStmt
+                                            Id	name: arr	scope: 2	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                CompoundStmt
+                                    ReturnStmt
+                                        FuncCallNode	funcName: params_fa40	 funcType: float(float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: x1	scope: 1	type: float array
+                                                Id	name: x2	scope: 1	type: float array
+                                                Id	name: x3	scope: 1	type: float array
+                                                Id	name: x4	scope: 1	type: float array
+                                                Id	name: x5	scope: 1	type: float array
+                                                Id	name: x6	scope: 1	type: float array
+                                                Id	name: x7	scope: 1	type: float array
+                                                Id	name: x8	scope: 1	type: float array
+                                                Id	name: x9	scope: 1	type: float array
+                                                Id	name: x10	scope: 1	type: float array
+                                                Id	name: x11	scope: 1	type: float array
+                                                Id	name: x12	scope: 1	type: float array
+                                                Id	name: x13	scope: 1	type: float array
+                                                Id	name: x14	scope: 1	type: float array
+                                                Id	name: x15	scope: 1	type: float array
+                                                Id	name: x16	scope: 1	type: float array
+                                                Id	name: x17	scope: 1	type: float array
+                                                Id	name: x18	scope: 1	type: float array
+                                                Id	name: x19	scope: 1	type: float array
+                                                Id	name: x20	scope: 1	type: float array
+                                                Id	name: x21	scope: 1	type: float array
+                                                Id	name: x22	scope: 1	type: float array
+                                                Id	name: x23	scope: 1	type: float array
+                                                Id	name: x24	scope: 1	type: float array
+                                                Id	name: x25	scope: 1	type: float array
+                                                Id	name: x26	scope: 1	type: float array
+                                                Id	name: x27	scope: 1	type: float array
+                                                Id	name: x28	scope: 1	type: float array
+                                                Id	name: x29	scope: 1	type: float array
+                                                Id	name: x30	scope: 1	type: float array
+                                                Id	name: x31	scope: 1	type: float array
+                                                Id	name: x32	scope: 1	type: float array
+                                                Id	name: x33	scope: 1	type: float array
+                                                Id	name: x34	scope: 1	type: float array
+                                                Id	name: x35	scope: 1	type: float array
+                                                Id	name: x36	scope: 1	type: float array
+                                                Id	name: x37	scope: 1	type: float array
+                                                Id	name: x38	scope: 1	type: float array
+                                                Id	name: x39	scope: 1	type: float array
+                                                Id	name: arr	scope: 2	type: float array
+            FunctionDefine function name: params_mix, type: int(float, int array, int, float array, float, int, float, float, float array, int array, int, int, float array, int array, int array, int, float array, float array, float, float, float, float array, int, float, float, float, int array, float array, int array, int array, float array, float, float, int array, int, float array, float array, float, float, int array, int array, int, int, float, float, int array, int, float array, int, int array, int array, float, float, float array, int, int array, float array, float, int, float, float array, float array, float, int)
+                FuncDefParamsNode
+                    Id	name: x0	scope: 1	type: float
+                    Id	name: i1	scope: 1	type: int array
+                    Id	name: i2	scope: 1	type: int
+                    Id	name: x3	scope: 1	type: float array
+                    Id	name: x4	scope: 1	type: float
+                    Id	name: i5	scope: 1	type: int
+                    Id	name: x6	scope: 1	type: float
+                    Id	name: x7	scope: 1	type: float
+                    Id	name: x8	scope: 1	type: float array
+                    Id	name: i9	scope: 1	type: int array
+                    Id	name: i10	scope: 1	type: int
+                    Id	name: i11	scope: 1	type: int
+                    Id	name: x12	scope: 1	type: float array
+                    Id	name: i13	scope: 1	type: int array
+                    Id	name: i14	scope: 1	type: int array
+                    Id	name: i15	scope: 1	type: int
+                    Id	name: x16	scope: 1	type: float array
+                    Id	name: x17	scope: 1	type: float array
+                    Id	name: x18	scope: 1	type: float
+                    Id	name: x19	scope: 1	type: float
+                    Id	name: x20	scope: 1	type: float
+                    Id	name: x21	scope: 1	type: float array
+                    Id	name: i22	scope: 1	type: int
+                    Id	name: x23	scope: 1	type: float
+                    Id	name: x24	scope: 1	type: float
+                    Id	name: x25	scope: 1	type: float
+                    Id	name: i26	scope: 1	type: int array
+                    Id	name: x27	scope: 1	type: float array
+                    Id	name: i28	scope: 1	type: int array
+                    Id	name: i29	scope: 1	type: int array
+                    Id	name: x30	scope: 1	type: float array
+                    Id	name: x31	scope: 1	type: float
+                    Id	name: x32	scope: 1	type: float
+                    Id	name: i33	scope: 1	type: int array
+                    Id	name: i34	scope: 1	type: int
+                    Id	name: x35	scope: 1	type: float array
+                    Id	name: x36	scope: 1	type: float array
+                    Id	name: x37	scope: 1	type: float
+                    Id	name: x38	scope: 1	type: float
+                    Id	name: i39	scope: 1	type: int array
+                    Id	name: i40	scope: 1	type: int array
+                    Id	name: i41	scope: 1	type: int
+                    Id	name: i42	scope: 1	type: int
+                    Id	name: x43	scope: 1	type: float
+                    Id	name: x44	scope: 1	type: float
+                    Id	name: i45	scope: 1	type: int array
+                    Id	name: i46	scope: 1	type: int
+                    Id	name: x47	scope: 1	type: float array
+                    Id	name: i48	scope: 1	type: int
+                    Id	name: i49	scope: 1	type: int array
+                    Id	name: i50	scope: 1	type: int array
+                    Id	name: x51	scope: 1	type: float
+                    Id	name: x52	scope: 1	type: float
+                    Id	name: x53	scope: 1	type: float array
+                    Id	name: i54	scope: 1	type: int
+                    Id	name: i55	scope: 1	type: int array
+                    Id	name: x56	scope: 1	type: float array
+                    Id	name: x57	scope: 1	type: float
+                    Id	name: i58	scope: 1	type: int
+                    Id	name: x59	scope: 1	type: float
+                    Id	name: x60	scope: 1	type: float array
+                    Id	name: x61	scope: 1	type: float array
+                    Id	name: x62	scope: 1	type: float
+                    Id	name: i63	scope: 1	type: int
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            DeclStmt
+                            DefNode	Variable	Array
+                                Id	name: arr	scope: 2	type: float array
+                                    ExprStmtNode
+                                        IntegerLiteral	value: 10	type: int
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x0	scope: 1	type: float
+                                                    Id	name: x3	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x4	scope: 1	type: float
+                                            Id	name: x6	scope: 1	type: float
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x7	scope: 1	type: float
+                                                    Id	name: x8	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x12	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x16	scope: 1	type: float array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x17	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x18	scope: 1	type: float
+                                                Id	name: x19	scope: 1	type: float
+                                            Id	name: x20	scope: 1	type: float
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x21	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x23	scope: 1	type: float
+                                                Id	name: x24	scope: 1	type: float
+                                            Id	name: x25	scope: 1	type: float
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x27	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x30	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x31	scope: 1	type: float
+                                            Id	name: x32	scope: 1	type: float
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x35	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                    Id	name: x36	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x37	scope: 1	type: float
+                                            Id	name: x38	scope: 1	type: float
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x43	scope: 1	type: float
+                                                    Id	name: x44	scope: 1	type: float
+                                                Id	name: x47	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x51	scope: 1	type: float
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x52	scope: 1	type: float
+                                                    Id	name: x53	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x56	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x57	scope: 1	type: float
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: x59	scope: 1	type: float
+                                                    Id	name: x60	scope: 1	type: float array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: x61	scope: 1	type: float array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: x62	scope: 1	type: float
+                            DeclStmt
+                            DefNode	Variable	Array
+                                Id	name: arr2	scope: 2	type: int array
+                                    ExprStmtNode
+                                        IntegerLiteral	value: 10	type: int
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                Id	name: i1	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                                Id	name: i2	scope: 1	type: int
+                                            Id	name: i5	scope: 1	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                Id	name: i9	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                                Id	name: i10	scope: 1	type: int
+                                            Id	name: i11	scope: 1	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                Id	name: i13	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                                Id	name: i14	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: i15	scope: 1	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                Id	name: i22	scope: 1	type: int
+                                                Id	name: i26	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: i28	scope: 1	type: int array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                Id	name: i29	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                                Id	name: i33	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: i34	scope: 1	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                Id	name: i39	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                                Id	name: i40	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: i41	scope: 1	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                Id	name: i42	scope: 1	type: int
+                                                Id	name: i45	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: i46	scope: 1	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                Id	name: i48	scope: 1	type: int
+                                                Id	name: i49	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: k	scope: 0	type: int
+                                            Id	name: i50	scope: 1	type: int array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                    DeclValNode	Variable
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    Id	name: i54	scope: 1	type: int
+                                                    Id	name: i55	scope: 1	type: int array
+                                                        ExprStmtNode
+                                                            Id	name: k	scope: 0	type: int
+                                                Id	name: i58	scope: 1	type: int
+                                            Id	name: i63	scope: 1	type: int
+                        IfElseStmt
+                            BinaryExpr	op: unequal
+                                Id	name: i63	scope: 1	type: int
+                                IntegerLiteral	value: 0	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                ExprStmtNode
+                                                    FuncCallNode	funcName: putfarray	 funcType: void(int, float array)	scope: 0
+                                                        FuncCallParamsNode
+                                                            IntegerLiteral	value: 10	type: int
+                                                            Id	name: arr	scope: 2	type: float array
+                                                ExprStmtNode
+                                                    FuncCallNode	funcName: putarray	 funcType: void(int, int array)	scope: 0
+                                                        FuncCallParamsNode
+                                                            IntegerLiteral	value: 10	type: int
+                                                            Id	name: arr2	scope: 2	type: int array
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: i	scope: 3	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                        WhileStmt
+                                            BinaryExpr	op: less
+                                                Id	name: i	scope: 3	type: int
+                                                IntegerLiteral	value: 10	type: int
+                                            CompoundStmt
+                                                Sequence
+                                                    AssignStmt
+                                                        Id	name: arr2	scope: 2	type: int array
+                                                            ExprStmtNode
+                                                                Id	name: i	scope: 3	type: int
+                                                        BinaryExpr	op: sub
+                                                            Id	name: arr2	scope: 2	type: int array
+                                                                ExprStmtNode
+                                                                    Id	name: i	scope: 3	type: int
+                                                            Id	name: arr	scope: 2	type: float array
+                                                                ExprStmtNode
+                                                                    Id	name: i	scope: 3	type: int
+                                                    AssignStmt
+                                                        Id	name: i	scope: 3	type: int
+                                                        BinaryExpr	op: add
+                                                            Id	name: i	scope: 3	type: int
+                                                            IntegerLiteral	value: 1	type: int
+                                    ReturnStmt
+                                        BinaryExpr	op: multi
+                                            Id	name: arr2	scope: 2	type: int array
+                                                ExprStmtNode
+                                                    Id	name: k	scope: 0	type: int
+                                            Id	name: arr	scope: 2	type: float array
+                                                ExprStmtNode
+                                                    IntegerLiteral	value: 8	type: int
+                            CompoundStmt
+                                ReturnStmt
+                                    FuncCallNode	funcName: params_mix	 funcType: int(float, int array, int, float array, float, int, float, float, float array, int array, int, int, float array, int array, int array, int, float array, float array, float, float, float, float array, int, float, float, float, int array, float array, int array, int array, float array, float, float, int array, int, float array, float array, float, float, int array, int array, int, int, float, float, int array, int, float array, int, int array, int array, float, float, float array, int, int array, float array, float, int, float, float array, float array, float, int)	scope: 0
+                                        FuncCallParamsNode
+                                            Id	name: x0	scope: 1	type: float
+                                            Id	name: arr2	scope: 2	type: int array
+                                            Id	name: i2	scope: 1	type: int
+                                            Id	name: arr	scope: 2	type: float array
+                                            Id	name: x4	scope: 1	type: float
+                                            Id	name: i5	scope: 1	type: int
+                                            Id	name: x6	scope: 1	type: float
+                                            Id	name: x7	scope: 1	type: float
+                                            Id	name: x8	scope: 1	type: float array
+                                            Id	name: i9	scope: 1	type: int array
+                                            Id	name: i10	scope: 1	type: int
+                                            Id	name: i11	scope: 1	type: int
+                                            Id	name: x12	scope: 1	type: float array
+                                            Id	name: i13	scope: 1	type: int array
+                                            Id	name: i14	scope: 1	type: int array
+                                            Id	name: i15	scope: 1	type: int
+                                            Id	name: x16	scope: 1	type: float array
+                                            Id	name: x17	scope: 1	type: float array
+                                            Id	name: x18	scope: 1	type: float
+                                            Id	name: x19	scope: 1	type: float
+                                            Id	name: x20	scope: 1	type: float
+                                            Id	name: x21	scope: 1	type: float array
+                                            Id	name: i22	scope: 1	type: int
+                                            Id	name: x23	scope: 1	type: float
+                                            Id	name: x24	scope: 1	type: float
+                                            Id	name: x25	scope: 1	type: float
+                                            Id	name: i26	scope: 1	type: int array
+                                            Id	name: x27	scope: 1	type: float array
+                                            Id	name: i28	scope: 1	type: int array
+                                            Id	name: i29	scope: 1	type: int array
+                                            Id	name: x30	scope: 1	type: float array
+                                            Id	name: x31	scope: 1	type: float
+                                            Id	name: x32	scope: 1	type: float
+                                            Id	name: i33	scope: 1	type: int array
+                                            Id	name: i34	scope: 1	type: int
+                                            Id	name: x35	scope: 1	type: float array
+                                            Id	name: x36	scope: 1	type: float array
+                                            Id	name: x37	scope: 1	type: float
+                                            Id	name: x38	scope: 1	type: float
+                                            Id	name: i39	scope: 1	type: int array
+                                            Id	name: i40	scope: 1	type: int array
+                                            Id	name: i41	scope: 1	type: int
+                                            Id	name: i42	scope: 1	type: int
+                                            Id	name: x43	scope: 1	type: float
+                                            Id	name: x44	scope: 1	type: float
+                                            Id	name: i45	scope: 1	type: int array
+                                            Id	name: i46	scope: 1	type: int
+                                            Id	name: x47	scope: 1	type: float array
+                                            Id	name: i48	scope: 1	type: int
+                                            Id	name: i49	scope: 1	type: int array
+                                            Id	name: i50	scope: 1	type: int array
+                                            Id	name: x51	scope: 1	type: float
+                                            Id	name: x52	scope: 1	type: float
+                                            Id	name: x53	scope: 1	type: float array
+                                            Id	name: i54	scope: 1	type: int
+                                            Id	name: i55	scope: 1	type: int array
+                                            Id	name: x56	scope: 1	type: float array
+                                            Id	name: x57	scope: 1	type: float
+                                            Id	name: i58	scope: 1	type: int
+                                            Id	name: x59	scope: 1	type: float
+                                            Id	name: x60	scope: 1	type: float array
+                                            Id	name: x61	scope: 1	type: float array
+                                            Id	name: i63	scope: 1	type: int
+                                            Id	name: x62	scope: 1	type: float
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            Sequence
+                                                                Sequence
+                                                                    Sequence
+                                                                        Sequence
+                                                                            Sequence
+                                                                                Sequence
+                                                                                    Sequence
+                                                                                        Sequence
+                                                                                            DeclStmt
+                                                                                            DefNode	Variable	Array
+                                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                                    ExprStmtNode
+                                                                                                        IntegerLiteral	value: 40	type: int
+                                                                                                        IntegerLiteral	value: 3	type: int
+                                                                                                null
+                                                                                            DeclStmt
+                                                                                            DefNode	Variable	Array
+                                                                                                Id	name: arr2	scope: 2	type: int array
+                                                                                                    ExprStmtNode
+                                                                                                        IntegerLiteral	value: 24	type: int
+                                                                                                        IntegerLiteral	value: 3	type: int
+                                                                                                null
+                                                                                            DefNode	Variable	NonArray
+                                                                                                Id	name: i	scope: 2	type: int
+                                                                                                null
+                                                                                        AssignStmt
+                                                                                            Id	name: k	scope: 0	type: int
+                                                                                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                                                                FuncCallParamsNode NULL
+                                                                                    AssignStmt
+                                                                                        Id	name: i	scope: 2	type: int
+                                                                                        IntegerLiteral	value: 0	type: int
+                                                                                WhileStmt
+                                                                                    BinaryExpr	op: less
+                                                                                        Id	name: i	scope: 2	type: int
+                                                                                        IntegerLiteral	value: 40	type: int
+                                                                                    CompoundStmt
+                                                                                        Sequence
+                                                                                            ExprStmtNode
+                                                                                                FuncCallNode	funcName: getfarray	 funcType: int(float array)	scope: 0
+                                                                                                    FuncCallParamsNode
+                                                                                                        Id	name: arr	scope: 2	type: float array
+                                                                                                            ExprStmtNode
+                                                                                                                Id	name: i	scope: 2	type: int
+                                                                                            AssignStmt
+                                                                                                Id	name: i	scope: 2	type: int
+                                                                                                BinaryExpr	op: add
+                                                                                                    Id	name: i	scope: 2	type: int
+                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                            AssignStmt
+                                                                                Id	name: i	scope: 2	type: int
+                                                                                IntegerLiteral	value: 0	type: int
+                                                                        WhileStmt
+                                                                            BinaryExpr	op: less
+                                                                                Id	name: i	scope: 2	type: int
+                                                                                IntegerLiteral	value: 24	type: int
+                                                                            CompoundStmt
+                                                                                Sequence
+                                                                                    ExprStmtNode
+                                                                                        FuncCallNode	funcName: getarray	 funcType: int(int array)	scope: 0
+                                                                                            FuncCallParamsNode
+                                                                                                Id	name: arr2	scope: 2	type: int array
+                                                                                                    ExprStmtNode
+                                                                                                        Id	name: i	scope: 2	type: int
+                                                                                    AssignStmt
+                                                                                        Id	name: i	scope: 2	type: int
+                                                                                        BinaryExpr	op: add
+                                                                                            Id	name: i	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 1	type: int
+                                                                    DeclStmt
+                                                                    DefNode	Variable	NonArray
+                                                                        Id	name: ret0	scope: 2	type: float
+                                                                        FuncCallNode	funcName: params_f40	 funcType: float(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)	scope: 0
+                                                                            FuncCallParamsNode
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 0	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 1	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 2	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 3	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 4	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 5	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 6	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 7	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 8	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 9	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 10	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 11	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 12	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 13	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 14	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 15	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 16	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 17	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 18	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 19	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 20	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 21	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 22	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 23	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 24	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 25	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 26	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 27	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 28	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 29	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 30	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 31	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 32	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 33	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 34	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 35	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 36	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 37	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 38	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                                Id	name: arr	scope: 2	type: float array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 39	type: int
+                                                                                        Id	name: k	scope: 0	type: int
+                                                                DeclStmt
+                                                                DefNode	Variable	NonArray
+                                                                    Id	name: ret1	scope: 2	type: float
+                                                                    FuncCallNode	funcName: params_f40_i24	 funcType: float(int, int, int, float, int, int, int, float, float, float, int, float, float, int, float, int, float, float, float, float, float, float, int, float, int, int, float, float, float, float, float, int, float, int, float, float, float, float, int, int, float, float, float, int, float, int, int, float, float, float, float, int, int, int, float, float, float, float, float, float, int, float, int, float)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 23	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 2	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 6	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 4	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 4	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 5	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 8	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 15	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 7	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 22	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 3	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 28	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 0	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 37	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 19	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 30	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 12	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 11	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 38	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 6	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 7	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 32	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 10	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 13	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 20	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 33	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 23	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 9	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 25	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 8	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 39	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 17	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 21	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 16	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 5	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 34	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 18	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 9	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 14	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 10	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 0	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 12	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 31	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 11	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 16	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 27	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 24	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 13	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 29	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 3	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 21	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 20	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 18	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 19	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 22	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 26	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 36	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 17	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 15	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 2	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr2	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 14	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                                            Id	name: arr	scope: 2	type: float array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 35	type: int
+                                                                                    Id	name: k	scope: 0	type: int
+                                                            DeclStmt
+                                                            DefNode	Variable	NonArray
+                                                                Id	name: ret2	scope: 2	type: float
+                                                                FuncCallNode	funcName: params_fa40	 funcType: float(float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array, float array)	scope: 0
+                                                                    FuncCallParamsNode
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 0	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 1	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 2	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 3	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 4	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 5	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 6	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 7	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 8	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 9	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 10	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 11	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 12	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 13	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 14	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 15	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 16	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 17	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 18	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 19	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 20	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 21	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 22	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 23	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 24	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 25	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 26	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 27	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 28	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 29	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 30	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 31	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 32	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 33	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 34	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 35	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 36	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 37	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 38	type: int
+                                                                        Id	name: arr	scope: 2	type: float array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 39	type: int
+                                                        DeclStmt
+                                                        DefNode	Variable	NonArray
+                                                            Id	name: ret3	scope: 2	type: int
+                                                            FuncCallNode	funcName: params_mix	 funcType: int(float, int array, int, float array, float, int, float, float, float array, int array, int, int, float array, int array, int array, int, float array, float array, float, float, float, float array, int, float, float, float, int array, float array, int array, int array, float array, float, float, int array, int, float array, float array, float, float, int array, int array, int, int, float, float, int array, int, float array, int, int array, int array, float, float, float array, int, int array, float array, float, int, float, float array, float array, float, int)	scope: 0
+                                                                FuncCallParamsNode
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 0	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 1	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 1	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 2	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 2	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 3	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 4	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 5	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 3	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 4	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 5	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 6	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 6	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 7	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 8	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 7	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 8	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 9	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 10	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 11	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 12	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 9	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 13	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 14	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 15	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 10	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 16	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 11	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 12	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 17	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 18	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 19	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 13	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 14	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 20	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 21	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 22	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 23	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 15	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 16	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 17	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 18	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 24	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 25	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 19	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 20	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 26	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 21	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 22	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 23	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 27	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 28	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 29	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 0	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 1	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 30	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 31	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 2	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 32	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 33	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 34	type: int
+                                                                    Id	name: arr	scope: 2	type: float array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 35	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                                    Id	name: arr2	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 3	type: int
+                                                                            Id	name: k	scope: 0	type: int
+                                                    ExprStmtNode
+                                                        FuncCallNode	funcName: putfloat	 funcType: void(float)	scope: 0
+                                                            FuncCallParamsNode
+                                                                Id	name: ret0	scope: 2	type: float
+                                                ExprStmtNode
+                                                    FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            IntegerLiteral	value: 10	type: int
+                                            ExprStmtNode
+                                                FuncCallNode	funcName: putfloat	 funcType: void(float)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: ret1	scope: 2	type: float
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                FuncCallParamsNode
+                                                    IntegerLiteral	value: 10	type: int
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: putfloat	 funcType: void(float)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: ret2	scope: 2	type: float
+                                ExprStmtNode
+                                    FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                        FuncCallParamsNode
+                                            IntegerLiteral	value: 10	type: int
+                            ExprStmtNode
+                                FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: ret3	scope: 2	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    IntegerLiteral	value: 10	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

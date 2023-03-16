@@ -1,0 +1,82 @@
+typecheck fin
+program
+    FunctionDefine function name: @func, type: i32
+        FuncDefParamsNode
+            Id	name: %n	scope: 1	type: i32	size: 4
+        CompoundStmt
+            IfElseStmt
+                BinaryExpr	op: lesseq     type:i1
+                    Id	name: %n	scope: 1	type: i32	size: 4
+                    IntegerLiteral	value: 50	type: i32
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: %n	scope: 1	type: i32	size: 4
+                    ReturnStmt
+                        IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: %n	scope: 1	type: i32	size: 4
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            IfElseStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: eq     type:i1
+                        FuncCallNode	funcName: @func	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 0	type: i32
+                        IntegerLiteral	value: 1	type: i32
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: eq     type:i1
+                            FuncCallNode	funcName: @func	 funcType: i32	scope: 0
+                                FuncCallParamsNode
+                                    IntegerLiteral	value: 50	type: i32
+                            IntegerLiteral	value: 1	type: i32
+                        BinaryExpr	op: eq     type:i1
+                            FuncCallNode	funcName: @func	 funcType: i32	scope: 0
+                                FuncCallParamsNode
+                                    IntegerLiteral	value: 100	type: i32
+                            IntegerLiteral	value: 0	type: i32
+                AssignStmt
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                AssignStmt
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 1	type: i32
+            IfElseStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: eq     type:i1
+                            FuncCallNode	funcName: @func	 funcType: i32	scope: 0
+                                FuncCallParamsNode
+                                    IntegerLiteral	value: 50	type: i32
+                            IntegerLiteral	value: 1	type: i32
+                        BinaryExpr	op: eq     type:i1
+                            FuncCallNode	funcName: @func	 funcType: i32	scope: 0
+                                FuncCallParamsNode
+                                    IntegerLiteral	value: 40	type: i32
+                            IntegerLiteral	value: 1	type: i32
+                    BinaryExpr	op: eq     type:i1
+                        FuncCallNode	funcName: @func	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 1	type: i32
+                        IntegerLiteral	value: 1	type: i32
+                AssignStmt
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                AssignStmt
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 1	type: i32
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

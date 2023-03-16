@@ -1,0 +1,55 @@
+program
+    FunctionDefine function name: main, type: int()
+        FuncDefParamsNode NULL
+        CompoundStmt
+            Sequence
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	Array
+                            Id	name: arr	scope: 2	type: int array
+                                ExprStmtNode
+                                    IntegerLiteral	value: 100	type: int
+                            null
+                        DefNode	Variable	NonArray
+                            Id	name: i	scope: 2	type: int
+                            IntegerLiteral	value: 0	type: int
+                        DefNode	Variable	NonArray
+                            Id	name: sum	scope: 2	type: int
+                            IntegerLiteral	value: 0	type: int
+                        WhileStmt
+                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                FuncCallParamsNode NULL
+                            CompoundStmt
+                                Sequence
+                                    AssignStmt
+                                        Id	name: arr	scope: 2	type: int array
+                                            ExprStmtNode
+                                                Id	name: i	scope: 2	type: int
+                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                            FuncCallParamsNode NULL
+                                    AssignStmt
+                                        Id	name: i	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: i	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                    WhileStmt
+                        Id	name: i	scope: 2	type: int
+                        CompoundStmt
+                            Sequence
+                                AssignStmt
+                                    Id	name: i	scope: 2	type: int
+                                    BinaryExpr	op: sub
+                                        Id	name: i	scope: 2	type: int
+                                        IntegerLiteral	value: 1	type: int
+                                AssignStmt
+                                    Id	name: sum	scope: 2	type: int
+                                    BinaryExpr	op: add
+                                        Id	name: sum	scope: 2	type: int
+                                        Id	name: arr	scope: 2	type: int array
+                                            ExprStmtNode
+                                                Id	name: i	scope: 2	type: int
+                ReturnStmt
+                    BinaryExpr	op: mod
+                        Id	name: sum	scope: 2	type: int
+                        IntegerLiteral	value: 79	type: int

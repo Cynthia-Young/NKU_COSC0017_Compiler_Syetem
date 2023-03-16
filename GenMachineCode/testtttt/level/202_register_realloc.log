@@ -1,0 +1,617 @@
+typecheck fin
+program
+    FunctionDefine function name: @func, type: i32
+        FuncDefParamsNode
+            Id	name: %a	scope: 1	type: i32	size: 4
+            Id	name: %b	scope: 1	type: i32	size: 4
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: i	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    Id	name: %a	scope: 1	type: i32	size: 4
+                    Id	name: %b	scope: 1	type: i32	size: 4
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: c1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: c2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: c3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: c4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: d1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: d2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: d3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: d4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: e1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: e2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: e3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: e4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: f1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: f2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: f3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: f4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: g1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: g2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: g3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: g4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: h1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: h2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: h3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: h4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: j1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: j2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: j3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: j4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: k1	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: k2	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: k3	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: k4	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: c1	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: c2	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 2	type: i32
+            AssignStmt
+                Id	name: c3	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 3	type: i32
+            AssignStmt
+                Id	name: c4	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 4	type: i32
+            AssignStmt
+                Id	name: d1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: c1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: d2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: c2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: d3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: c3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: d4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: c4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: e1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: d1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: e2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: d2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: e3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: d3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: e4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: d4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: f1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: e1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: f2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: e2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: f3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: e3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: f4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: e4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: g1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: f1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: g2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: f2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: g3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: f3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: g4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: f4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: h1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: g1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: h2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: g2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: h3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: g3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: h4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: g4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: h1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: h2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: h3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: h4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: j1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: i1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: j2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: i2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: j3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: i3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: j4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: i4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: k1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: j1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: k2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: j2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: k3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: j3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: k4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: j4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    BinaryExpr	op: sub     type:i32
+                        Id	name: %a	scope: 1	type: i32	size: 4
+                        Id	name: %b	scope: 1	type: i32	size: 4
+                    IntegerLiteral	value: 10	type: i32
+            AssignStmt
+                Id	name: k1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: j1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: k2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: j2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: k3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: j3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: k4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: j4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: j1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: i1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: j2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: i2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: j3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: i3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: j4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: i4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: h1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: h2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: h3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: i4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: h4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: h1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: g1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: h2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: g2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: h3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: g3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: h4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: g4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: g1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: f1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: g2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: f2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: g3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: f3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: g4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: f4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: f1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: e1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: f2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: e2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: f3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: e3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: f4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: e4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: e1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: d1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: e2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: d2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: e3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: d3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: e4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: d4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: d1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: c1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: d2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: c2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: d3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: c3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: d4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: c4	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: c1	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 1	type: i32
+                    Id	name: k1	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: c2	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 2	type: i32
+                    Id	name: k2	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: c3	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 3	type: i32
+                    Id	name: k3	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: c4	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    IntegerLiteral	value: 4	type: i32
+                    Id	name: k4	scope: 2	type: i32	size: 4
+            ReturnStmt
+                BinaryExpr	op: add     type:i32
+                    BinaryExpr	op: add     type:i32
+                        BinaryExpr	op: add     type:i32
+                            BinaryExpr	op: add     type:i32
+                                BinaryExpr	op: sub     type:i32
+                                    BinaryExpr	op: sub     type:i32
+                                        BinaryExpr	op: sub     type:i32
+                                            BinaryExpr	op: sub     type:i32
+                                                BinaryExpr	op: add     type:i32
+                                                    BinaryExpr	op: add     type:i32
+                                                        BinaryExpr	op: add     type:i32
+                                                            BinaryExpr	op: add     type:i32
+                                                                BinaryExpr	op: sub     type:i32
+                                                                    BinaryExpr	op: sub     type:i32
+                                                                        BinaryExpr	op: sub     type:i32
+                                                                            BinaryExpr	op: sub     type:i32
+                                                                                BinaryExpr	op: add     type:i32
+                                                                                    BinaryExpr	op: add     type:i32
+                                                                                        BinaryExpr	op: add     type:i32
+                                                                                            BinaryExpr	op: add     type:i32
+                                                                                                BinaryExpr	op: sub     type:i32
+                                                                                                    BinaryExpr	op: sub     type:i32
+                                                                                                        BinaryExpr	op: sub     type:i32
+                                                                                                            BinaryExpr	op: sub     type:i32
+                                                                                                                BinaryExpr	op: add     type:i32
+                                                                                                                    BinaryExpr	op: add     type:i32
+                                                                                                                        BinaryExpr	op: add     type:i32
+                                                                                                                            BinaryExpr	op: add     type:i32
+                                                                                                                                BinaryExpr	op: sub     type:i32
+                                                                                                                                    BinaryExpr	op: sub     type:i32
+                                                                                                                                        BinaryExpr	op: sub     type:i32
+                                                                                                                                            BinaryExpr	op: sub     type:i32
+                                                                                                                                                BinaryExpr	op: add     type:i32
+                                                                                                                                                    BinaryExpr	op: add     type:i32
+                                                                                                                                                        BinaryExpr	op: add     type:i32
+                                                                                                                                                            BinaryExpr	op: add     type:i32
+                                                                                                                                                                Id	name: i	scope: 2	type: i32	size: 4
+                                                                                                                                                                Id	name: c1	scope: 2	type: i32	size: 4
+                                                                                                                                                            Id	name: c2	scope: 2	type: i32	size: 4
+                                                                                                                                                        Id	name: c3	scope: 2	type: i32	size: 4
+                                                                                                                                                    Id	name: c4	scope: 2	type: i32	size: 4
+                                                                                                                                                Id	name: d1	scope: 2	type: i32	size: 4
+                                                                                                                                            Id	name: d2	scope: 2	type: i32	size: 4
+                                                                                                                                        Id	name: d3	scope: 2	type: i32	size: 4
+                                                                                                                                    Id	name: d4	scope: 2	type: i32	size: 4
+                                                                                                                                Id	name: e1	scope: 2	type: i32	size: 4
+                                                                                                                            Id	name: e2	scope: 2	type: i32	size: 4
+                                                                                                                        Id	name: e3	scope: 2	type: i32	size: 4
+                                                                                                                    Id	name: e4	scope: 2	type: i32	size: 4
+                                                                                                                Id	name: f1	scope: 2	type: i32	size: 4
+                                                                                                            Id	name: f2	scope: 2	type: i32	size: 4
+                                                                                                        Id	name: f3	scope: 2	type: i32	size: 4
+                                                                                                    Id	name: f4	scope: 2	type: i32	size: 4
+                                                                                                Id	name: g1	scope: 2	type: i32	size: 4
+                                                                                            Id	name: g2	scope: 2	type: i32	size: 4
+                                                                                        Id	name: g3	scope: 2	type: i32	size: 4
+                                                                                    Id	name: g4	scope: 2	type: i32	size: 4
+                                                                                Id	name: h1	scope: 2	type: i32	size: 4
+                                                                            Id	name: h2	scope: 2	type: i32	size: 4
+                                                                        Id	name: h3	scope: 2	type: i32	size: 4
+                                                                    Id	name: h4	scope: 2	type: i32	size: 4
+                                                                Id	name: i1	scope: 2	type: i32	size: 4
+                                                            Id	name: i2	scope: 2	type: i32	size: 4
+                                                        Id	name: i3	scope: 2	type: i32	size: 4
+                                                    Id	name: i4	scope: 2	type: i32	size: 4
+                                                Id	name: j1	scope: 2	type: i32	size: 4
+                                            Id	name: j2	scope: 2	type: i32	size: 4
+                                        Id	name: j3	scope: 2	type: i32	size: 4
+                                    Id	name: j4	scope: 2	type: i32	size: 4
+                                Id	name: k1	scope: 2	type: i32	size: 4
+                            Id	name: k2	scope: 2	type: i32	size: 4
+                        Id	name: k3	scope: 2	type: i32	size: 4
+                    Id	name: k4	scope: 2	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: b	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    Id	name: a	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 18	type: i32
+            ReturnStmt
+                FuncCallNode	funcName: @func	 funcType: i32	scope: 0
+                    FuncCallParamsNode
+                        Id	name: a	scope: 2	type: i32	size: 4
+                        Id	name: b	scope: 2	type: i32	size: 4

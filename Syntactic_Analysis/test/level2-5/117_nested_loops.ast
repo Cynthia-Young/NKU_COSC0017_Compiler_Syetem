@@ -1,0 +1,630 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	Array
+                            Id	name: arr1	scope: 0	type: int array
+                                ExprStmtNode
+                                    IntegerLiteral	value: 10	type: int
+                                    IntegerLiteral	value: 2	type: int
+                                    IntegerLiteral	value: 3	type: int
+                                    IntegerLiteral	value: 4	type: int
+                                    IntegerLiteral	value: 5	type: int
+                                    IntegerLiteral	value: 6	type: int
+                                    IntegerLiteral	value: 2	type: int
+                            null
+                        DeclStmt
+                        DefNode	Variable	Array
+                            Id	name: arr2	scope: 0	type: int array
+                                ExprStmtNode
+                                    IntegerLiteral	value: 10	type: int
+                                    IntegerLiteral	value: 2	type: int
+                                    IntegerLiteral	value: 3	type: int
+                                    IntegerLiteral	value: 2	type: int
+                                    IntegerLiteral	value: 4	type: int
+                                    IntegerLiteral	value: 8	type: int
+                                    IntegerLiteral	value: 7	type: int
+                            null
+                    FunctionDefine function name: loop1, type: void(int, int)
+                        FuncDefParamsNode
+                            Id	name: x	scope: 1	type: int
+                            Id	name: y	scope: 1	type: int
+                        CompoundStmt
+                            Sequence
+                                Sequence
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: a	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: b	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: c	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: d	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: e	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: f	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: g	scope: 2	type: int
+                                        null
+                                    AssignStmt
+                                        Id	name: a	scope: 2	type: int
+                                        IntegerLiteral	value: 0	type: int
+                                WhileStmt
+                                    BinaryExpr	op: and
+                                        BinaryExpr	op: less
+                                            Id	name: a	scope: 2	type: int
+                                            Id	name: x	scope: 1	type: int
+                                        BinaryExpr	op: less
+                                            Id	name: a	scope: 2	type: int
+                                            Id	name: y	scope: 1	type: int
+                                    CompoundStmt
+                                        Sequence
+                                            Sequence
+                                                AssignStmt
+                                                    Id	name: b	scope: 2	type: int
+                                                    IntegerLiteral	value: 0	type: int
+                                                WhileStmt
+                                                    BinaryExpr	op: less
+                                                        Id	name: b	scope: 2	type: int
+                                                        IntegerLiteral	value: 2	type: int
+                                                    CompoundStmt
+                                                        Sequence
+                                                            Sequence
+                                                                AssignStmt
+                                                                    Id	name: c	scope: 2	type: int
+                                                                    IntegerLiteral	value: 0	type: int
+                                                                WhileStmt
+                                                                    BinaryExpr	op: less
+                                                                        Id	name: c	scope: 2	type: int
+                                                                        IntegerLiteral	value: 3	type: int
+                                                                    CompoundStmt
+                                                                        Sequence
+                                                                            Sequence
+                                                                                AssignStmt
+                                                                                    Id	name: d	scope: 2	type: int
+                                                                                    IntegerLiteral	value: 0	type: int
+                                                                                WhileStmt
+                                                                                    BinaryExpr	op: less
+                                                                                        Id	name: d	scope: 2	type: int
+                                                                                        IntegerLiteral	value: 4	type: int
+                                                                                    CompoundStmt
+                                                                                        Sequence
+                                                                                            Sequence
+                                                                                                AssignStmt
+                                                                                                    Id	name: e	scope: 2	type: int
+                                                                                                    IntegerLiteral	value: 0	type: int
+                                                                                                WhileStmt
+                                                                                                    BinaryExpr	op: less
+                                                                                                        Id	name: e	scope: 2	type: int
+                                                                                                        IntegerLiteral	value: 5	type: int
+                                                                                                    CompoundStmt
+                                                                                                        Sequence
+                                                                                                            Sequence
+                                                                                                                AssignStmt
+                                                                                                                    Id	name: f	scope: 2	type: int
+                                                                                                                    IntegerLiteral	value: 0	type: int
+                                                                                                                WhileStmt
+                                                                                                                    BinaryExpr	op: less
+                                                                                                                        Id	name: f	scope: 2	type: int
+                                                                                                                        IntegerLiteral	value: 6	type: int
+                                                                                                                    CompoundStmt
+                                                                                                                        Sequence
+                                                                                                                            Sequence
+                                                                                                                                AssignStmt
+                                                                                                                                    Id	name: g	scope: 2	type: int
+                                                                                                                                    IntegerLiteral	value: 0	type: int
+                                                                                                                                WhileStmt
+                                                                                                                                    BinaryExpr	op: less
+                                                                                                                                        Id	name: g	scope: 2	type: int
+                                                                                                                                        IntegerLiteral	value: 2	type: int
+                                                                                                                                    CompoundStmt
+                                                                                                                                        Sequence
+                                                                                                                                            AssignStmt
+                                                                                                                                                Id	name: arr1	scope: 0	type: int array
+                                                                                                                                                    ExprStmtNode
+                                                                                                                                                        Id	name: a	scope: 2	type: int
+                                                                                                                                                        Id	name: b	scope: 2	type: int
+                                                                                                                                                        Id	name: c	scope: 2	type: int
+                                                                                                                                                        Id	name: d	scope: 2	type: int
+                                                                                                                                                        Id	name: e	scope: 2	type: int
+                                                                                                                                                        Id	name: f	scope: 2	type: int
+                                                                                                                                                        Id	name: g	scope: 2	type: int
+                                                                                                                                                BinaryExpr	op: add
+                                                                                                                                                    BinaryExpr	op: add
+                                                                                                                                                        BinaryExpr	op: add
+                                                                                                                                                            BinaryExpr	op: add
+                                                                                                                                                                BinaryExpr	op: add
+                                                                                                                                                                    BinaryExpr	op: add
+                                                                                                                                                                        BinaryExpr	op: add
+                                                                                                                                                                            BinaryExpr	op: add
+                                                                                                                                                                                Id	name: a	scope: 2	type: int
+                                                                                                                                                                                Id	name: b	scope: 2	type: int
+                                                                                                                                                                            Id	name: c	scope: 2	type: int
+                                                                                                                                                                        Id	name: d	scope: 2	type: int
+                                                                                                                                                                    Id	name: e	scope: 2	type: int
+                                                                                                                                                                Id	name: f	scope: 2	type: int
+                                                                                                                                                            Id	name: g	scope: 2	type: int
+                                                                                                                                                        Id	name: x	scope: 1	type: int
+                                                                                                                                                    Id	name: y	scope: 1	type: int
+                                                                                                                                            AssignStmt
+                                                                                                                                                Id	name: g	scope: 2	type: int
+                                                                                                                                                BinaryExpr	op: add
+                                                                                                                                                    Id	name: g	scope: 2	type: int
+                                                                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                                                            AssignStmt
+                                                                                                                                Id	name: f	scope: 2	type: int
+                                                                                                                                BinaryExpr	op: add
+                                                                                                                                    Id	name: f	scope: 2	type: int
+                                                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                                            AssignStmt
+                                                                                                                Id	name: e	scope: 2	type: int
+                                                                                                                BinaryExpr	op: add
+                                                                                                                    Id	name: e	scope: 2	type: int
+                                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                            AssignStmt
+                                                                                                Id	name: d	scope: 2	type: int
+                                                                                                BinaryExpr	op: add
+                                                                                                    Id	name: d	scope: 2	type: int
+                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                            AssignStmt
+                                                                                Id	name: c	scope: 2	type: int
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: c	scope: 2	type: int
+                                                                                    IntegerLiteral	value: 1	type: int
+                                                            AssignStmt
+                                                                Id	name: b	scope: 2	type: int
+                                                                BinaryExpr	op: add
+                                                                    Id	name: b	scope: 2	type: int
+                                                                    IntegerLiteral	value: 1	type: int
+                                            AssignStmt
+                                                Id	name: a	scope: 2	type: int
+                                                BinaryExpr	op: add
+                                                    Id	name: a	scope: 2	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                FunctionDefine function name: loop2, type: void()
+                    FuncDefParamsNode NULL
+                    CompoundStmt
+                        Sequence
+                            Sequence
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: a	scope: 2	type: int
+                                    null
+                                DefNode	Variable	NonArray
+                                    Id	name: b	scope: 2	type: int
+                                    null
+                                DefNode	Variable	NonArray
+                                    Id	name: c	scope: 2	type: int
+                                    null
+                                DefNode	Variable	NonArray
+                                    Id	name: d	scope: 2	type: int
+                                    null
+                                DefNode	Variable	NonArray
+                                    Id	name: e	scope: 2	type: int
+                                    null
+                                DefNode	Variable	NonArray
+                                    Id	name: f	scope: 2	type: int
+                                    null
+                                DefNode	Variable	NonArray
+                                    Id	name: g	scope: 2	type: int
+                                    null
+                                AssignStmt
+                                    Id	name: a	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                            WhileStmt
+                                BinaryExpr	op: less
+                                    Id	name: a	scope: 2	type: int
+                                    IntegerLiteral	value: 10	type: int
+                                CompoundStmt
+                                    Sequence
+                                        Sequence
+                                            AssignStmt
+                                                Id	name: b	scope: 2	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                            WhileStmt
+                                                BinaryExpr	op: less
+                                                    Id	name: b	scope: 2	type: int
+                                                    IntegerLiteral	value: 2	type: int
+                                                CompoundStmt
+                                                    Sequence
+                                                        Sequence
+                                                            AssignStmt
+                                                                Id	name: c	scope: 2	type: int
+                                                                IntegerLiteral	value: 0	type: int
+                                                            WhileStmt
+                                                                BinaryExpr	op: less
+                                                                    Id	name: c	scope: 2	type: int
+                                                                    IntegerLiteral	value: 3	type: int
+                                                                CompoundStmt
+                                                                    Sequence
+                                                                        Sequence
+                                                                            AssignStmt
+                                                                                Id	name: d	scope: 2	type: int
+                                                                                IntegerLiteral	value: 0	type: int
+                                                                            WhileStmt
+                                                                                BinaryExpr	op: less
+                                                                                    Id	name: d	scope: 2	type: int
+                                                                                    IntegerLiteral	value: 2	type: int
+                                                                                CompoundStmt
+                                                                                    Sequence
+                                                                                        Sequence
+                                                                                            AssignStmt
+                                                                                                Id	name: e	scope: 2	type: int
+                                                                                                IntegerLiteral	value: 0	type: int
+                                                                                            WhileStmt
+                                                                                                BinaryExpr	op: less
+                                                                                                    Id	name: e	scope: 2	type: int
+                                                                                                    IntegerLiteral	value: 4	type: int
+                                                                                                CompoundStmt
+                                                                                                    Sequence
+                                                                                                        Sequence
+                                                                                                            AssignStmt
+                                                                                                                Id	name: f	scope: 2	type: int
+                                                                                                                IntegerLiteral	value: 0	type: int
+                                                                                                            WhileStmt
+                                                                                                                BinaryExpr	op: less
+                                                                                                                    Id	name: f	scope: 2	type: int
+                                                                                                                    IntegerLiteral	value: 8	type: int
+                                                                                                                CompoundStmt
+                                                                                                                    Sequence
+                                                                                                                        Sequence
+                                                                                                                            AssignStmt
+                                                                                                                                Id	name: g	scope: 2	type: int
+                                                                                                                                IntegerLiteral	value: 0	type: int
+                                                                                                                            WhileStmt
+                                                                                                                                BinaryExpr	op: less
+                                                                                                                                    Id	name: g	scope: 2	type: int
+                                                                                                                                    IntegerLiteral	value: 7	type: int
+                                                                                                                                CompoundStmt
+                                                                                                                                    Sequence
+                                                                                                                                        AssignStmt
+                                                                                                                                            Id	name: arr2	scope: 0	type: int array
+                                                                                                                                                ExprStmtNode
+                                                                                                                                                    Id	name: a	scope: 2	type: int
+                                                                                                                                                    Id	name: b	scope: 2	type: int
+                                                                                                                                                    Id	name: c	scope: 2	type: int
+                                                                                                                                                    Id	name: d	scope: 2	type: int
+                                                                                                                                                    Id	name: e	scope: 2	type: int
+                                                                                                                                                    Id	name: f	scope: 2	type: int
+                                                                                                                                                    Id	name: g	scope: 2	type: int
+                                                                                                                                            BinaryExpr	op: add
+                                                                                                                                                BinaryExpr	op: add
+                                                                                                                                                    BinaryExpr	op: add
+                                                                                                                                                        Id	name: a	scope: 2	type: int
+                                                                                                                                                        Id	name: b	scope: 2	type: int
+                                                                                                                                                    Id	name: d	scope: 2	type: int
+                                                                                                                                                Id	name: g	scope: 2	type: int
+                                                                                                                                        AssignStmt
+                                                                                                                                            Id	name: g	scope: 2	type: int
+                                                                                                                                            BinaryExpr	op: add
+                                                                                                                                                Id	name: g	scope: 2	type: int
+                                                                                                                                                IntegerLiteral	value: 1	type: int
+                                                                                                                        AssignStmt
+                                                                                                                            Id	name: f	scope: 2	type: int
+                                                                                                                            BinaryExpr	op: add
+                                                                                                                                Id	name: f	scope: 2	type: int
+                                                                                                                                IntegerLiteral	value: 1	type: int
+                                                                                                        AssignStmt
+                                                                                                            Id	name: e	scope: 2	type: int
+                                                                                                            BinaryExpr	op: add
+                                                                                                                Id	name: e	scope: 2	type: int
+                                                                                                                IntegerLiteral	value: 1	type: int
+                                                                                        AssignStmt
+                                                                                            Id	name: d	scope: 2	type: int
+                                                                                            BinaryExpr	op: add
+                                                                                                Id	name: d	scope: 2	type: int
+                                                                                                IntegerLiteral	value: 1	type: int
+                                                                        AssignStmt
+                                                                            Id	name: c	scope: 2	type: int
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: c	scope: 2	type: int
+                                                                                IntegerLiteral	value: 1	type: int
+                                                        AssignStmt
+                                                            Id	name: b	scope: 2	type: int
+                                                            BinaryExpr	op: add
+                                                                Id	name: b	scope: 2	type: int
+                                                                IntegerLiteral	value: 1	type: int
+                                        AssignStmt
+                                            Id	name: a	scope: 2	type: int
+                                            BinaryExpr	op: add
+                                                Id	name: a	scope: 2	type: int
+                                                IntegerLiteral	value: 1	type: int
+            FunctionDefine function name: loop3, type: int(int, int, int, int, int, int, int)
+                FuncDefParamsNode
+                    Id	name: h	scope: 1	type: int
+                    Id	name: i	scope: 1	type: int
+                    Id	name: j	scope: 1	type: int
+                    Id	name: k	scope: 1	type: int
+                    Id	name: l	scope: 1	type: int
+                    Id	name: m	scope: 1	type: int
+                    Id	name: n	scope: 1	type: int
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: a	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: b	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: c	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: d	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: e	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: f	scope: 2	type: int
+                                        null
+                                    DefNode	Variable	NonArray
+                                        Id	name: g	scope: 2	type: int
+                                        null
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: ans	scope: 2	type: int
+                                        IntegerLiteral	value: 0	type: int
+                                AssignStmt
+                                    Id	name: a	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                            WhileStmt
+                                BinaryExpr	op: less
+                                    Id	name: a	scope: 2	type: int
+                                    IntegerLiteral	value: 10	type: int
+                                CompoundStmt
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                AssignStmt
+                                                    Id	name: b	scope: 2	type: int
+                                                    IntegerLiteral	value: 0	type: int
+                                                WhileStmt
+                                                    BinaryExpr	op: less
+                                                        Id	name: b	scope: 2	type: int
+                                                        IntegerLiteral	value: 100	type: int
+                                                    CompoundStmt
+                                                        Sequence
+                                                            Sequence
+                                                                Sequence
+                                                                    AssignStmt
+                                                                        Id	name: c	scope: 2	type: int
+                                                                        IntegerLiteral	value: 0	type: int
+                                                                    WhileStmt
+                                                                        BinaryExpr	op: less
+                                                                            Id	name: c	scope: 2	type: int
+                                                                            IntegerLiteral	value: 1000	type: int
+                                                                        CompoundStmt
+                                                                            Sequence
+                                                                                Sequence
+                                                                                    Sequence
+                                                                                        AssignStmt
+                                                                                            Id	name: d	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 0	type: int
+                                                                                        WhileStmt
+                                                                                            BinaryExpr	op: less
+                                                                                                Id	name: d	scope: 2	type: int
+                                                                                                IntegerLiteral	value: 10000	type: int
+                                                                                            CompoundStmt
+                                                                                                Sequence
+                                                                                                    Sequence
+                                                                                                        Sequence
+                                                                                                            AssignStmt
+                                                                                                                Id	name: e	scope: 2	type: int
+                                                                                                                IntegerLiteral	value: 0	type: int
+                                                                                                            WhileStmt
+                                                                                                                BinaryExpr	op: less
+                                                                                                                    Id	name: e	scope: 2	type: int
+                                                                                                                    IntegerLiteral	value: 100000	type: int
+                                                                                                                CompoundStmt
+                                                                                                                    Sequence
+                                                                                                                        Sequence
+                                                                                                                            Sequence
+                                                                                                                                AssignStmt
+                                                                                                                                    Id	name: f	scope: 2	type: int
+                                                                                                                                    IntegerLiteral	value: 0	type: int
+                                                                                                                                WhileStmt
+                                                                                                                                    BinaryExpr	op: less
+                                                                                                                                        Id	name: f	scope: 2	type: int
+                                                                                                                                        IntegerLiteral	value: 1000000	type: int
+                                                                                                                                    CompoundStmt
+                                                                                                                                        Sequence
+                                                                                                                                            Sequence
+                                                                                                                                                Sequence
+                                                                                                                                                    AssignStmt
+                                                                                                                                                        Id	name: g	scope: 2	type: int
+                                                                                                                                                        IntegerLiteral	value: 0	type: int
+                                                                                                                                                    WhileStmt
+                                                                                                                                                        BinaryExpr	op: less
+                                                                                                                                                            Id	name: g	scope: 2	type: int
+                                                                                                                                                            IntegerLiteral	value: 10000000	type: int
+                                                                                                                                                        CompoundStmt
+                                                                                                                                                            Sequence
+                                                                                                                                                                Sequence
+                                                                                                                                                                    AssignStmt
+                                                                                                                                                                        Id	name: ans	scope: 2	type: int
+                                                                                                                                                                        BinaryExpr	op: add
+                                                                                                                                                                            BinaryExpr	op: add
+                                                                                                                                                                                BinaryExpr	op: mod
+                                                                                                                                                                                    Id	name: ans	scope: 2	type: int
+                                                                                                                                                                                    IntegerLiteral	value: 817	type: int
+                                                                                                                                                                                Id	name: arr1	scope: 0	type: int array
+                                                                                                                                                                                    ExprStmtNode
+                                                                                                                                                                                        Id	name: a	scope: 2	type: int
+                                                                                                                                                                                        Id	name: b	scope: 2	type: int
+                                                                                                                                                                                        Id	name: c	scope: 2	type: int
+                                                                                                                                                                                        Id	name: d	scope: 2	type: int
+                                                                                                                                                                                        Id	name: e	scope: 2	type: int
+                                                                                                                                                                                        Id	name: f	scope: 2	type: int
+                                                                                                                                                                                        Id	name: g	scope: 2	type: int
+                                                                                                                                                                            Id	name: arr2	scope: 0	type: int array
+                                                                                                                                                                                ExprStmtNode
+                                                                                                                                                                                    Id	name: a	scope: 2	type: int
+                                                                                                                                                                                    Id	name: b	scope: 2	type: int
+                                                                                                                                                                                    Id	name: c	scope: 2	type: int
+                                                                                                                                                                                    Id	name: d	scope: 2	type: int
+                                                                                                                                                                                    Id	name: e	scope: 2	type: int
+                                                                                                                                                                                    Id	name: f	scope: 2	type: int
+                                                                                                                                                                                    Id	name: g	scope: 2	type: int
+                                                                                                                                                                    AssignStmt
+                                                                                                                                                                        Id	name: g	scope: 2	type: int
+                                                                                                                                                                        BinaryExpr	op: add
+                                                                                                                                                                            Id	name: g	scope: 2	type: int
+                                                                                                                                                                            IntegerLiteral	value: 1	type: int
+                                                                                                                                                                IfStmt
+                                                                                                                                                                    BinaryExpr	op: greaterorequal
+                                                                                                                                                                        Id	name: g	scope: 2	type: int
+                                                                                                                                                                        Id	name: n	scope: 1	type: int
+                                                                                                                                                                    BreakStmt
+                                                                                                                                                AssignStmt
+                                                                                                                                                    Id	name: f	scope: 2	type: int
+                                                                                                                                                    BinaryExpr	op: add
+                                                                                                                                                        Id	name: f	scope: 2	type: int
+                                                                                                                                                        IntegerLiteral	value: 1	type: int
+                                                                                                                                            IfStmt
+                                                                                                                                                BinaryExpr	op: greaterorequal
+                                                                                                                                                    Id	name: f	scope: 2	type: int
+                                                                                                                                                    Id	name: m	scope: 1	type: int
+                                                                                                                                                BreakStmt
+                                                                                                                            AssignStmt
+                                                                                                                                Id	name: e	scope: 2	type: int
+                                                                                                                                BinaryExpr	op: add
+                                                                                                                                    Id	name: e	scope: 2	type: int
+                                                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                                                        IfStmt
+                                                                                                                            BinaryExpr	op: greaterorequal
+                                                                                                                                Id	name: e	scope: 2	type: int
+                                                                                                                                Id	name: l	scope: 1	type: int
+                                                                                                                            BreakStmt
+                                                                                                        AssignStmt
+                                                                                                            Id	name: d	scope: 2	type: int
+                                                                                                            BinaryExpr	op: add
+                                                                                                                Id	name: d	scope: 2	type: int
+                                                                                                                IntegerLiteral	value: 1	type: int
+                                                                                                    IfStmt
+                                                                                                        BinaryExpr	op: greaterorequal
+                                                                                                            Id	name: d	scope: 2	type: int
+                                                                                                            Id	name: k	scope: 1	type: int
+                                                                                                        BreakStmt
+                                                                                    AssignStmt
+                                                                                        Id	name: c	scope: 2	type: int
+                                                                                        BinaryExpr	op: add
+                                                                                            Id	name: c	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 1	type: int
+                                                                                IfStmt
+                                                                                    BinaryExpr	op: greaterorequal
+                                                                                        Id	name: c	scope: 2	type: int
+                                                                                        Id	name: j	scope: 1	type: int
+                                                                                    BreakStmt
+                                                                AssignStmt
+                                                                    Id	name: b	scope: 2	type: int
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: b	scope: 2	type: int
+                                                                        IntegerLiteral	value: 1	type: int
+                                                            IfStmt
+                                                                BinaryExpr	op: greaterorequal
+                                                                    Id	name: b	scope: 2	type: int
+                                                                    Id	name: i	scope: 1	type: int
+                                                                BreakStmt
+                                            AssignStmt
+                                                Id	name: a	scope: 2	type: int
+                                                BinaryExpr	op: add
+                                                    Id	name: a	scope: 2	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                                        IfStmt
+                                            BinaryExpr	op: greaterorequal
+                                                Id	name: a	scope: 2	type: int
+                                                Id	name: h	scope: 1	type: int
+                                            BreakStmt
+                        ReturnStmt
+                            Id	name: ans	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        DeclStmt
+                                                        DefNode	Variable	NonArray
+                                                            Id	name: x	scope: 2	type: int
+                                                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                                FuncCallParamsNode NULL
+                                                        DeclStmt
+                                                        DefNode	Variable	NonArray
+                                                            Id	name: y	scope: 2	type: int
+                                                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                                FuncCallParamsNode NULL
+                                                    DeclStmt
+                                                    DefNode	Variable	NonArray
+                                                        Id	name: h	scope: 2	type: int
+                                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                            FuncCallParamsNode NULL
+                                                DeclStmt
+                                                DefNode	Variable	NonArray
+                                                    Id	name: i	scope: 2	type: int
+                                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                        FuncCallParamsNode NULL
+                                                DefNode	Variable	NonArray
+                                                    Id	name: j	scope: 2	type: int
+                                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                        FuncCallParamsNode NULL
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: k	scope: 2	type: int
+                                                FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                    FuncCallParamsNode NULL
+                                        DeclStmt
+                                        DefNode	Variable	NonArray
+                                            Id	name: l	scope: 2	type: int
+                                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                FuncCallParamsNode NULL
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: m	scope: 2	type: int
+                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                            FuncCallParamsNode NULL
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: n	scope: 2	type: int
+                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                        FuncCallParamsNode NULL
+                            ExprStmtNode
+                                FuncCallNode	funcName: loop1	 funcType: void(int, int)	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: x	scope: 2	type: int
+                                        Id	name: y	scope: 2	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: loop2	 funcType: void()	scope: 0
+                                FuncCallParamsNode NULL
+                    ReturnStmt
+                        FuncCallNode	funcName: loop3	 funcType: int(int, int, int, int, int, int, int)	scope: 0
+                            FuncCallParamsNode
+                                Id	name: h	scope: 2	type: int
+                                Id	name: i	scope: 2	type: int
+                                Id	name: j	scope: 2	type: int
+                                Id	name: k	scope: 2	type: int
+                                Id	name: l	scope: 2	type: int
+                                Id	name: m	scope: 2	type: int
+                                Id	name: n	scope: 2	type: int

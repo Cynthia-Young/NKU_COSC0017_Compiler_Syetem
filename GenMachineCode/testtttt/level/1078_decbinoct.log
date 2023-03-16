@@ -1,0 +1,93 @@
+typecheck fin
+program
+    FunctionDefine function name: @dec2bin, type: i32
+        FuncDefParamsNode
+            Id	name: %a	scope: 1	type: i32	size: 4
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: res	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: k	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: temp	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            AssignStmt
+                Id	name: k	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: temp	scope: 2	type: i32	size: 4
+                Id	name: %a	scope: 1	type: i32	size: 4
+            WhileStmt
+                BinaryExpr	op: neq     type:i1
+                    Id	name: temp	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: mod     type:i32
+                            Id	name: temp	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 2	type: i32
+                    AssignStmt
+                        Id	name: res	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            BinaryExpr	op: mul     type:i32
+                                Id	name: k	scope: 2	type: i32	size: 4
+                                Id	name: i	scope: 2	type: i32	size: 4
+                            Id	name: res	scope: 2	type: i32	size: 4
+                    AssignStmt
+                        Id	name: k	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: mul     type:i32
+                            Id	name: k	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 10	type: i32
+                    AssignStmt
+                        Id	name: temp	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: div     type:i32
+                            Id	name: temp	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 2	type: i32
+            ReturnStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 400	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: res	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @dec2bin	 funcType: i32	scope: 0
+                    FuncCallParamsNode
+                        Id	name: a	scope: 2	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: res	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 10	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: res	scope: 2	type: i32	size: 4
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

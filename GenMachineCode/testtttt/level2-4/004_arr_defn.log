@@ -1,0 +1,44 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	Array
+        Id	name: @a	scope: 0	type: int array	size: 40
+            ArrayDimensions
+            ArrDim
+                IntegerLiteral	value: 10	type: i32
+        This variable/constant is not assigned
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+DeclStmt::genCode
+ReturnStmt::genCode
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+	.arch armv8-a
+	.fpu vfpv3-d16
+	.arch_extension crc
+	.arm
+	.data
+	.comm	a,40,4
+	.text
+	.global main
+	.type main , %function
+main:
+	push {r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #0
+.L0:
+	ldr r10, =0
+	mov r0, r10
+	b .Lmain_END
+.Lmain_END:
+BinaryMInstruction::output() 
+	add sp, sp, #0
+	pop {r10, fp, lr}
+	bx  lr
+
+addr_a_0:
+	.word a

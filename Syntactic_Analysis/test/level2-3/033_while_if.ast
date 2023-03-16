@@ -1,0 +1,107 @@
+program
+    Sequence
+        Sequence
+            FunctionDefine function name: get_one, type: int(int)
+                FuncDefParamsNode
+                    Id	name: a	scope: 1	type: int
+                CompoundStmt
+                    ReturnStmt
+                        IntegerLiteral	value: 1	type: int
+            FunctionDefine function name: deepWhileBr, type: int(int, int)
+                FuncDefParamsNode
+                    Id	name: a	scope: 1	type: int
+                    Id	name: b	scope: 1	type: int
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            Sequence
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: c	scope: 2	type: int
+                                    null
+                                AssignStmt
+                                    Id	name: c	scope: 2	type: int
+                                    BinaryExpr	op: add
+                                        Id	name: a	scope: 1	type: int
+                                        Id	name: b	scope: 1	type: int
+                            WhileStmt
+                                BinaryExpr	op: less
+                                    Id	name: c	scope: 2	type: int
+                                    IntegerLiteral	value: 75	type: int
+                                CompoundStmt
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: d	scope: 3	type: int
+                                                null
+                                            AssignStmt
+                                                Id	name: d	scope: 3	type: int
+                                                IntegerLiteral	value: 42	type: int
+                                        IfStmt
+                                            BinaryExpr	op: less
+                                                Id	name: c	scope: 2	type: int
+                                                IntegerLiteral	value: 100	type: int
+                                            CompoundStmt
+                                                Sequence
+                                                    AssignStmt
+                                                        Id	name: c	scope: 2	type: int
+                                                        BinaryExpr	op: add
+                                                            Id	name: c	scope: 2	type: int
+                                                            Id	name: d	scope: 3	type: int
+                                                    IfStmt
+                                                        BinaryExpr	op: greater
+                                                            Id	name: c	scope: 2	type: int
+                                                            IntegerLiteral	value: 99	type: int
+                                                        CompoundStmt
+                                                            Sequence
+                                                                Sequence
+                                                                    DeclStmt
+                                                                    DefNode	Variable	NonArray
+                                                                        Id	name: e	scope: 5	type: int
+                                                                        null
+                                                                    AssignStmt
+                                                                        Id	name: e	scope: 5	type: int
+                                                                        BinaryExpr	op: multi
+                                                                            Id	name: d	scope: 3	type: int
+                                                                            IntegerLiteral	value: 2	type: int
+                                                                IfStmt
+                                                                    BinaryExpr	op: equal
+                                                                        FuncCallNode	funcName: get_one	 funcType: int(int)	scope: 0
+                                                                            FuncCallParamsNode
+                                                                                IntegerLiteral	value: 0	type: int
+                                                                        IntegerLiteral	value: 1	type: int
+                                                                    CompoundStmt
+                                                                        AssignStmt
+                                                                            Id	name: c	scope: 2	type: int
+                                                                            BinaryExpr	op: multi
+                                                                                Id	name: e	scope: 5	type: int
+                                                                                IntegerLiteral	value: 2	type: int
+                        ReturnStmt
+                            Id	name: c	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: p	scope: 2	type: int
+                                    null
+                                AssignStmt
+                                    Id	name: p	scope: 2	type: int
+                                    IntegerLiteral	value: 2	type: int
+                            AssignStmt
+                                Id	name: p	scope: 2	type: int
+                                FuncCallNode	funcName: deepWhileBr	 funcType: int(int, int)	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: p	scope: 2	type: int
+                                        Id	name: p	scope: 2	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    Id	name: p	scope: 2	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

@@ -1,0 +1,433 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Const	NonArray
+                                                Id	name: INF	scope: 0	type: const int
+                                                IntegerLiteral	value: 1879048192	type: int
+                                            DeclStmt
+                                            DefNode	Variable	Array
+                                                Id	name: size	scope: 0	type: int array
+                                                    ExprStmtNode
+                                                        IntegerLiteral	value: 10	type: int
+                                                null
+                                        DeclStmt
+                                        DefNode	Variable	Array
+                                            Id	name: to	scope: 0	type: int array
+                                                ExprStmtNode
+                                                    IntegerLiteral	value: 10	type: int
+                                                    IntegerLiteral	value: 10	type: int
+                                            null
+                                    DeclStmt
+                                    DefNode	Variable	Array
+                                        Id	name: cap	scope: 0	type: int array
+                                            ExprStmtNode
+                                                IntegerLiteral	value: 10	type: int
+                                                IntegerLiteral	value: 10	type: int
+                                        null
+                                DeclStmt
+                                DefNode	Variable	Array
+                                    Id	name: rev	scope: 0	type: int array
+                                        ExprStmtNode
+                                            IntegerLiteral	value: 10	type: int
+                                            IntegerLiteral	value: 10	type: int
+                                    null
+                            DeclStmt
+                            DefNode	Variable	Array
+                                Id	name: used	scope: 0	type: int array
+                                    ExprStmtNode
+                                        IntegerLiteral	value: 10	type: int
+                                null
+                        FunctionDefine function name: my_memset, type: void(int array, int, int)
+                            FuncDefParamsNode
+                                Id	name: arr	scope: 1	type: int array
+                                Id	name: val	scope: 1	type: int
+                                Id	name: n	scope: 1	type: int
+                            CompoundStmt
+                                Sequence
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: i	scope: 2	type: int
+                                        IntegerLiteral	value: 0	type: int
+                                    WhileStmt
+                                        BinaryExpr	op: less
+                                            Id	name: i	scope: 2	type: int
+                                            Id	name: n	scope: 1	type: int
+                                        CompoundStmt
+                                            Sequence
+                                                AssignStmt
+                                                    Id	name: arr	scope: 1	type: int array
+                                                        ExprStmtNode
+                                                            Id	name: i	scope: 2	type: int
+                                                    Id	name: val	scope: 1	type: int
+                                                AssignStmt
+                                                    Id	name: i	scope: 2	type: int
+                                                    BinaryExpr	op: add
+                                                        Id	name: i	scope: 2	type: int
+                                                        IntegerLiteral	value: 1	type: int
+                    FunctionDefine function name: add_node, type: void(int, int, int)
+                        FuncDefParamsNode
+                            Id	name: u	scope: 1	type: int
+                            Id	name: v	scope: 1	type: int
+                            Id	name: c	scope: 1	type: int
+                        CompoundStmt
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        AssignStmt
+                                                            Id	name: to	scope: 0	type: int array
+                                                                ExprStmtNode
+                                                                    Id	name: u	scope: 1	type: int
+                                                                    Id	name: size	scope: 0	type: int array
+                                                                        ExprStmtNode
+                                                                            Id	name: u	scope: 1	type: int
+                                                            Id	name: v	scope: 1	type: int
+                                                        AssignStmt
+                                                            Id	name: cap	scope: 0	type: int array
+                                                                ExprStmtNode
+                                                                    Id	name: u	scope: 1	type: int
+                                                                    Id	name: size	scope: 0	type: int array
+                                                                        ExprStmtNode
+                                                                            Id	name: u	scope: 1	type: int
+                                                            Id	name: c	scope: 1	type: int
+                                                    AssignStmt
+                                                        Id	name: rev	scope: 0	type: int array
+                                                            ExprStmtNode
+                                                                Id	name: u	scope: 1	type: int
+                                                                Id	name: size	scope: 0	type: int array
+                                                                    ExprStmtNode
+                                                                        Id	name: u	scope: 1	type: int
+                                                        Id	name: size	scope: 0	type: int array
+                                                            ExprStmtNode
+                                                                Id	name: v	scope: 1	type: int
+                                                AssignStmt
+                                                    Id	name: to	scope: 0	type: int array
+                                                        ExprStmtNode
+                                                            Id	name: v	scope: 1	type: int
+                                                            Id	name: size	scope: 0	type: int array
+                                                                ExprStmtNode
+                                                                    Id	name: v	scope: 1	type: int
+                                                    Id	name: u	scope: 1	type: int
+                                            AssignStmt
+                                                Id	name: cap	scope: 0	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: v	scope: 1	type: int
+                                                        Id	name: size	scope: 0	type: int array
+                                                            ExprStmtNode
+                                                                Id	name: v	scope: 1	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                        AssignStmt
+                                            Id	name: rev	scope: 0	type: int array
+                                                ExprStmtNode
+                                                    Id	name: v	scope: 1	type: int
+                                                    Id	name: size	scope: 0	type: int array
+                                                        ExprStmtNode
+                                                            Id	name: v	scope: 1	type: int
+                                            Id	name: size	scope: 0	type: int array
+                                                ExprStmtNode
+                                                    Id	name: u	scope: 1	type: int
+                                    AssignStmt
+                                        Id	name: size	scope: 0	type: int array
+                                            ExprStmtNode
+                                                Id	name: u	scope: 1	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: size	scope: 0	type: int array
+                                                ExprStmtNode
+                                                    Id	name: u	scope: 1	type: int
+                                            IntegerLiteral	value: 1	type: int
+                                AssignStmt
+                                    Id	name: size	scope: 0	type: int array
+                                        ExprStmtNode
+                                            Id	name: v	scope: 1	type: int
+                                    BinaryExpr	op: add
+                                        Id	name: size	scope: 0	type: int array
+                                            ExprStmtNode
+                                                Id	name: v	scope: 1	type: int
+                                        IntegerLiteral	value: 1	type: int
+                FunctionDefine function name: dfs, type: int(int, int, int)
+                    FuncDefParamsNode
+                        Id	name: s	scope: 1	type: int
+                        Id	name: t	scope: 1	type: int
+                        Id	name: f	scope: 1	type: int
+                    CompoundStmt
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        IfStmt
+                                            BinaryExpr	op: equal
+                                                Id	name: s	scope: 1	type: int
+                                                Id	name: t	scope: 1	type: int
+                                            ReturnStmt
+                                                Id	name: f	scope: 1	type: int
+                                        AssignStmt
+                                            Id	name: used	scope: 0	type: int array
+                                                ExprStmtNode
+                                                    Id	name: s	scope: 1	type: int
+                                            IntegerLiteral	value: 1	type: int
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: i	scope: 2	type: int
+                                        IntegerLiteral	value: 0	type: int
+                                WhileStmt
+                                    BinaryExpr	op: less
+                                        Id	name: i	scope: 2	type: int
+                                        Id	name: size	scope: 0	type: int array
+                                            ExprStmtNode
+                                                Id	name: s	scope: 1	type: int
+                                    CompoundStmt
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            Sequence
+                                                                IfStmt
+                                                                    Id	name: used	scope: 0	type: int array
+                                                                        ExprStmtNode
+                                                                            Id	name: to	scope: 0	type: int array
+                                                                                ExprStmtNode
+                                                                                    Id	name: s	scope: 1	type: int
+                                                                                    Id	name: i	scope: 2	type: int
+                                                                    CompoundStmt
+                                                                        Sequence
+                                                                            AssignStmt
+                                                                                Id	name: i	scope: 2	type: int
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: i	scope: 2	type: int
+                                                                                    IntegerLiteral	value: 1	type: int
+                                                                            ContinueStmt
+                                                                IfStmt
+                                                                    BinaryExpr	op: lessorequal
+                                                                        Id	name: cap	scope: 0	type: int array
+                                                                            ExprStmtNode
+                                                                                Id	name: s	scope: 1	type: int
+                                                                                Id	name: i	scope: 2	type: int
+                                                                        IntegerLiteral	value: 0	type: int
+                                                                    CompoundStmt
+                                                                        Sequence
+                                                                            AssignStmt
+                                                                                Id	name: i	scope: 2	type: int
+                                                                                BinaryExpr	op: add
+                                                                                    Id	name: i	scope: 2	type: int
+                                                                                    IntegerLiteral	value: 1	type: int
+                                                                            ContinueStmt
+                                                            DeclStmt
+                                                            DefNode	Variable	NonArray
+                                                                Id	name: min_f	scope: 3	type: int
+                                                                null
+                                                        IfElseStmt
+                                                            BinaryExpr	op: less
+                                                                Id	name: f	scope: 1	type: int
+                                                                Id	name: cap	scope: 0	type: int array
+                                                                    ExprStmtNode
+                                                                        Id	name: s	scope: 1	type: int
+                                                                        Id	name: i	scope: 2	type: int
+                                                            AssignStmt
+                                                                Id	name: min_f	scope: 3	type: int
+                                                                Id	name: f	scope: 1	type: int
+                                                            AssignStmt
+                                                                Id	name: min_f	scope: 3	type: int
+                                                                Id	name: cap	scope: 0	type: int array
+                                                                    ExprStmtNode
+                                                                        Id	name: s	scope: 1	type: int
+                                                                        Id	name: i	scope: 2	type: int
+                                                    DeclStmt
+                                                    DefNode	Variable	NonArray
+                                                        Id	name: d	scope: 3	type: int
+                                                        FuncCallNode	funcName: dfs	 funcType: int(int, int, int)	scope: 0
+                                                            FuncCallParamsNode
+                                                                Id	name: to	scope: 0	type: int array
+                                                                    ExprStmtNode
+                                                                        Id	name: s	scope: 1	type: int
+                                                                        Id	name: i	scope: 2	type: int
+                                                                Id	name: t	scope: 1	type: int
+                                                                Id	name: min_f	scope: 3	type: int
+                                                IfStmt
+                                                    BinaryExpr	op: greater
+                                                        Id	name: d	scope: 3	type: int
+                                                        IntegerLiteral	value: 0	type: int
+                                                    CompoundStmt
+                                                        Sequence
+                                                            Sequence
+                                                                AssignStmt
+                                                                    Id	name: cap	scope: 0	type: int array
+                                                                        ExprStmtNode
+                                                                            Id	name: s	scope: 1	type: int
+                                                                            Id	name: i	scope: 2	type: int
+                                                                    BinaryExpr	op: sub
+                                                                        Id	name: cap	scope: 0	type: int array
+                                                                            ExprStmtNode
+                                                                                Id	name: s	scope: 1	type: int
+                                                                                Id	name: i	scope: 2	type: int
+                                                                        Id	name: d	scope: 3	type: int
+                                                                AssignStmt
+                                                                    Id	name: cap	scope: 0	type: int array
+                                                                        ExprStmtNode
+                                                                            Id	name: to	scope: 0	type: int array
+                                                                                ExprStmtNode
+                                                                                    Id	name: s	scope: 1	type: int
+                                                                                    Id	name: i	scope: 2	type: int
+                                                                            Id	name: rev	scope: 0	type: int array
+                                                                                ExprStmtNode
+                                                                                    Id	name: s	scope: 1	type: int
+                                                                                    Id	name: i	scope: 2	type: int
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: cap	scope: 0	type: int array
+                                                                            ExprStmtNode
+                                                                                Id	name: to	scope: 0	type: int array
+                                                                                    ExprStmtNode
+                                                                                        Id	name: s	scope: 1	type: int
+                                                                                        Id	name: i	scope: 2	type: int
+                                                                                Id	name: rev	scope: 0	type: int array
+                                                                                    ExprStmtNode
+                                                                                        Id	name: s	scope: 1	type: int
+                                                                                        Id	name: i	scope: 2	type: int
+                                                                        Id	name: d	scope: 3	type: int
+                                                            ReturnStmt
+                                                                Id	name: d	scope: 3	type: int
+                                            AssignStmt
+                                                Id	name: i	scope: 2	type: int
+                                                BinaryExpr	op: add
+                                                    Id	name: i	scope: 2	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                            ReturnStmt
+                                IntegerLiteral	value: 0	type: int
+            FunctionDefine function name: max_flow, type: int(int, int)
+                FuncDefParamsNode
+                    Id	name: s	scope: 1	type: int
+                    Id	name: t	scope: 1	type: int
+                CompoundStmt
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: flow	scope: 2	type: int
+                            IntegerLiteral	value: 0	type: int
+                        WhileStmt
+                            IntegerLiteral	value: 1	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            ExprStmtNode
+                                                FuncCallNode	funcName: my_memset	 funcType: void(int array, int, int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: used	scope: 0	type: int array
+                                                        IntegerLiteral	value: 0	type: int
+                                                        IntegerLiteral	value: 10	type: int
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: f	scope: 3	type: int
+                                                FuncCallNode	funcName: dfs	 funcType: int(int, int, int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: s	scope: 1	type: int
+                                                        Id	name: t	scope: 1	type: int
+                                                        Id	name: INF	scope: 0	type: const int
+                                        IfStmt
+                                            BinaryExpr	op: equal
+                                                Id	name: f	scope: 3	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                            ReturnStmt
+                                                Id	name: flow	scope: 2	type: int
+                                    AssignStmt
+                                        Id	name: flow	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: flow	scope: 2	type: int
+                                            Id	name: f	scope: 3	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: V	scope: 2	type: int
+                                                null
+                                            DefNode	Variable	NonArray
+                                                Id	name: E	scope: 2	type: int
+                                                null
+                                            AssignStmt
+                                                Id	name: V	scope: 2	type: int
+                                                FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                    FuncCallParamsNode NULL
+                                        AssignStmt
+                                            Id	name: E	scope: 2	type: int
+                                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                FuncCallParamsNode NULL
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: my_memset	 funcType: void(int array, int, int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: size	scope: 0	type: int array
+                                                IntegerLiteral	value: 0	type: int
+                                                IntegerLiteral	value: 10	type: int
+                                WhileStmt
+                                    BinaryExpr	op: greater
+                                        Id	name: E	scope: 2	type: int
+                                        IntegerLiteral	value: 0	type: int
+                                    CompoundStmt
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            DeclStmt
+                                                            DefNode	Variable	NonArray
+                                                                Id	name: u	scope: 3	type: int
+                                                                null
+                                                            DefNode	Variable	NonArray
+                                                                Id	name: v	scope: 3	type: int
+                                                                null
+                                                            AssignStmt
+                                                                Id	name: u	scope: 3	type: int
+                                                                FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                                    FuncCallParamsNode NULL
+                                                        AssignStmt
+                                                            Id	name: v	scope: 3	type: int
+                                                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                                FuncCallParamsNode NULL
+                                                    DeclStmt
+                                                    DefNode	Variable	NonArray
+                                                        Id	name: c	scope: 3	type: int
+                                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                            FuncCallParamsNode NULL
+                                                ExprStmtNode
+                                                    FuncCallNode	funcName: add_node	 funcType: void(int, int, int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            Id	name: u	scope: 3	type: int
+                                                            Id	name: v	scope: 3	type: int
+                                                            Id	name: c	scope: 3	type: int
+                                            AssignStmt
+                                                Id	name: E	scope: 2	type: int
+                                                BinaryExpr	op: sub
+                                                    Id	name: E	scope: 2	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                            ExprStmtNode
+                                FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                    FuncCallParamsNode
+                                        FuncCallNode	funcName: max_flow	 funcType: int(int, int)	scope: 0
+                                            FuncCallParamsNode
+                                                IntegerLiteral	value: 1	type: int
+                                                Id	name: V	scope: 2	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    IntegerLiteral	value: 10	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

@@ -1,0 +1,100 @@
+typecheck fin
+program
+    FunctionDefine function name: @move, type: void
+        FuncDefParamsNode
+            Id	name: %x	scope: 1	type: i32	size: 4
+            Id	name: %y	scope: 1	type: i32	size: 4
+        CompoundStmt
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: %x	scope: 1	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 32	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: %y	scope: 1	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 44	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 32	type: i32
+    FunctionDefine function name: @hanoi, type: void
+        FuncDefParamsNode
+            Id	name: %n	scope: 1	type: i32	size: 4
+            Id	name: %one	scope: 1	type: i32	size: 4
+            Id	name: %two	scope: 1	type: i32	size: 4
+            Id	name: %three	scope: 1	type: i32	size: 4
+        CompoundStmt
+            IfElseStmt
+                BinaryExpr	op: eq     type:i1
+                    Id	name: %n	scope: 1	type: i32	size: 4
+                    IntegerLiteral	value: 1	type: i32
+                ExprStmtNode
+                    FuncCallNode	funcName: @move	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            Id	name: %one	scope: 1	type: i32	size: 4
+                            Id	name: %three	scope: 1	type: i32	size: 4
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @hanoi	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                BinaryExpr	op: sub     type:i32
+                                    Id	name: %n	scope: 1	type: i32	size: 4
+                                    IntegerLiteral	value: 1	type: i32
+                                Id	name: %one	scope: 1	type: i32	size: 4
+                                Id	name: %three	scope: 1	type: i32	size: 4
+                                Id	name: %two	scope: 1	type: i32	size: 4
+                    ExprStmtNode
+                        FuncCallNode	funcName: @move	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: %one	scope: 1	type: i32	size: 4
+                                Id	name: %three	scope: 1	type: i32	size: 4
+                    ExprStmtNode
+                        FuncCallNode	funcName: @hanoi	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                BinaryExpr	op: sub     type:i32
+                                    Id	name: %n	scope: 1	type: i32	size: 4
+                                    IntegerLiteral	value: 1	type: i32
+                                Id	name: %two	scope: 1	type: i32	size: 4
+                                Id	name: %one	scope: 1	type: i32	size: 4
+                                Id	name: %three	scope: 1	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: n	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                    FuncCallParamsNode NULL
+            WhileStmt
+                BinaryExpr	op: great     type:i1
+                    Id	name: n	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @hanoi	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                                IntegerLiteral	value: 1	type: i32
+                                IntegerLiteral	value: 2	type: i32
+                                IntegerLiteral	value: 3	type: i32
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 10	type: i32
+                    AssignStmt
+                        Id	name: n	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: n	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

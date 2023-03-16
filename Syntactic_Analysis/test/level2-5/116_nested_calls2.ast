@@ -1,0 +1,57 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                FunctionDefine function name: f, type: int(int, int)
+                    FuncDefParamsNode
+                        Id	name: a	scope: 1	type: int
+                        Id	name: b	scope: 1	type: int
+                    CompoundStmt
+                        ReturnStmt
+                            BinaryExpr	op: multi
+                                Id	name: a	scope: 1	type: int
+                                Id	name: b	scope: 1	type: int
+                FunctionDefine function name: g, type: int(int, int)
+                    FuncDefParamsNode
+                        Id	name: a	scope: 1	type: int
+                        Id	name: b	scope: 1	type: int
+                    CompoundStmt
+                        ReturnStmt
+                            BinaryExpr	op: mod
+                                Id	name: a	scope: 1	type: int
+                                Id	name: b	scope: 1	type: int
+            FunctionDefine function name: h, type: int(int, int)
+                FuncDefParamsNode
+                    Id	name: a	scope: 1	type: int
+                    Id	name: b	scope: 1	type: int
+                CompoundStmt
+                    ReturnStmt
+                        FuncCallNode	funcName: f	 funcType: int(int, int)	scope: 0
+                            FuncCallParamsNode
+                                FuncCallNode	funcName: f	 funcType: int(int, int)	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 2	type: int
+                                        FuncCallNode	funcName: g	 funcType: int(int, int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: a	scope: 1	type: int
+                                                Id	name: b	scope: 1	type: int
+                                FuncCallNode	funcName: g	 funcType: int(int, int)	scope: 0
+                                    FuncCallParamsNode
+                                        FuncCallNode	funcName: f	 funcType: int(int, int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: a	scope: 1	type: int
+                                                Id	name: b	scope: 1	type: int
+                                        IntegerLiteral	value: 4	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    ExprStmtNode
+                        FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                            FuncCallParamsNode
+                                FuncCallNode	funcName: h	 funcType: int(int, int)	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 11	type: int
+                                        IntegerLiteral	value: 3	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

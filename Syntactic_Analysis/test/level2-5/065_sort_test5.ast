@@ -1,0 +1,357 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    DeclStmt
+                    DefNode	Variable	NonArray
+                        Id	name: n	scope: 0	type: int
+                        null
+                    FunctionDefine function name: swap, type: int(int array, int, int)
+                        FuncDefParamsNode
+                            Id	name: array	scope: 1	type: int array
+                            Id	name: i	scope: 1	type: int
+                            Id	name: j	scope: 1	type: int
+                        CompoundStmt
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: temp	scope: 2	type: int
+                                                null
+                                            AssignStmt
+                                                Id	name: temp	scope: 2	type: int
+                                                Id	name: array	scope: 1	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: i	scope: 1	type: int
+                                        AssignStmt
+                                            Id	name: array	scope: 1	type: int array
+                                                ExprStmtNode
+                                                    Id	name: i	scope: 1	type: int
+                                            Id	name: array	scope: 1	type: int array
+                                                ExprStmtNode
+                                                    Id	name: j	scope: 1	type: int
+                                    AssignStmt
+                                        Id	name: array	scope: 1	type: int array
+                                            ExprStmtNode
+                                                Id	name: j	scope: 1	type: int
+                                        Id	name: temp	scope: 2	type: int
+                                ReturnStmt
+                                    IntegerLiteral	value: 0	type: int
+                FunctionDefine function name: heap_ajust, type: int(int array, int, int)
+                    FuncDefParamsNode
+                        Id	name: arr	scope: 1	type: int array
+                        Id	name: start	scope: 1	type: int
+                        Id	name: end	scope: 1	type: int
+                    CompoundStmt
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: dad	scope: 2	type: int
+                                                null
+                                            AssignStmt
+                                                Id	name: dad	scope: 2	type: int
+                                                Id	name: start	scope: 1	type: int
+                                        DeclStmt
+                                        DefNode	Variable	NonArray
+                                            Id	name: son	scope: 2	type: int
+                                            null
+                                    AssignStmt
+                                        Id	name: son	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: multi
+                                                Id	name: dad	scope: 2	type: int
+                                                IntegerLiteral	value: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                                WhileStmt
+                                    BinaryExpr	op: less
+                                        Id	name: son	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: end	scope: 1	type: int
+                                            IntegerLiteral	value: 1	type: int
+                                    CompoundStmt
+                                        Sequence
+                                            IfStmt
+                                                BinaryExpr	op: and
+                                                    BinaryExpr	op: less
+                                                        Id	name: son	scope: 2	type: int
+                                                        Id	name: end	scope: 1	type: int
+                                                    BinaryExpr	op: less
+                                                        Id	name: arr	scope: 1	type: int array
+                                                            ExprStmtNode
+                                                                Id	name: son	scope: 2	type: int
+                                                        Id	name: arr	scope: 1	type: int array
+                                                            ExprStmtNode
+                                                                BinaryExpr	op: add
+                                                                    Id	name: son	scope: 2	type: int
+                                                                    IntegerLiteral	value: 1	type: int
+                                                AssignStmt
+                                                    Id	name: son	scope: 2	type: int
+                                                    BinaryExpr	op: add
+                                                        Id	name: son	scope: 2	type: int
+                                                        IntegerLiteral	value: 1	type: int
+                                            IfElseStmt
+                                                BinaryExpr	op: greater
+                                                    Id	name: arr	scope: 1	type: int array
+                                                        ExprStmtNode
+                                                            Id	name: dad	scope: 2	type: int
+                                                    Id	name: arr	scope: 1	type: int array
+                                                        ExprStmtNode
+                                                            Id	name: son	scope: 2	type: int
+                                                ReturnStmt
+                                                    IntegerLiteral	value: 0	type: int
+                                                CompoundStmt
+                                                    Sequence
+                                                        Sequence
+                                                            AssignStmt
+                                                                Id	name: dad	scope: 2	type: int
+                                                                FuncCallNode	funcName: swap	 funcType: int(int array, int, int)	scope: 0
+                                                                    FuncCallParamsNode
+                                                                        Id	name: arr	scope: 1	type: int array
+                                                                        Id	name: dad	scope: 2	type: int
+                                                                        Id	name: son	scope: 2	type: int
+                                                            AssignStmt
+                                                                Id	name: dad	scope: 2	type: int
+                                                                Id	name: son	scope: 2	type: int
+                                                        AssignStmt
+                                                            Id	name: son	scope: 2	type: int
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: multi
+                                                                    Id	name: dad	scope: 2	type: int
+                                                                    IntegerLiteral	value: 2	type: int
+                                                                IntegerLiteral	value: 1	type: int
+                            ReturnStmt
+                                IntegerLiteral	value: 0	type: int
+            FunctionDefine function name: heap_sort, type: int(int array, int)
+                FuncDefParamsNode
+                    Id	name: arr	scope: 1	type: int array
+                    Id	name: len	scope: 1	type: int
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: i	scope: 2	type: int
+                                                null
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: tmp	scope: 2	type: int
+                                                null
+                                        AssignStmt
+                                            Id	name: i	scope: 2	type: int
+                                            BinaryExpr	op: sub
+                                                BinaryExpr	op: divide
+                                                    Id	name: len	scope: 1	type: int
+                                                    IntegerLiteral	value: 2	type: int
+                                                IntegerLiteral	value: 1	type: int
+                                    WhileStmt
+                                        BinaryExpr	op: greater
+                                            Id	name: i	scope: 2	type: int
+                                            SingleExpr	op: sub
+                                                IntegerLiteral	value: 1	type: int
+                                        CompoundStmt
+                                            Sequence
+                                                Sequence
+                                                    AssignStmt
+                                                        Id	name: tmp	scope: 2	type: int
+                                                        BinaryExpr	op: sub
+                                                            Id	name: len	scope: 1	type: int
+                                                            IntegerLiteral	value: 1	type: int
+                                                    AssignStmt
+                                                        Id	name: tmp	scope: 2	type: int
+                                                        FuncCallNode	funcName: heap_ajust	 funcType: int(int array, int, int)	scope: 0
+                                                            FuncCallParamsNode
+                                                                Id	name: arr	scope: 1	type: int array
+                                                                Id	name: i	scope: 2	type: int
+                                                                Id	name: tmp	scope: 2	type: int
+                                                AssignStmt
+                                                    Id	name: i	scope: 2	type: int
+                                                    BinaryExpr	op: sub
+                                                        Id	name: i	scope: 2	type: int
+                                                        IntegerLiteral	value: 1	type: int
+                                AssignStmt
+                                    Id	name: i	scope: 2	type: int
+                                    BinaryExpr	op: sub
+                                        Id	name: len	scope: 1	type: int
+                                        IntegerLiteral	value: 1	type: int
+                            WhileStmt
+                                BinaryExpr	op: greater
+                                    Id	name: i	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                                CompoundStmt
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        DeclStmt
+                                                        DefNode	Variable	NonArray
+                                                            Id	name: tmp0	scope: 3	type: int
+                                                            null
+                                                        AssignStmt
+                                                            Id	name: tmp0	scope: 3	type: int
+                                                            IntegerLiteral	value: 0	type: int
+                                                    AssignStmt
+                                                        Id	name: tmp	scope: 2	type: int
+                                                        FuncCallNode	funcName: swap	 funcType: int(int array, int, int)	scope: 0
+                                                            FuncCallParamsNode
+                                                                Id	name: arr	scope: 1	type: int array
+                                                                Id	name: tmp0	scope: 3	type: int
+                                                                Id	name: i	scope: 2	type: int
+                                                AssignStmt
+                                                    Id	name: tmp	scope: 2	type: int
+                                                    BinaryExpr	op: sub
+                                                        Id	name: i	scope: 2	type: int
+                                                        IntegerLiteral	value: 1	type: int
+                                            AssignStmt
+                                                Id	name: tmp	scope: 2	type: int
+                                                FuncCallNode	funcName: heap_ajust	 funcType: int(int array, int, int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: arr	scope: 1	type: int array
+                                                        Id	name: tmp0	scope: 3	type: int
+                                                        Id	name: tmp	scope: 2	type: int
+                                        AssignStmt
+                                            Id	name: i	scope: 2	type: int
+                                            BinaryExpr	op: sub
+                                                Id	name: i	scope: 2	type: int
+                                                IntegerLiteral	value: 1	type: int
+                        ReturnStmt
+                            IntegerLiteral	value: 0	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            Sequence
+                                                                Sequence
+                                                                    Sequence
+                                                                        Sequence
+                                                                            Sequence
+                                                                                AssignStmt
+                                                                                    Id	name: n	scope: 0	type: int
+                                                                                    IntegerLiteral	value: 10	type: int
+                                                                                DeclStmt
+                                                                                DefNode	Variable	Array
+                                                                                    Id	name: a	scope: 2	type: int array
+                                                                                        ExprStmtNode
+                                                                                            IntegerLiteral	value: 10	type: int
+                                                                                    null
+                                                                            AssignStmt
+                                                                                Id	name: a	scope: 2	type: int array
+                                                                                    ExprStmtNode
+                                                                                        IntegerLiteral	value: 0	type: int
+                                                                                IntegerLiteral	value: 4	type: int
+                                                                        AssignStmt
+                                                                            Id	name: a	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 1	type: int
+                                                                            IntegerLiteral	value: 3	type: int
+                                                                    AssignStmt
+                                                                        Id	name: a	scope: 2	type: int array
+                                                                            ExprStmtNode
+                                                                                IntegerLiteral	value: 2	type: int
+                                                                        IntegerLiteral	value: 9	type: int
+                                                                AssignStmt
+                                                                    Id	name: a	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 3	type: int
+                                                                    IntegerLiteral	value: 2	type: int
+                                                            AssignStmt
+                                                                Id	name: a	scope: 2	type: int array
+                                                                    ExprStmtNode
+                                                                        IntegerLiteral	value: 4	type: int
+                                                                IntegerLiteral	value: 0	type: int
+                                                        AssignStmt
+                                                            Id	name: a	scope: 2	type: int array
+                                                                ExprStmtNode
+                                                                    IntegerLiteral	value: 5	type: int
+                                                            IntegerLiteral	value: 1	type: int
+                                                    AssignStmt
+                                                        Id	name: a	scope: 2	type: int array
+                                                            ExprStmtNode
+                                                                IntegerLiteral	value: 6	type: int
+                                                        IntegerLiteral	value: 6	type: int
+                                                AssignStmt
+                                                    Id	name: a	scope: 2	type: int array
+                                                        ExprStmtNode
+                                                            IntegerLiteral	value: 7	type: int
+                                                    IntegerLiteral	value: 5	type: int
+                                            AssignStmt
+                                                Id	name: a	scope: 2	type: int array
+                                                    ExprStmtNode
+                                                        IntegerLiteral	value: 8	type: int
+                                                IntegerLiteral	value: 7	type: int
+                                        AssignStmt
+                                            Id	name: a	scope: 2	type: int array
+                                                ExprStmtNode
+                                                    IntegerLiteral	value: 9	type: int
+                                            IntegerLiteral	value: 8	type: int
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: i	scope: 2	type: int
+                                        null
+                                AssignStmt
+                                    Id	name: i	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                            AssignStmt
+                                Id	name: i	scope: 2	type: int
+                                FuncCallNode	funcName: heap_sort	 funcType: int(int array, int)	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: a	scope: 2	type: int array
+                                        Id	name: n	scope: 0	type: int
+                        WhileStmt
+                            BinaryExpr	op: less
+                                Id	name: i	scope: 2	type: int
+                                Id	name: n	scope: 0	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    DeclStmt
+                                                    DefNode	Variable	NonArray
+                                                        Id	name: tmp	scope: 3	type: int
+                                                        null
+                                                    AssignStmt
+                                                        Id	name: tmp	scope: 3	type: int
+                                                        Id	name: a	scope: 2	type: int array
+                                                            ExprStmtNode
+                                                                Id	name: i	scope: 2	type: int
+                                                ExprStmtNode
+                                                    FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            Id	name: tmp	scope: 3	type: int
+                                            AssignStmt
+                                                Id	name: tmp	scope: 3	type: int
+                                                IntegerLiteral	value: 10	type: int
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                FuncCallParamsNode
+                                                    Id	name: tmp	scope: 3	type: int
+                                    AssignStmt
+                                        Id	name: i	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: i	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

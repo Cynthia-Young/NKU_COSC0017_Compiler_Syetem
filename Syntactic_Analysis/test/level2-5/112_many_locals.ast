@@ -1,0 +1,343 @@
+program
+    Sequence
+        FunctionDefine function name: foo, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                DeclStmt
+                                DefNode	Variable	Array
+                                    Id	name: arr	scope: 2	type: int array
+                                        ExprStmtNode
+                                            IntegerLiteral	value: 16	type: int
+                                    DeclValNode	Variable
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 0	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 1	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 2	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 3	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 0	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 1	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 2	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 3	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 0	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 1	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 2	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 3	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 0	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 1	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 2	type: int
+                                        DeclValNode	Variable
+                                            IntegerLiteral	value: 3	type: int
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: a	scope: 2	type: int
+                                    IntegerLiteral	value: 3	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: b	scope: 2	type: int
+                                    IntegerLiteral	value: 7	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: c	scope: 2	type: int
+                                    IntegerLiteral	value: 5	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: d	scope: 2	type: int
+                                    IntegerLiteral	value: 6	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: e	scope: 2	type: int
+                                    IntegerLiteral	value: 1	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: f	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: g	scope: 2	type: int
+                                    IntegerLiteral	value: 3	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: h	scope: 2	type: int
+                                    IntegerLiteral	value: 5	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: i	scope: 2	type: int
+                                    IntegerLiteral	value: 4	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: j	scope: 2	type: int
+                                    IntegerLiteral	value: 2	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: k	scope: 2	type: int
+                                    IntegerLiteral	value: 7	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: l	scope: 2	type: int
+                                    IntegerLiteral	value: 9	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: m	scope: 2	type: int
+                                    IntegerLiteral	value: 8	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: n	scope: 2	type: int
+                                    IntegerLiteral	value: 1	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: o	scope: 2	type: int
+                                    IntegerLiteral	value: 4	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: p	scope: 2	type: int
+                                    IntegerLiteral	value: 6	type: int
+                            DeclStmt
+                            DefNode	Variable	NonArray
+                                Id	name: sum1	scope: 2	type: int
+                                BinaryExpr	op: add
+                                    BinaryExpr	op: add
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    BinaryExpr	op: add
+                                                        BinaryExpr	op: add
+                                                            Id	name: a	scope: 2	type: int
+                                                            Id	name: b	scope: 2	type: int
+                                                        Id	name: c	scope: 2	type: int
+                                                    Id	name: d	scope: 2	type: int
+                                                Id	name: e	scope: 2	type: int
+                                            Id	name: f	scope: 2	type: int
+                                        Id	name: g	scope: 2	type: int
+                                    Id	name: h	scope: 2	type: int
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: sum2	scope: 2	type: int
+                            BinaryExpr	op: add
+                                BinaryExpr	op: add
+                                    BinaryExpr	op: add
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    BinaryExpr	op: add
+                                                        Id	name: i	scope: 2	type: int
+                                                        Id	name: j	scope: 2	type: int
+                                                    Id	name: k	scope: 2	type: int
+                                                Id	name: l	scope: 2	type: int
+                                            Id	name: m	scope: 2	type: int
+                                        Id	name: n	scope: 2	type: int
+                                    Id	name: o	scope: 2	type: int
+                                Id	name: p	scope: 2	type: int
+                    ReturnStmt
+                        BinaryExpr	op: add
+                            BinaryExpr	op: add
+                                Id	name: sum1	scope: 2	type: int
+                                Id	name: sum2	scope: 2	type: int
+                            Id	name: arr	scope: 2	type: int array
+                                ExprStmtNode
+                                    Id	name: a	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            Sequence
+                                                                Sequence
+                                                                    Sequence
+                                                                        Sequence
+                                                                            Sequence
+                                                                                Sequence
+                                                                                    Sequence
+                                                                                        DeclStmt
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: a	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 3	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: b	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 7	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: c	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 5	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: d	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 6	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: e	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 1	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: f	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 0	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: g	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 3	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: h	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 5	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: i	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 4	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: j	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 2	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: k	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 7	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: l	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 9	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: m	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 8	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: n	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 1	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: o	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 4	type: int
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: p	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 6	type: int
+                                                                                        DeclStmt
+                                                                                        DefNode	Variable	NonArray
+                                                                                            Id	name: sum1	scope: 2	type: int
+                                                                                            BinaryExpr	op: add
+                                                                                                BinaryExpr	op: add
+                                                                                                    BinaryExpr	op: add
+                                                                                                        BinaryExpr	op: add
+                                                                                                            BinaryExpr	op: add
+                                                                                                                BinaryExpr	op: add
+                                                                                                                    BinaryExpr	op: add
+                                                                                                                        Id	name: a	scope: 2	type: int
+                                                                                                                        Id	name: b	scope: 2	type: int
+                                                                                                                    Id	name: c	scope: 2	type: int
+                                                                                                                Id	name: d	scope: 2	type: int
+                                                                                                            Id	name: e	scope: 2	type: int
+                                                                                                        Id	name: f	scope: 2	type: int
+                                                                                                    Id	name: g	scope: 2	type: int
+                                                                                                Id	name: h	scope: 2	type: int
+                                                                                    DeclStmt
+                                                                                    DefNode	Variable	NonArray
+                                                                                        Id	name: sum2	scope: 2	type: int
+                                                                                        BinaryExpr	op: add
+                                                                                            BinaryExpr	op: add
+                                                                                                BinaryExpr	op: add
+                                                                                                    BinaryExpr	op: add
+                                                                                                        BinaryExpr	op: add
+                                                                                                            BinaryExpr	op: add
+                                                                                                                BinaryExpr	op: add
+                                                                                                                    Id	name: i	scope: 2	type: int
+                                                                                                                    Id	name: j	scope: 2	type: int
+                                                                                                                Id	name: k	scope: 2	type: int
+                                                                                                            Id	name: l	scope: 2	type: int
+                                                                                                        Id	name: m	scope: 2	type: int
+                                                                                                    Id	name: n	scope: 2	type: int
+                                                                                                Id	name: o	scope: 2	type: int
+                                                                                            Id	name: p	scope: 2	type: int
+                                                                                AssignStmt
+                                                                                    Id	name: sum1	scope: 2	type: int
+                                                                                    BinaryExpr	op: add
+                                                                                        Id	name: sum1	scope: 2	type: int
+                                                                                        FuncCallNode	funcName: foo	 funcType: int()	scope: 0
+                                                                                            FuncCallParamsNode NULL
+                                                                            DeclStmt
+                                                                            DefNode	Variable	NonArray
+                                                                                Id	name: q	scope: 2	type: int
+                                                                                IntegerLiteral	value: 4	type: int
+                                                                            DefNode	Variable	NonArray
+                                                                                Id	name: r	scope: 2	type: int
+                                                                                IntegerLiteral	value: 7	type: int
+                                                                            DefNode	Variable	NonArray
+                                                                                Id	name: s	scope: 2	type: int
+                                                                                IntegerLiteral	value: 2	type: int
+                                                                            DefNode	Variable	NonArray
+                                                                                Id	name: t	scope: 2	type: int
+                                                                                IntegerLiteral	value: 5	type: int
+                                                                            DefNode	Variable	NonArray
+                                                                                Id	name: u	scope: 2	type: int
+                                                                                IntegerLiteral	value: 8	type: int
+                                                                            DefNode	Variable	NonArray
+                                                                                Id	name: v	scope: 2	type: int
+                                                                                IntegerLiteral	value: 0	type: int
+                                                                            DefNode	Variable	NonArray
+                                                                                Id	name: w	scope: 2	type: int
+                                                                                IntegerLiteral	value: 6	type: int
+                                                                            DefNode	Variable	NonArray
+                                                                                Id	name: x	scope: 2	type: int
+                                                                                IntegerLiteral	value: 3	type: int
+                                                                        AssignStmt
+                                                                            Id	name: sum2	scope: 2	type: int
+                                                                            BinaryExpr	op: add
+                                                                                Id	name: sum2	scope: 2	type: int
+                                                                                FuncCallNode	funcName: foo	 funcType: int()	scope: 0
+                                                                                    FuncCallParamsNode NULL
+                                                                    AssignStmt
+                                                                        Id	name: a	scope: 2	type: int
+                                                                        Id	name: i	scope: 2	type: int
+                                                                AssignStmt
+                                                                    Id	name: b	scope: 2	type: int
+                                                                    Id	name: j	scope: 2	type: int
+                                                            AssignStmt
+                                                                Id	name: c	scope: 2	type: int
+                                                                Id	name: k	scope: 2	type: int
+                                                        AssignStmt
+                                                            Id	name: d	scope: 2	type: int
+                                                            Id	name: l	scope: 2	type: int
+                                                    AssignStmt
+                                                        Id	name: e	scope: 2	type: int
+                                                        Id	name: m	scope: 2	type: int
+                                                AssignStmt
+                                                    Id	name: f	scope: 2	type: int
+                                                    Id	name: n	scope: 2	type: int
+                                            AssignStmt
+                                                Id	name: g	scope: 2	type: int
+                                                Id	name: o	scope: 2	type: int
+                                        AssignStmt
+                                            Id	name: h	scope: 2	type: int
+                                            Id	name: p	scope: 2	type: int
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: sum3	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    BinaryExpr	op: add
+                                                        BinaryExpr	op: add
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    Id	name: q	scope: 2	type: int
+                                                                    Id	name: r	scope: 2	type: int
+                                                                Id	name: s	scope: 2	type: int
+                                                            Id	name: t	scope: 2	type: int
+                                                        Id	name: u	scope: 2	type: int
+                                                    Id	name: v	scope: 2	type: int
+                                                Id	name: w	scope: 2	type: int
+                                            Id	name: x	scope: 2	type: int
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: sum	scope: 2	type: int
+                                    BinaryExpr	op: add
+                                        BinaryExpr	op: add
+                                            Id	name: sum1	scope: 2	type: int
+                                            Id	name: sum2	scope: 2	type: int
+                                        Id	name: sum3	scope: 2	type: int
+                            ExprStmtNode
+                                FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: sum	scope: 2	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    IntegerLiteral	value: 10	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

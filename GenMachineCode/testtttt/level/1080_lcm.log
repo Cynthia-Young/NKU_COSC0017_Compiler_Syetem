@@ -1,0 +1,99 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @n	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    FunctionDefine function name: @gcd, type: i32
+        FuncDefParamsNode
+            Id	name: %m	scope: 1	type: i32	size: 4
+            Id	name: %n	scope: 1	type: i32	size: 4
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                Id	name: %m	scope: 1	type: i32	size: 4
+            AssignStmt
+                Id	name: b	scope: 2	type: i32	size: 4
+                Id	name: %n	scope: 1	type: i32	size: 4
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: t	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: r	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            IfStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: %m	scope: 1	type: i32	size: 4
+                    Id	name: %n	scope: 1	type: i32	size: 4
+                CompoundStmt
+                    AssignStmt
+                        Id	name: t	scope: 2	type: i32	size: 4
+                        Id	name: %m	scope: 1	type: i32	size: 4
+                    AssignStmt
+                        Id	name: %m	scope: 1	type: i32	size: 4
+                        Id	name: %n	scope: 1	type: i32	size: 4
+                    AssignStmt
+                        Id	name: %n	scope: 1	type: i32	size: 4
+                        Id	name: t	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: r	scope: 2	type: i32	size: 4
+                BinaryExpr	op: mod     type:i32
+                    Id	name: %m	scope: 1	type: i32	size: 4
+                    Id	name: %n	scope: 1	type: i32	size: 4
+            WhileStmt
+                BinaryExpr	op: neq     type:i1
+                    Id	name: r	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: %m	scope: 1	type: i32	size: 4
+                        Id	name: %n	scope: 1	type: i32	size: 4
+                    AssignStmt
+                        Id	name: %n	scope: 1	type: i32	size: 4
+                        Id	name: r	scope: 2	type: i32	size: 4
+                    AssignStmt
+                        Id	name: r	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: mod     type:i32
+                            Id	name: %m	scope: 1	type: i32	size: 4
+                            Id	name: %n	scope: 1	type: i32	size: 4
+            ReturnStmt
+                BinaryExpr	op: div     type:i32
+                    BinaryExpr	op: mul     type:i32
+                        Id	name: a	scope: 2	type: i32	size: 4
+                        Id	name: b	scope: 2	type: i32	size: 4
+                    Id	name: %n	scope: 1	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: m	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: i	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                    FuncCallParamsNode NULL
+            AssignStmt
+                Id	name: m	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                    FuncCallParamsNode NULL
+            ReturnStmt
+                FuncCallNode	funcName: @gcd	 funcType: i32	scope: 0
+                    FuncCallParamsNode
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        Id	name: m	scope: 2	type: i32	size: 4
+TOTAL: 0H-0M-0S-0us

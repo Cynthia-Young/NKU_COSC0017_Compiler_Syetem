@@ -1,0 +1,18 @@
+program
+    Sequence
+        FunctionDefine function name: defn, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                ReturnStmt
+                    IntegerLiteral	value: 4	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    DeclStmt
+                    DefNode	Variable	NonArray
+                        Id	name: a	scope: 2	type: int
+                        FuncCallNode	funcName: defn	 funcType: int()	scope: 0
+                            FuncCallParamsNode NULL
+                    ReturnStmt
+                        Id	name: a	scope: 2	type: int

@@ -1,0 +1,15 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	Array
+        Id	name: @a	scope: 0	type: int array	size: 400
+            ArrayDimensions
+            ArrDim
+                IntegerLiteral	value: 10	type: i32
+                IntegerLiteral	value: 10	type: i32
+        This variable/constant is not assigned
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32

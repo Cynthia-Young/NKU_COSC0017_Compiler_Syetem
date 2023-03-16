@@ -1,0 +1,58 @@
+ReturnStmt::genCode
+DeclStmt::genCode
+new StoreInstruction src:1253349024
+ReturnStmt::genCode
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+	.arch armv8-a
+	.fpu vfpv3-d16
+	.arch_extension crc
+	.arm
+	.text
+	.global defn
+	.type defn , %function
+defn:
+	push {r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #0
+.L1:
+	ldr r10, =4
+	mov r0, r10
+	b .Ldefn_END
+.Ldefn_END:
+BinaryMInstruction::output() 
+	add sp, sp, #0
+	pop {r10, fp, lr}
+	bx  lr
+
+	.global main
+	.type main , %function
+main:
+	push {r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #4
+.L2:
+	bl  defn
+	mov r10, r0
+	str r10, [fp, #-4]
+	ldr r10, [fp, #-4]
+	mov r0, r10
+	b .Lmain_END
+.Lmain_END:
+BinaryMInstruction::output() 
+	add sp, sp, #4
+	pop {r10, fp, lr}
+	bx  lr
+

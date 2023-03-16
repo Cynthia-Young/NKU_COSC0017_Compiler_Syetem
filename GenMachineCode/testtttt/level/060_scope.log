@@ -1,0 +1,77 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 7	type: i32
+    FunctionDefine function name: @func, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                Id	name: @a	scope: 0	type: i32	size: 4
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            IfElseStmt
+                BinaryExpr	op: eq     type:i1
+                    Id	name: a	scope: 2	type: i32	size: 4
+                    Id	name: b	scope: 2	type: i32	size: 4
+                CompoundStmt
+                    AssignStmt
+                        Id	name: a	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: a	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+                    ReturnStmt
+                        IntegerLiteral	value: 1	type: i32
+                ReturnStmt
+                    IntegerLiteral	value: 0	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: result	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            WhileStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 100	type: i32
+                CompoundStmt
+                    IfStmt
+                        BinaryExpr	op: eq     type:i1
+                            FuncCallNode	funcName: @func	 funcType: i32	scope: 0
+                                FuncCallParamsNode NULL
+                            IntegerLiteral	value: 1	type: i32
+                        AssignStmt
+                            Id	name: result	scope: 2	type: i32	size: 4
+                            BinaryExpr	op: add     type:i32
+                                Id	name: result	scope: 2	type: i32	size: 4
+                                IntegerLiteral	value: 1	type: i32
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: i	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            IfElseStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: result	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 100	type: i32
+                ExprStmtNode
+                    FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 1	type: i32
+                ExprStmtNode
+                    FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 0	type: i32
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

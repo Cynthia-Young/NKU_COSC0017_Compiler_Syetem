@@ -1,0 +1,48 @@
+program
+    Sequence
+        Sequence
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 0	type: int
+                null
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 0	type: int
+                null
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                AssignStmt
+                                    Id	name: a	scope: 0	type: int
+                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                        FuncCallParamsNode NULL
+                                AssignStmt
+                                    Id	name: b	scope: 0	type: int
+                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                        FuncCallParamsNode NULL
+                            DeclStmt
+                            DefNode	Variable	NonArray
+                                Id	name: c	scope: 2	type: int
+                                null
+                        IfElseStmt
+                            BinaryExpr	op: and
+                                BinaryExpr	op: equal
+                                    Id	name: a	scope: 0	type: int
+                                    Id	name: b	scope: 0	type: int
+                                BinaryExpr	op: unequal
+                                    Id	name: a	scope: 0	type: int
+                                    IntegerLiteral	value: 3	type: int
+                            CompoundStmt
+                                AssignStmt
+                                    Id	name: c	scope: 2	type: int
+                                    IntegerLiteral	value: 1	type: int
+                            CompoundStmt
+                                AssignStmt
+                                    Id	name: c	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                    ReturnStmt
+                        Id	name: c	scope: 2	type: int

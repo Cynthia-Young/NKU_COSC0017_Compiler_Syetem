@@ -1,0 +1,23 @@
+program
+    Sequence
+        DeclStmt
+        DefNode	Variable	NonArray
+            Id	name: a	scope: 0	type: int
+            null
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    AssignStmt
+                        Id	name: a	scope: 0	type: int
+                        IntegerLiteral	value: 10	type: int
+                    IfElseStmt
+                        BinaryExpr	op: greater
+                            Id	name: a	scope: 0	type: int
+                            IntegerLiteral	value: 0	type: int
+                        CompoundStmt
+                            ReturnStmt
+                                IntegerLiteral	value: 1	type: int
+                        CompoundStmt
+                            ReturnStmt
+                                IntegerLiteral	value: 0	type: int

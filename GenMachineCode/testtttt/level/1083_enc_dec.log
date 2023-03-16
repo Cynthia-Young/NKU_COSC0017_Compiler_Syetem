@@ -1,0 +1,82 @@
+typecheck fin
+program
+    FunctionDefine function name: @enc, type: i32
+        FuncDefParamsNode
+            Id	name: %a	scope: 1	type: i32	size: 4
+        CompoundStmt
+            IfElseStmt
+                BinaryExpr	op: great     type:i1
+                    Id	name: %a	scope: 1	type: i32	size: 4
+                    IntegerLiteral	value: 25	type: i32
+                AssignStmt
+                    Id	name: %a	scope: 1	type: i32	size: 4
+                    BinaryExpr	op: add     type:i32
+                        Id	name: %a	scope: 1	type: i32	size: 4
+                        IntegerLiteral	value: 60	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: %a	scope: 1	type: i32	size: 4
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: %a	scope: 1	type: i32	size: 4
+                            IntegerLiteral	value: 15	type: i32
+            ReturnStmt
+                Id	name: %a	scope: 1	type: i32	size: 4
+    FunctionDefine function name: @dec, type: i32
+        FuncDefParamsNode
+            Id	name: %a	scope: 1	type: i32	size: 4
+        CompoundStmt
+            IfElseStmt
+                BinaryExpr	op: great     type:i1
+                    Id	name: %a	scope: 1	type: i32	size: 4
+                    IntegerLiteral	value: 85	type: i32
+                AssignStmt
+                    Id	name: %a	scope: 1	type: i32	size: 4
+                    BinaryExpr	op: sub     type:i32
+                        Id	name: %a	scope: 1	type: i32	size: 4
+                        IntegerLiteral	value: 59	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: %a	scope: 1	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: %a	scope: 1	type: i32	size: 4
+                            IntegerLiteral	value: 14	type: i32
+            ReturnStmt
+                Id	name: %a	scope: 1	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 400	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: res	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @enc	 funcType: i32	scope: 0
+                    FuncCallParamsNode
+                        Id	name: a	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @dec	 funcType: i32	scope: 0
+                    FuncCallParamsNode
+                        Id	name: res	scope: 2	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: res	scope: 2	type: i32	size: 4
+            AssignStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 10	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: res	scope: 2	type: i32	size: 4
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

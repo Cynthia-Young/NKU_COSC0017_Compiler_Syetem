@@ -1,0 +1,52 @@
+typecheck fin
+program
+    FunctionDefine function name: @doubleWhile, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: j	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: j	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 7	type: i32
+            WhileStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 100	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: i	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 30	type: i32
+                    WhileStmt
+                        BinaryExpr	op: less     type:i1
+                            Id	name: j	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 100	type: i32
+                        CompoundStmt
+                            AssignStmt
+                                Id	name: j	scope: 2	type: i32	size: 4
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: j	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 6	type: i32
+                    AssignStmt
+                        Id	name: j	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: j	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 100	type: i32
+            ReturnStmt
+                Id	name: j	scope: 2	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                FuncCallNode	funcName: @doubleWhile	 funcType: i32	scope: 0
+                    FuncCallParamsNode NULL

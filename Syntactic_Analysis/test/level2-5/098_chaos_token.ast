@@ -1,0 +1,360 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	Array
+                            Id	name: __HELLO	scope: 0	type: int array
+                                ExprStmtNode
+                                    IntegerLiteral	value: 100	type: int
+                            DeclValNode	Variable
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 87	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 101	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 108	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 99	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 111	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 109	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 101	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 32	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 116	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 111	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 32	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 116	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 104	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 101	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 32	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 74	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 97	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 112	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 97	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 114	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 105	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 32	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 80	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 97	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 114	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 107	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 33	type: int
+                                DeclValNode	Variable
+                                    IntegerLiteral	value: 10	type: int
+                        DeclStmt
+                        DefNode	Variable	Array
+                            Id	name: N4__mE___	scope: 0	type: int array
+                                ExprStmtNode
+                                    IntegerLiteral	value: 6	type: int
+                                    IntegerLiteral	value: 50	type: int
+                            DeclValNode	Variable
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 83	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 98	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 114	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 117	type: int
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 75	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 98	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 110	type: int
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 72	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 115	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 104	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 105	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 98	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 105	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 114	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 111	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 107	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 111	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 117	type: int
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 65	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 114	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 105	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 103	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 117	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 109	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 72	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 117	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 110	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 98	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 111	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 114	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 117	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 116	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 111	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 32	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 80	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 101	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 110	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 103	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 105	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 110	type: int
+                                DeclValNode	Variable
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 84	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 105	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 114	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 105	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 107	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 117	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 32	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 79	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 111	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 107	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 97	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 109	type: int
+                                    DeclValNode	Variable
+                                        IntegerLiteral	value: 105	type: int
+                    DeclStmt
+                    DefNode	Variable	Array
+                        Id	name: saY_HeI10_To	scope: 0	type: int array
+                            ExprStmtNode
+                                IntegerLiteral	value: 40	type: int
+                        DeclValNode	Variable
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 32	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 115	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 97	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 121	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 115	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 32	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 104	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 101	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 108	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 108	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 111	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 32	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 116	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 111	type: int
+                            DeclValNode	Variable
+                                IntegerLiteral	value: 32	type: int
+                DeclStmt
+                DefNode	Variable	Array
+                    Id	name: RET	scope: 0	type: int array
+                        ExprStmtNode
+                            IntegerLiteral	value: 5	type: int
+                    DeclValNode	Variable
+                        DeclValNode	Variable
+                            IntegerLiteral	value: 10	type: int
+            FunctionDefine function name: putstr, type: int(int array)
+                FuncDefParamsNode
+                    Id	name: str	scope: 1	type: int array
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            Sequence
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: iNd__1X	scope: 2	type: int
+                                    null
+                                AssignStmt
+                                    Id	name: iNd__1X	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                            WhileStmt
+                                Id	name: str	scope: 1	type: int array
+                                    ExprStmtNode
+                                        Id	name: iNd__1X	scope: 2	type: int
+                                CompoundStmt
+                                    Sequence
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                FuncCallParamsNode
+                                                    Id	name: str	scope: 1	type: int array
+                                                        ExprStmtNode
+                                                            Id	name: iNd__1X	scope: 2	type: int
+                                        AssignStmt
+                                            Id	name: iNd__1X	scope: 2	type: int
+                                            BinaryExpr	op: add
+                                                Id	name: iNd__1X	scope: 2	type: int
+                                                IntegerLiteral	value: 1	type: int
+                        ReturnStmt
+                            Id	name: iNd__1X	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            ExprStmtNode
+                                FuncCallNode	funcName: putstr	 funcType: int(int array)	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: __HELLO	scope: 0	type: int array
+                            DeclStmt
+                            DefNode	Variable	NonArray
+                                Id	name: i	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                        WhileStmt
+                            IntegerLiteral	value: 1	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                DeclStmt
+                                                DefNode	Variable	NonArray
+                                                    Id	name: _	scope: 3	type: int
+                                                    BinaryExpr	op: divide
+                                                        Id	name: i	scope: 2	type: int
+                                                        IntegerLiteral	value: 6	type: int
+                                                DeclStmt
+                                                DefNode	Variable	NonArray
+                                                    Id	name: __	scope: 3	type: int
+                                                    BinaryExpr	op: mod
+                                                        Id	name: i	scope: 2	type: int
+                                                        IntegerLiteral	value: 6	type: int
+                                            IfStmt
+                                                BinaryExpr	op: unequal
+                                                    Id	name: _	scope: 3	type: int
+                                                    Id	name: __	scope: 3	type: int
+                                                CompoundStmt
+                                                    Sequence
+                                                        Sequence
+                                                            Sequence
+                                                                ExprStmtNode
+                                                                    FuncCallNode	funcName: putstr	 funcType: int(int array)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            Id	name: N4__mE___	scope: 0	type: int array
+                                                                                ExprStmtNode
+                                                                                    Id	name: _	scope: 3	type: int
+                                                                ExprStmtNode
+                                                                    FuncCallNode	funcName: putstr	 funcType: int(int array)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            Id	name: saY_HeI10_To	scope: 0	type: int array
+                                                            ExprStmtNode
+                                                                FuncCallNode	funcName: putstr	 funcType: int(int array)	scope: 0
+                                                                    FuncCallParamsNode
+                                                                        Id	name: N4__mE___	scope: 0	type: int array
+                                                                            ExprStmtNode
+                                                                                Id	name: __	scope: 3	type: int
+                                                        ExprStmtNode
+                                                            FuncCallNode	funcName: putstr	 funcType: int(int array)	scope: 0
+                                                                FuncCallParamsNode
+                                                                    Id	name: RET	scope: 0	type: int array
+                                        AssignStmt
+                                            Id	name: i	scope: 2	type: int
+                                            BinaryExpr	op: mod
+                                                BinaryExpr	op: add
+                                                    BinaryExpr	op: multi
+                                                        Id	name: i	scope: 2	type: int
+                                                        IntegerLiteral	value: 17	type: int
+                                                    IntegerLiteral	value: 23	type: int
+                                                IntegerLiteral	value: 32	type: int
+                                    IfStmt
+                                        BinaryExpr	op: equal
+                                            Id	name: i	scope: 2	type: int
+                                            IntegerLiteral	value: 0	type: int
+                                        CompoundStmt
+                                            BreakStmt
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

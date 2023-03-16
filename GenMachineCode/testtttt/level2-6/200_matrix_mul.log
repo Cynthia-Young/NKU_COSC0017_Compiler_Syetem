@@ -1,0 +1,3 @@
+free(): invalid next size (normal)
+timeout: 监视的命令已核心转储
+Aborted

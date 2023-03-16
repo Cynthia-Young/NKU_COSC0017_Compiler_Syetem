@@ -1,0 +1,3 @@
+/usr/lib/gcc-cross/arm-linux-gnueabihf/11/../../../../arm-linux-gnueabihf/bin/ld: /usr/lib/gcc-cross/arm-linux-gnueabihf/11/../../../../arm-linux-gnueabihf/lib/Scrt1.o: in function `_start':
+(.text+0x30): undefined reference to `main'
+collect2: error: ld returned 1 exit status

@@ -1,0 +1,30 @@
+program
+    DeclStmt
+    DefNode	Const	NonArray
+        Id	name: 0	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 10	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                BinaryExpr	op: div     type:i32
+                    Id	name: 0	scope: 0	type: i32	size: 4
+                    IntegerLiteral	value: 5	type: i32
+program
+    DeclStmt
+    DefNode	Const	NonArray
+        Id	name: 10	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 10	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                IntegerLiteral	value: 2	type: i32
+DeclStmt::genCode
+new StoreInstruction src:128165536
+ReturnStmt::genCode
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+#0
+#2
+#0

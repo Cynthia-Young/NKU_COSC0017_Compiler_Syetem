@@ -1,0 +1,319 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    DefNode	Variable	NonArray
+        Id	name: @b	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    DefNode	Variable	NonArray
+        Id	name: @d	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    FunctionDefine function name: @set_a, type: i32
+        FuncDefParamsNode
+            Id	name: %val	scope: 1	type: i32	size: 4
+        CompoundStmt
+            AssignStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+                Id	name: %val	scope: 1	type: i32	size: 4
+            ReturnStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+    FunctionDefine function name: @set_b, type: i32
+        FuncDefParamsNode
+            Id	name: %val	scope: 1	type: i32	size: 4
+        CompoundStmt
+            AssignStmt
+                Id	name: @b	scope: 0	type: i32	size: 4
+                Id	name: %val	scope: 1	type: i32	size: 4
+            ReturnStmt
+                Id	name: @b	scope: 0	type: i32	size: 4
+    FunctionDefine function name: @set_d, type: i32
+        FuncDefParamsNode
+            Id	name: %val	scope: 1	type: i32	size: 4
+        CompoundStmt
+            AssignStmt
+                Id	name: @d	scope: 0	type: i32	size: 4
+                Id	name: %val	scope: 1	type: i32	size: 4
+            ReturnStmt
+                Id	name: @d	scope: 0	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            AssignStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 2	type: i32
+            AssignStmt
+                Id	name: @b	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 3	type: i32
+            IfStmt
+                BinaryExpr	op: and     type:i1
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        FuncCallNode	funcName: @set_a	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 0	type: i32
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        FuncCallNode	funcName: @set_b	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @a	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 32	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @b	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 32	type: i32
+            AssignStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 2	type: i32
+            AssignStmt
+                Id	name: @b	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 3	type: i32
+            IfStmt
+                BinaryExpr	op: and     type:i1
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        FuncCallNode	funcName: @set_a	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 0	type: i32
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        FuncCallNode	funcName: @set_b	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 1	type: i32
+                EmptyStmt
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @a	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 32	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @b	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 10	type: i32
+            DeclStmt
+            DefNode	Const	NonArray
+                Id	name: 1	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: @d	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 2	type: i32
+            IfStmt
+                BinaryExpr	op: and     type:i1
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        IntegerLiteral	value: 1	type: i32
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        FuncCallNode	funcName: @set_d	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 3	type: i32
+                EmptyStmt
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @d	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 32	type: i32
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        IntegerLiteral	value: 1	type: i32
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        FuncCallNode	funcName: @set_d	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 4	type: i32
+                CompoundStmt
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @d	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 10	type: i32
+            IfStmt
+                BinaryExpr	op: neq     type:i1
+                    IntegerLiteral	value: 0	type: i32
+                    IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 65	type: i32
+            IfStmt
+                BinaryExpr	op: neq     type:i1
+                    IntegerLiteral	value: 0	type: i32
+                    IntegerLiteral	value: 0	type: i32
+                ExprStmtNode
+                    FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 66	type: i32
+            IfStmt
+                BinaryExpr	op: neq     type:i1
+                    IntegerLiteral	value: 0	type: i32
+                    IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 67	type: i32
+            IfStmt
+                BinaryExpr	op: neq     type:i1
+                    IntegerLiteral	value: 0	type: i32
+                    IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 68	type: i32
+            IfStmt
+                BinaryExpr	op: neq     type:i1
+                    IntegerLiteral	value: 0	type: i32
+                    IntegerLiteral	value: 0	type: i32
+                ExprStmtNode
+                    FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 69	type: i32
+            IfStmt
+                BinaryExpr	op: neq     type:i1
+                    IntegerLiteral	value: 0	type: i32
+                    IntegerLiteral	value: 1	type: i32
+                ExprStmtNode
+                    FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 70	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 10	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i0	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            DefNode	Variable	NonArray
+                Id	name: i1	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            DefNode	Variable	NonArray
+                Id	name: i2	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 2	type: i32
+            DefNode	Variable	NonArray
+                Id	name: i3	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 3	type: i32
+            DefNode	Variable	NonArray
+                Id	name: i4	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 4	type: i32
+            WhileStmt
+                BinaryExpr	op: and     type:i1
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        Id	name: i0	scope: 2	type: i32	size: 4
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        Id	name: i1	scope: 2	type: i32	size: 4
+                ExprStmtNode
+                    FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 32	type: i32
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        Id	name: i0	scope: 2	type: i32	size: 4
+                    BinaryExpr	op: neq     type:i1
+                        IntegerLiteral	value: 0	type: i32
+                        Id	name: i1	scope: 2	type: i32	size: 4
+                ExprStmtNode
+                    FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 67	type: i32
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: greateq     type:i1
+                        Id	name: i0	scope: 2	type: i32	size: 4
+                        Id	name: i1	scope: 2	type: i32	size: 4
+                    BinaryExpr	op: lesseq     type:i1
+                        Id	name: i1	scope: 2	type: i32	size: 4
+                        Id	name: i0	scope: 2	type: i32	size: 4
+                ExprStmtNode
+                    FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 72	type: i32
+            IfStmt
+                BinaryExpr	op: and     type:i1
+                    BinaryExpr	op: greateq     type:i1
+                        Id	name: i2	scope: 2	type: i32	size: 4
+                        Id	name: i1	scope: 2	type: i32	size: 4
+                    BinaryExpr	op: neq     type:i1
+                        Id	name: i4	scope: 2	type: i32	size: 4
+                        Id	name: i3	scope: 2	type: i32	size: 4
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 73	type: i32
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: eq     type:i1
+                            Id	name: i0	scope: 2	type: i32	size: 4
+                            SingleExpr	op: not     type:i1
+                                Id	name: i1	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: less     type:i1
+                            Id	name: i3	scope: 2	type: i32	size: 4
+                            Id	name: i3	scope: 2	type: i32	size: 4
+                    BinaryExpr	op: greateq     type:i1
+                        Id	name: i4	scope: 2	type: i32	size: 4
+                        Id	name: i4	scope: 2	type: i32	size: 4
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 74	type: i32
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: eq     type:i1
+                        Id	name: i0	scope: 2	type: i32	size: 4
+                        SingleExpr	op: not     type:i1
+                            Id	name: i1	scope: 2	type: i32	size: 4
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: less     type:i1
+                            Id	name: i3	scope: 2	type: i32	size: 4
+                            Id	name: i3	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: greateq     type:i1
+                            Id	name: i4	scope: 2	type: i32	size: 4
+                            Id	name: i4	scope: 2	type: i32	size: 4
+                ExprStmtNode
+                    FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                        FuncCallParamsNode
+                            IntegerLiteral	value: 75	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 10	type: i32
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

@@ -1,0 +1,173 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                DeclStmt
+                DefNode	Const	NonArray
+                    Id	name: ascii_0	scope: 0	type: const int
+                    IntegerLiteral	value: 48	type: int
+                FunctionDefine function name: my_getint, type: int()
+                    FuncDefParamsNode NULL
+                    CompoundStmt
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        DeclStmt
+                                        DefNode	Variable	NonArray
+                                            Id	name: sum	scope: 2	type: int
+                                            IntegerLiteral	value: 0	type: int
+                                        DefNode	Variable	NonArray
+                                            Id	name: c	scope: 2	type: int
+                                            null
+                                        WhileStmt
+                                            IntegerLiteral	value: 1	type: int
+                                            CompoundStmt
+                                                Sequence
+                                                    AssignStmt
+                                                        Id	name: c	scope: 2	type: int
+                                                        BinaryExpr	op: sub
+                                                            FuncCallNode	funcName: getch	 funcType: int()	scope: 0
+                                                                FuncCallParamsNode NULL
+                                                            Id	name: ascii_0	scope: 0	type: const int
+                                                    IfElseStmt
+                                                        BinaryExpr	op: or
+                                                            BinaryExpr	op: less
+                                                                Id	name: c	scope: 2	type: int
+                                                                IntegerLiteral	value: 0	type: int
+                                                            BinaryExpr	op: greater
+                                                                Id	name: c	scope: 2	type: int
+                                                                IntegerLiteral	value: 9	type: int
+                                                        CompoundStmt
+                                                            ContinueStmt
+                                                        CompoundStmt
+                                                            BreakStmt
+                                    AssignStmt
+                                        Id	name: sum	scope: 2	type: int
+                                        Id	name: c	scope: 2	type: int
+                                WhileStmt
+                                    IntegerLiteral	value: 1	type: int
+                                    CompoundStmt
+                                        Sequence
+                                            AssignStmt
+                                                Id	name: c	scope: 2	type: int
+                                                BinaryExpr	op: sub
+                                                    FuncCallNode	funcName: getch	 funcType: int()	scope: 0
+                                                        FuncCallParamsNode NULL
+                                                    Id	name: ascii_0	scope: 0	type: const int
+                                            IfElseStmt
+                                                BinaryExpr	op: and
+                                                    BinaryExpr	op: greaterorequal
+                                                        Id	name: c	scope: 2	type: int
+                                                        IntegerLiteral	value: 0	type: int
+                                                    BinaryExpr	op: lessorequal
+                                                        Id	name: c	scope: 2	type: int
+                                                        IntegerLiteral	value: 9	type: int
+                                                CompoundStmt
+                                                    AssignStmt
+                                                        Id	name: sum	scope: 2	type: int
+                                                        BinaryExpr	op: add
+                                                            BinaryExpr	op: multi
+                                                                Id	name: sum	scope: 2	type: int
+                                                                IntegerLiteral	value: 10	type: int
+                                                            Id	name: c	scope: 2	type: int
+                                                CompoundStmt
+                                                    BreakStmt
+                            ReturnStmt
+                                Id	name: sum	scope: 2	type: int
+            FunctionDefine function name: my_putint, type: void(int)
+                FuncDefParamsNode
+                    Id	name: a	scope: 1	type: int
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            DeclStmt
+                            DefNode	Variable	Array
+                                Id	name: b	scope: 2	type: int array
+                                    ExprStmtNode
+                                        IntegerLiteral	value: 16	type: int
+                                null
+                            DefNode	Variable	NonArray
+                                Id	name: i	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                            WhileStmt
+                                BinaryExpr	op: greater
+                                    Id	name: a	scope: 1	type: int
+                                    IntegerLiteral	value: 0	type: int
+                                CompoundStmt
+                                    Sequence
+                                        Sequence
+                                            AssignStmt
+                                                Id	name: b	scope: 2	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: i	scope: 2	type: int
+                                                BinaryExpr	op: add
+                                                    BinaryExpr	op: mod
+                                                        Id	name: a	scope: 1	type: int
+                                                        IntegerLiteral	value: 10	type: int
+                                                    Id	name: ascii_0	scope: 0	type: const int
+                                            AssignStmt
+                                                Id	name: a	scope: 1	type: int
+                                                BinaryExpr	op: divide
+                                                    Id	name: a	scope: 1	type: int
+                                                    IntegerLiteral	value: 10	type: int
+                                        AssignStmt
+                                            Id	name: i	scope: 2	type: int
+                                            BinaryExpr	op: add
+                                                Id	name: i	scope: 2	type: int
+                                                IntegerLiteral	value: 1	type: int
+                        WhileStmt
+                            BinaryExpr	op: greater
+                                Id	name: i	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                            CompoundStmt
+                                Sequence
+                                    AssignStmt
+                                        Id	name: i	scope: 2	type: int
+                                        BinaryExpr	op: sub
+                                            Id	name: i	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: b	scope: 2	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: i	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: n	scope: 2	type: int
+                            FuncCallNode	funcName: my_getint	 funcType: int()	scope: 0
+                                FuncCallParamsNode NULL
+                        WhileStmt
+                            BinaryExpr	op: greater
+                                Id	name: n	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: m	scope: 3	type: int
+                                                FuncCallNode	funcName: my_getint	 funcType: int()	scope: 0
+                                                    FuncCallParamsNode NULL
+                                            ExprStmtNode
+                                                FuncCallNode	funcName: my_putint	 funcType: void(int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: m	scope: 3	type: int
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                FuncCallParamsNode
+                                                    IntegerLiteral	value: 10	type: int
+                                    AssignStmt
+                                        Id	name: n	scope: 2	type: int
+                                        BinaryExpr	op: sub
+                                            Id	name: n	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

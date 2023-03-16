@@ -1,0 +1,15 @@
+program
+    FunctionDefine function name: main, type: int()
+        FuncDefParamsNode NULL
+        CompoundStmt
+            Sequence
+                Sequence
+                    DeclStmt
+                    DefNode	Variable	NonArray
+                        Id	name: a	scope: 2	type: int
+                        null
+                    AssignStmt
+                        Id	name: a	scope: 2	type: int
+                        IntegerLiteral	value: 5	type: int
+                ReturnStmt
+                    Id	name: a	scope: 2	type: int

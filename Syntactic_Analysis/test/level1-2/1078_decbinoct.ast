@@ -1,0 +1,110 @@
+program
+    Sequence
+        FunctionDefine function name: dec2bin, type: int(int)
+            FuncDefParamsNode
+                Id	name: a	scope: 1	type: int
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                DeclStmt
+                                                DefNode	Variable	NonArray
+                                                    Id	name: res	scope: 2	type: int
+                                                    null
+                                                DeclStmt
+                                                DefNode	Variable	NonArray
+                                                    Id	name: k	scope: 2	type: int
+                                                    null
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: i	scope: 2	type: int
+                                                null
+                                        DeclStmt
+                                        DefNode	Variable	NonArray
+                                            Id	name: temp	scope: 2	type: int
+                                            null
+                                    AssignStmt
+                                        Id	name: res	scope: 2	type: int
+                                        IntegerLiteral	value: 0	type: int
+                                AssignStmt
+                                    Id	name: k	scope: 2	type: int
+                                    IntegerLiteral	value: 1	type: int
+                            AssignStmt
+                                Id	name: temp	scope: 2	type: int
+                                Id	name: a	scope: 1	type: int
+                        WhileStmt
+                            BinaryExpr	op: unequal
+                                Id	name: temp	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            AssignStmt
+                                                Id	name: i	scope: 2	type: int
+                                                BinaryExpr	op: mod
+                                                    Id	name: temp	scope: 2	type: int
+                                                    IntegerLiteral	value: 2	type: int
+                                            AssignStmt
+                                                Id	name: res	scope: 2	type: int
+                                                BinaryExpr	op: add
+                                                    BinaryExpr	op: multi
+                                                        Id	name: k	scope: 2	type: int
+                                                        Id	name: i	scope: 2	type: int
+                                                    Id	name: res	scope: 2	type: int
+                                        AssignStmt
+                                            Id	name: k	scope: 2	type: int
+                                            BinaryExpr	op: multi
+                                                Id	name: k	scope: 2	type: int
+                                                IntegerLiteral	value: 10	type: int
+                                    AssignStmt
+                                        Id	name: temp	scope: 2	type: int
+                                        BinaryExpr	op: divide
+                                            Id	name: temp	scope: 2	type: int
+                                            IntegerLiteral	value: 2	type: int
+                    ReturnStmt
+                        Id	name: res	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: a	scope: 2	type: int
+                                                null
+                                            AssignStmt
+                                                Id	name: a	scope: 2	type: int
+                                                IntegerLiteral	value: 400	type: int
+                                        DeclStmt
+                                        DefNode	Variable	NonArray
+                                            Id	name: res	scope: 2	type: int
+                                            null
+                                    AssignStmt
+                                        Id	name: res	scope: 2	type: int
+                                        FuncCallNode	funcName: dec2bin	 funcType: int(int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: a	scope: 2	type: int
+                                ExprStmtNode
+                                    FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                        FuncCallParamsNode
+                                            Id	name: res	scope: 2	type: int
+                            AssignStmt
+                                Id	name: res	scope: 2	type: int
+                                IntegerLiteral	value: 10	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    Id	name: res	scope: 2	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

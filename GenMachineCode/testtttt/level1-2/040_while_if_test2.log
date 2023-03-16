@@ -1,0 +1,198 @@
+DeclStmt::genCode
+AssignStmt::genCode
+DeclStmt::genCode
+AssignStmt::genCode
+WhileStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+WhileStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+ReturnStmt::genCode
+ReturnStmt::genCode
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+	.arch armv8-a
+	.fpu vfpv3-d16
+	.arch_extension crc
+	.arm
+	.text
+	.global ifWhile
+	.type ifWhile , %function
+ifWhile:
+	push {r8, r9, r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #8
+.L8:
+	ldr r10, =0
+	str r10, [fp, #-8]
+	ldr r10, =3
+	str r10, [fp, #-4]
+	ldr r10, [fp, #-8]
+	ldr r9, =5
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L11
+	b .L16
+.L11:
+	b .L18
+.L12:
+	ldr r10, [fp, #-4]
+	mov r0, r10
+	b .LifWhile_END
+.L13:
+	b .L27
+.L15:
+.L16:
+	b .L13
+.L17:
+.L18:
+	ldr r10, [fp, #-4]
+	ldr r9, =2
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L19
+	b .L23
+.L19:
+	ldr r10, [fp, #-4]
+BinaryMInstruction::output() 
+	add r9, r10, #2
+	str r9, [fp, #-4]
+	b .L18
+.L20:
+	ldr r10, [fp, #-4]
+BinaryMInstruction::output() 
+	add r9, r10, #25
+	str r9, [fp, #-4]
+	b .L12
+.L22:
+.L23:
+	b .L20
+.L24:
+.L27:
+	ldr r10, [fp, #-8]
+	ldr r9, =5
+	cmp r10, r9
+	movlt r10, #1
+	movge r10, #0
+	blt .L28
+	b .L32
+.L28:
+	ldr r10, [fp, #-4]
+	ldr r9, =2
+BinaryMInstruction::output() 
+	mul r8, r10, r9
+	str r8, [fp, #-4]
+	ldr r10, [fp, #-8]
+BinaryMInstruction::output() 
+	add r9, r10, #1
+	str r9, [fp, #-8]
+	b .L27
+.L29:
+	b .L12
+.L31:
+.L32:
+	b .L29
+.L33:
+.LifWhile_END:
+BinaryMInstruction::output() 
+	add sp, sp, #8
+	pop {r8, r9, r10, fp, lr}
+	bx  lr
+
+	.global main
+	.type main , %function
+main:
+	push {r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #0
+.L37:
+	bl  ifWhile
+	mov r10, r0
+	mov r0, r10
+	b .Lmain_END
+.Lmain_END:
+BinaryMInstruction::output() 
+	add sp, sp, #0
+	pop {r10, fp, lr}
+	bx  lr
+

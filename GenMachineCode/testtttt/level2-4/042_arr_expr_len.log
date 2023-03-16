@@ -1,0 +1,187 @@
+
+
+
+
+
+
+
+typecheck fin
+program
+    DeclStmt
+    DefNode	Const	NonArray
+        Id	name: -1	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: -1	type: i32
+    DeclStmt
+    DefNode	Variable	Array
+        Id	name: @arr	scope: 0	type: int array	size: 24
+            ArrayDimensions
+            ArrDim
+                IntegerLiteral	value: 6	type: i32
+        ArrValNode	Variable	ValList
+            ArrValNode	Variable	Expr
+                IntegerLiteral	value: 1	type: i32
+            ArrValNode	Variable	Expr
+                IntegerLiteral	value: 2	type: i32
+            ArrValNode	Variable	Expr
+                IntegerLiteral	value: 33	type: i32
+            ArrValNode	Variable	Expr
+                IntegerLiteral	value: 4	type: i32
+            ArrValNode	Variable	Expr
+                IntegerLiteral	value: 5	type: i32
+            ArrValNode	Variable	Expr
+                IntegerLiteral	value: 6	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            DefNode	Variable	NonArray
+                Id	name: sum	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            WhileStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 6	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: sum	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: sum	scope: 2	type: i32	size: 4
+                            Id	name: @arr	scope: 0	type: int array	size: 24
+                                ArrayDimensions
+                                ArrDim
+                                    Id	name: i	scope: 2	type: i32	size: 4
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: i	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            ReturnStmt
+                Id	name: sum	scope: 2	type: i32	size: 4
+DeclStmt::genCode
+new StoreInstruction src:202819232
+DeclStmt::genCode
+DeclStmt::genCode
+new StoreInstruction src:202819232
+new StoreInstruction src:202819232
+WhileStmt::genCode
+AssignStmt::genCode
+Id::ArrgenCode
+AssignStmt::genCode
+ReturnStmt::genCode
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+	.arch armv8-a
+	.fpu vfpv3-d16
+	.arch_extension crc
+	.arm
+	.data
+	.global arr
+	.align 4
+	.size arr, 24
+arr:
+	.word 1
+	.word 2
+	.word 33
+	.word 4
+	.word 5
+	.word 6
+	.text
+	.global main
+	.type main , %function
+main:
+	push {r7, r8, r9, r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #8
+.L14:
+	ldr r10, =0
+	str r10, [fp, #-8]
+	ldr r10, =0
+	str r10, [fp, #-4]
+	b .L17
+.L17:
+	ldr r10, [fp, #-8]
+	ldr r9, =6
+	cmp r10, r9
+	movlt r10, #1
+	movge r10, #0
+	blt .L18
+	b .L22
+.L18:
+	ldr r10, [fp, #-4]
+	ldr r9, [fp, #-8]
+	ldr r8, =4
+BinaryMInstruction::output() 
+	mul r7, r9, r8
+	ldr r9, addr_rr_0
+BinaryMInstruction::output() 
+	add r8, r7, r9
+	ldr r9, [r8]
+BinaryMInstruction::output() 
+	add r8, r10, r9
+	str r8, [fp, #-4]
+	ldr r10, [fp, #-8]
+BinaryMInstruction::output() 
+	add r9, r10, #1
+	str r9, [fp, #-8]
+	b .L17
+.L19:
+	ldr r10, [fp, #-4]
+	mov r0, r10
+	b .Lmain_END
+.L21:
+.L22:
+	b .L19
+.L23:
+.Lmain_END:
+BinaryMInstruction::output() 
+	add sp, sp, #8
+	pop {r7, r8, r9, r10, fp, lr}
+	bx  lr
+
+addr_arr_0:
+	.word arr

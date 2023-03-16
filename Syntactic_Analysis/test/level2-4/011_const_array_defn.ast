@@ -1,0 +1,25 @@
+program
+    Sequence
+        DeclStmt
+        DefNode	Const	Array
+            Id	name: a	scope: 0	type: const int array
+                ExprStmtNode
+                    IntegerLiteral	value: 5	type: int
+            DeclValNode	Const
+                DeclValNode	Const
+                    IntegerLiteral	value: 0	type: int
+                DeclValNode	Const
+                    IntegerLiteral	value: 1	type: int
+                DeclValNode	Const
+                    IntegerLiteral	value: 2	type: int
+                DeclValNode	Const
+                    IntegerLiteral	value: 3	type: int
+                DeclValNode	Const
+                    IntegerLiteral	value: 4	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                ReturnStmt
+                    Id	name: a	scope: 0	type: const int array
+                        ExprStmtNode
+                            IntegerLiteral	value: 4	type: int

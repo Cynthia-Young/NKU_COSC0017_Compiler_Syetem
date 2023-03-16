@@ -1,0 +1,398 @@
+typecheck fin
+program
+    FunctionDefine function name: @climbStairs, type: i32
+        FuncDefParamsNode
+            Id	name: %n	scope: 1	type: i32	size: 4
+        CompoundStmt
+            IfStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: %n	scope: 1	type: i32	size: 4
+                    IntegerLiteral	value: 4	type: i32
+                ReturnStmt
+                    Id	name: %n	scope: 1	type: i32	size: 4
+            DeclStmt
+            DefNode	Variable	Array
+                Id	name: dp	scope: 2	type: int array	size: 40
+                    ArrayDimensions
+                    ArrDim
+                        IntegerLiteral	value: 10	type: i32
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: dp	scope: 2	type: int array	size: 40
+                    ArrayDimensions
+                    ArrDim
+                        IntegerLiteral	value: 0	type: i32
+                IntegerLiteral	value: 0	type: i32
+            AssignStmt
+                Id	name: dp	scope: 2	type: int array	size: 40
+                    ArrayDimensions
+                    ArrDim
+                        IntegerLiteral	value: 1	type: i32
+                IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: dp	scope: 2	type: int array	size: 40
+                    ArrayDimensions
+                    ArrDim
+                        IntegerLiteral	value: 2	type: i32
+                IntegerLiteral	value: 2	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 3	type: i32
+            WhileStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    BinaryExpr	op: add     type:i32
+                        Id	name: %n	scope: 1	type: i32	size: 4
+                        IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: dp	scope: 2	type: int array	size: 40
+                            ArrayDimensions
+                            ArrDim
+                                Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: dp	scope: 2	type: int array	size: 40
+                                ArrayDimensions
+                                ArrDim
+                                    BinaryExpr	op: sub     type:i32
+                                        Id	name: i	scope: 2	type: i32	size: 4
+                                        IntegerLiteral	value: 1	type: i32
+                            Id	name: dp	scope: 2	type: int array	size: 40
+                                ArrayDimensions
+                                ArrDim
+                                    BinaryExpr	op: sub     type:i32
+                                        Id	name: i	scope: 2	type: i32	size: 4
+                                        IntegerLiteral	value: 2	type: i32
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: i	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            ReturnStmt
+                Id	name: dp	scope: 2	type: int array	size: 40
+                    ArrayDimensions
+                    ArrDim
+                        Id	name: %n	scope: 1	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: res	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: n	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: n	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            AssignStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @climbStairs	 funcType: i32	scope: 0
+                    FuncCallParamsNode
+                        Id	name: n	scope: 2	type: i32	size: 4
+            ReturnStmt
+                Id	name: res	scope: 2	type: i32	size: 4
+ReturnStmt::genCode
+DeclStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+DeclStmt::genCode
+AssignStmt::genCode
+WhileStmt::genCode
+AssignStmt::genCode
+Id::ArrgenCode
+Id::ArrgenCode
+AssignStmt::genCode
+ReturnStmt::genCode
+Id::ArrgenCode
+DeclStmt::genCode
+DeclStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+callParams[0]->getexprkind() == ExprNode::CONSTANT  is 0
+ReturnStmt::genCode
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode1
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode7
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode7
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode7
+LoadInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode int
+CallInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+	.arch armv8-a
+	.fpu vfpv3-d16
+	.arch_extension crc
+	.arm
+	.text
+	.global climbStairs
+	.type climbStairs , %function
+climbStairs:
+	push {r7, r8, r9, r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #48
+.L8:
+	str r0, [fp, #-48]
+	ldr r10, [fp, #-48]
+	ldr r9, =4
+	cmp r10, r9
+	movlt r10, #1
+	movge r10, #0
+	blt .L10
+	b .L14
+.L10:
+	ldr r10, [fp, #-48]
+	mov r0, r10
+	b .LclimbStairs_END
+.L11:
+	ldr r10, =0
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r8, r10, r9
+BinaryMInstruction::output() 
+	add r10, r8, #-44
+	ldr r9, =0
+BinaryMInstruction::output() 
+	add r8, fp, r10
+	str r9, [r8]
+	ldr r10, =1
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r8, r10, r9
+BinaryMInstruction::output() 
+	add r10, r8, #-44
+	ldr r9, =1
+BinaryMInstruction::output() 
+	add r8, fp, r10
+	str r9, [r8]
+	ldr r10, =2
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r8, r10, r9
+BinaryMInstruction::output() 
+	add r10, r8, #-44
+	ldr r9, =2
+BinaryMInstruction::output() 
+	add r8, fp, r10
+	str r9, [r8]
+	ldr r10, =3
+	str r10, [fp, #-4]
+	b .L25
+.L13:
+.L14:
+	b .L11
+.L15:
+.L25:
+	ldr r10, [fp, #-4]
+	ldr r9, [fp, #-48]
+BinaryMInstruction::output() 
+	add r8, r9, #1
+	cmp r10, r8
+	movlt r10, #1
+	movge r10, #0
+	blt .L26
+	b .L31
+.L26:
+	ldr r10, [fp, #-4]
+BinaryMInstruction::output() 
+	sub r9, r10, #1
+	ldr r10, =4
+BinaryMInstruction::output() 
+	mul r8, r9, r10
+BinaryMInstruction::output() 
+	add r10, r8, #-44
+BinaryMInstruction::output() 
+	add r9, fp, r10
+	ldr r10, [r9]
+	ldr r9, [fp, #-4]
+BinaryMInstruction::output() 
+	sub r8, r9, #2
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r7, r8, r9
+BinaryMInstruction::output() 
+	add r9, r7, #-44
+BinaryMInstruction::output() 
+	add r8, fp, r9
+	ldr r9, [r8]
+BinaryMInstruction::output() 
+	add r8, r10, r9
+	ldr r10, [fp, #-4]
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r7, r10, r9
+BinaryMInstruction::output() 
+	add r10, r7, #-44
+BinaryMInstruction::output() 
+	add r9, fp, r10
+	str r8, [r9]
+	ldr r10, [fp, #-4]
+BinaryMInstruction::output() 
+	add r9, r10, #1
+	str r9, [fp, #-4]
+	b .L25
+.L27:
+	ldr r10, [fp, #-48]
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r8, r10, r9
+BinaryMInstruction::output() 
+	add r10, r8, #-44
+BinaryMInstruction::output() 
+	add r9, fp, r10
+	ldr r10, [r9]
+	mov r0, r10
+	b .LclimbStairs_END
+.L30:
+.L31:
+	b .L27
+.L32:
+.LclimbStairs_END:
+BinaryMInstruction::output() 
+	add sp, sp, #48
+	pop {r7, r8, r9, r10, fp, lr}
+	bx  lr
+
+	.global main
+	.type main , %function
+main:
+	push {r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #8
+.L49:
+	ldr r10, =5
+	str r10, [fp, #-4]
+	ldr r10, [fp, #-4]
+	mov r0, r10
+	bl  climbStairs
+	mov r10, r0
+	str r10, [fp, #-8]
+	ldr r10, [fp, #-8]
+	mov r0, r10
+	b .Lmain_END
+.Lmain_END:
+BinaryMInstruction::output() 
+	add sp, sp, #8
+	pop {r10, fp, lr}
+	bx  lr
+

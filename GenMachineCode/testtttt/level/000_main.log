@@ -1,0 +1,7 @@
+typecheck fin
+program
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                IntegerLiteral	value: 3	type: i32

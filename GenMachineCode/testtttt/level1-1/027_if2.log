@@ -1,0 +1,66 @@
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            AssignStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 10	type: i32
+            IfElseStmt
+                BinaryExpr	op: great     type:i1
+                    Id	name: @a	scope: 0	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    ReturnStmt
+                        IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: i32
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            AssignStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 10	type: i32
+            IfElseStmt
+                BinaryExpr	op: great     type:i1
+                    Id	name: @a	scope: 0	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    ReturnStmt
+                        IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: i32
+DeclStmt::genCode
+AssignStmt::genCode
+ReturnStmt::genCode
+ReturnStmt::genCode
+StoreInstruction::genMachineCode
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+#0
+#1
+#0
+#1
+#0
+#0

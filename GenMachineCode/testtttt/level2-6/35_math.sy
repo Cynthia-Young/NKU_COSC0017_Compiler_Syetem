@@ -1,0 +1,35 @@
+// reference: https://zhuanlan.zhihu.com/p/20085048
+
+const float e = 2.718281828459045;
+
+
+float my_pow(float a, int n) {
+  if (n < 0) return 1 / my_pow(a, -n);
+  float res = 1.0;
+  while (n) {
+    if (n % 2) res = res * a;
+    a = a * a;
+    n = n / 2;
+  }
+  return res;
+}
+
+
+
+float eee(float x) {
+  if (x > 1e-3) {
+    float ee = eee(x / 2);
+    return ee * ee;
+  }
+  return 1 + x + x * x / 2 + my_pow(x, 3) / 6 + my_pow(x, 4) / 24 +
+         my_pow(x, 5) / 120;
+}
+
+float my_exp(float x) {
+  if (x < 0) return 1 / my_exp(-x);
+  int n = x;
+  x = x - n;
+  float e1 = my_pow(e, n);
+  float e2 = eee(x);
+  return e1 * e2;
+}

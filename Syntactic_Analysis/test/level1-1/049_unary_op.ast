@@ -1,0 +1,33 @@
+program
+    FunctionDefine function name: main, type: int()
+        FuncDefParamsNode NULL
+        CompoundStmt
+            Sequence
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: a	scope: 2	type: int
+                            null
+                        AssignStmt
+                            Id	name: a	scope: 2	type: int
+                            IntegerLiteral	value: 10	type: int
+                    IfElseStmt
+                        SingleExpr	op: sub
+                            SingleExpr	op: not
+                                SingleExpr	op: not
+                                    SingleExpr	op: not
+                                        Id	name: a	scope: 2	type: int
+                        CompoundStmt
+                            AssignStmt
+                                Id	name: a	scope: 2	type: int
+                                SingleExpr	op: sub
+                                    SingleExpr	op: sub
+                                        SingleExpr	op: sub
+                                            IntegerLiteral	value: 1	type: int
+                        CompoundStmt
+                            AssignStmt
+                                Id	name: a	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                ReturnStmt
+                    Id	name: a	scope: 2	type: int

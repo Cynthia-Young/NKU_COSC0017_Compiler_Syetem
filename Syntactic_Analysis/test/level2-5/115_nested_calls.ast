@@ -1,0 +1,315 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                FunctionDefine function name: func1, type: int(int, int, int)
+                                    FuncDefParamsNode
+                                        Id	name: x	scope: 1	type: int
+                                        Id	name: y	scope: 1	type: int
+                                        Id	name: z	scope: 1	type: int
+                                    CompoundStmt
+                                        IfElseStmt
+                                            BinaryExpr	op: equal
+                                                Id	name: z	scope: 1	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                            CompoundStmt
+                                                ReturnStmt
+                                                    BinaryExpr	op: multi
+                                                        Id	name: x	scope: 1	type: int
+                                                        Id	name: y	scope: 1	type: int
+                                            CompoundStmt
+                                                ReturnStmt
+                                                    FuncCallNode	funcName: func1	 funcType: int(int, int, int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            Id	name: x	scope: 1	type: int
+                                                            BinaryExpr	op: sub
+                                                                Id	name: y	scope: 1	type: int
+                                                                Id	name: z	scope: 1	type: int
+                                                            IntegerLiteral	value: 0	type: int
+                                FunctionDefine function name: func2, type: int(int, int)
+                                    FuncDefParamsNode
+                                        Id	name: x	scope: 1	type: int
+                                        Id	name: y	scope: 1	type: int
+                                    CompoundStmt
+                                        IfElseStmt
+                                            Id	name: y	scope: 1	type: int
+                                            CompoundStmt
+                                                ReturnStmt
+                                                    FuncCallNode	funcName: func2	 funcType: int(int, int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            BinaryExpr	op: mod
+                                                                Id	name: x	scope: 1	type: int
+                                                                Id	name: y	scope: 1	type: int
+                                                            IntegerLiteral	value: 0	type: int
+                                            CompoundStmt
+                                                ReturnStmt
+                                                    Id	name: x	scope: 1	type: int
+                            FunctionDefine function name: func3, type: int(int, int)
+                                FuncDefParamsNode
+                                    Id	name: x	scope: 1	type: int
+                                    Id	name: y	scope: 1	type: int
+                                CompoundStmt
+                                    IfElseStmt
+                                        BinaryExpr	op: equal
+                                            Id	name: y	scope: 1	type: int
+                                            IntegerLiteral	value: 0	type: int
+                                        CompoundStmt
+                                            ReturnStmt
+                                                BinaryExpr	op: add
+                                                    Id	name: x	scope: 1	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                                        CompoundStmt
+                                            ReturnStmt
+                                                FuncCallNode	funcName: func3	 funcType: int(int, int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        BinaryExpr	op: add
+                                                            Id	name: x	scope: 1	type: int
+                                                            Id	name: y	scope: 1	type: int
+                                                        IntegerLiteral	value: 0	type: int
+                        FunctionDefine function name: func4, type: int(int, int, int)
+                            FuncDefParamsNode
+                                Id	name: x	scope: 1	type: int
+                                Id	name: y	scope: 1	type: int
+                                Id	name: z	scope: 1	type: int
+                            CompoundStmt
+                                IfElseStmt
+                                    Id	name: x	scope: 1	type: int
+                                    CompoundStmt
+                                        ReturnStmt
+                                            Id	name: y	scope: 1	type: int
+                                    CompoundStmt
+                                        ReturnStmt
+                                            Id	name: z	scope: 1	type: int
+                    FunctionDefine function name: func5, type: int(int)
+                        FuncDefParamsNode
+                            Id	name: x	scope: 1	type: int
+                        CompoundStmt
+                            ReturnStmt
+                                SingleExpr	op: sub
+                                    Id	name: x	scope: 1	type: int
+                FunctionDefine function name: func6, type: int(int, int)
+                    FuncDefParamsNode
+                        Id	name: x	scope: 1	type: int
+                        Id	name: y	scope: 1	type: int
+                    CompoundStmt
+                        IfElseStmt
+                            BinaryExpr	op: and
+                                Id	name: x	scope: 1	type: int
+                                Id	name: y	scope: 1	type: int
+                            CompoundStmt
+                                ReturnStmt
+                                    IntegerLiteral	value: 1	type: int
+                            CompoundStmt
+                                ReturnStmt
+                                    IntegerLiteral	value: 0	type: int
+            FunctionDefine function name: func7, type: int(int)
+                FuncDefParamsNode
+                    Id	name: x	scope: 1	type: int
+                CompoundStmt
+                    IfElseStmt
+                        SingleExpr	op: not
+                            Id	name: x	scope: 1	type: int
+                        CompoundStmt
+                            ReturnStmt
+                                IntegerLiteral	value: 1	type: int
+                        CompoundStmt
+                            ReturnStmt
+                                IntegerLiteral	value: 0	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: i1	scope: 2	type: int
+                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                            FuncCallParamsNode NULL
+                                    DefNode	Variable	NonArray
+                                        Id	name: i2	scope: 2	type: int
+                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                            FuncCallParamsNode NULL
+                                    DefNode	Variable	NonArray
+                                        Id	name: i3	scope: 2	type: int
+                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                            FuncCallParamsNode NULL
+                                    DefNode	Variable	NonArray
+                                        Id	name: i4	scope: 2	type: int
+                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                            FuncCallParamsNode NULL
+                                    DeclStmt
+                                    DefNode	Variable	Array
+                                        Id	name: arr	scope: 2	type: int array
+                                            ExprStmtNode
+                                                IntegerLiteral	value: 10	type: int
+                                        null
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: i	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                            WhileStmt
+                                BinaryExpr	op: less
+                                    Id	name: i	scope: 2	type: int
+                                    IntegerLiteral	value: 10	type: int
+                                CompoundStmt
+                                    Sequence
+                                        AssignStmt
+                                            Id	name: arr	scope: 2	type: int array
+                                                ExprStmtNode
+                                                    Id	name: i	scope: 2	type: int
+                                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                FuncCallParamsNode NULL
+                                        AssignStmt
+                                            Id	name: i	scope: 2	type: int
+                                            BinaryExpr	op: add
+                                                Id	name: i	scope: 2	type: int
+                                                IntegerLiteral	value: 1	type: int
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: a	scope: 2	type: int
+                            FuncCallNode	funcName: func1	 funcType: int(int, int, int)	scope: 0
+                                FuncCallParamsNode
+                                    FuncCallNode	funcName: func2	 funcType: int(int, int)	scope: 0
+                                        FuncCallParamsNode
+                                            FuncCallNode	funcName: func1	 funcType: int(int, int, int)	scope: 0
+                                                FuncCallParamsNode
+                                                    FuncCallNode	funcName: func3	 funcType: int(int, int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            FuncCallNode	funcName: func4	 funcType: int(int, int, int)	scope: 0
+                                                                FuncCallParamsNode
+                                                                    FuncCallNode	funcName: func5	 funcType: int(int)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            FuncCallNode	funcName: func3	 funcType: int(int, int)	scope: 0
+                                                                                FuncCallParamsNode
+                                                                                    FuncCallNode	funcName: func2	 funcType: int(int, int)	scope: 0
+                                                                                        FuncCallParamsNode
+                                                                                            FuncCallNode	funcName: func6	 funcType: int(int, int)	scope: 0
+                                                                                                FuncCallParamsNode
+                                                                                                    FuncCallNode	funcName: func7	 funcType: int(int)	scope: 0
+                                                                                                        FuncCallParamsNode
+                                                                                                            Id	name: i1	scope: 2	type: int
+                                                                                                    FuncCallNode	funcName: func5	 funcType: int(int)	scope: 0
+                                                                                                        FuncCallParamsNode
+                                                                                                            Id	name: i2	scope: 2	type: int
+                                                                                            Id	name: i3	scope: 2	type: int
+                                                                                    Id	name: i4	scope: 2	type: int
+                                                                    Id	name: arr	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 0	type: int
+                                                                    FuncCallNode	funcName: func1	 funcType: int(int, int, int)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            FuncCallNode	funcName: func2	 funcType: int(int, int)	scope: 0
+                                                                                FuncCallParamsNode
+                                                                                    FuncCallNode	funcName: func3	 funcType: int(int, int)	scope: 0
+                                                                                        FuncCallParamsNode
+                                                                                            FuncCallNode	funcName: func4	 funcType: int(int, int, int)	scope: 0
+                                                                                                FuncCallParamsNode
+                                                                                                    FuncCallNode	funcName: func5	 funcType: int(int)	scope: 0
+                                                                                                        FuncCallParamsNode
+                                                                                                            Id	name: arr	scope: 2	type: int array
+                                                                                                                ExprStmtNode
+                                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                                    FuncCallNode	funcName: func6	 funcType: int(int, int)	scope: 0
+                                                                                                        FuncCallParamsNode
+                                                                                                            Id	name: arr	scope: 2	type: int array
+                                                                                                                ExprStmtNode
+                                                                                                                    IntegerLiteral	value: 2	type: int
+                                                                                                            FuncCallNode	funcName: func7	 funcType: int(int)	scope: 0
+                                                                                                                FuncCallParamsNode
+                                                                                                                    Id	name: arr	scope: 2	type: int array
+                                                                                                                        ExprStmtNode
+                                                                                                                            IntegerLiteral	value: 3	type: int
+                                                                                                    FuncCallNode	funcName: func2	 funcType: int(int, int)	scope: 0
+                                                                                                        FuncCallParamsNode
+                                                                                                            Id	name: arr	scope: 2	type: int array
+                                                                                                                ExprStmtNode
+                                                                                                                    IntegerLiteral	value: 4	type: int
+                                                                                                            FuncCallNode	funcName: func7	 funcType: int(int)	scope: 0
+                                                                                                                FuncCallParamsNode
+                                                                                                                    Id	name: arr	scope: 2	type: int array
+                                                                                                                        ExprStmtNode
+                                                                                                                            IntegerLiteral	value: 5	type: int
+                                                                                            Id	name: arr	scope: 2	type: int array
+                                                                                                ExprStmtNode
+                                                                                                    IntegerLiteral	value: 6	type: int
+                                                                                    Id	name: arr	scope: 2	type: int array
+                                                                                        ExprStmtNode
+                                                                                            IntegerLiteral	value: 7	type: int
+                                                                            FuncCallNode	funcName: func3	 funcType: int(int, int)	scope: 0
+                                                                                FuncCallParamsNode
+                                                                                    Id	name: arr	scope: 2	type: int array
+                                                                                        ExprStmtNode
+                                                                                            IntegerLiteral	value: 8	type: int
+                                                                                    FuncCallNode	funcName: func7	 funcType: int(int)	scope: 0
+                                                                                        FuncCallParamsNode
+                                                                                            Id	name: arr	scope: 2	type: int array
+                                                                                                ExprStmtNode
+                                                                                                    IntegerLiteral	value: 9	type: int
+                                                                            Id	name: i1	scope: 2	type: int
+                                                            FuncCallNode	funcName: func2	 funcType: int(int, int)	scope: 0
+                                                                FuncCallParamsNode
+                                                                    Id	name: i2	scope: 2	type: int
+                                                                    FuncCallNode	funcName: func3	 funcType: int(int, int)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            FuncCallNode	funcName: func7	 funcType: int(int)	scope: 0
+                                                                                FuncCallParamsNode
+                                                                                    Id	name: i3	scope: 2	type: int
+                                                                            Id	name: i4	scope: 2	type: int
+                                                    Id	name: arr	scope: 2	type: int array
+                                                        ExprStmtNode
+                                                            IntegerLiteral	value: 0	type: int
+                                                    Id	name: arr	scope: 2	type: int array
+                                                        ExprStmtNode
+                                                            IntegerLiteral	value: 1	type: int
+                                            Id	name: arr	scope: 2	type: int array
+                                                ExprStmtNode
+                                                    IntegerLiteral	value: 2	type: int
+                                    Id	name: arr	scope: 2	type: int array
+                                        ExprStmtNode
+                                            IntegerLiteral	value: 3	type: int
+                                    FuncCallNode	funcName: func3	 funcType: int(int, int)	scope: 0
+                                        FuncCallParamsNode
+                                            FuncCallNode	funcName: func2	 funcType: int(int, int)	scope: 0
+                                                FuncCallParamsNode
+                                                    FuncCallNode	funcName: func1	 funcType: int(int, int, int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            FuncCallNode	funcName: func2	 funcType: int(int, int)	scope: 0
+                                                                FuncCallParamsNode
+                                                                    FuncCallNode	funcName: func3	 funcType: int(int, int)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            Id	name: arr	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 4	type: int
+                                                                            FuncCallNode	funcName: func5	 funcType: int(int)	scope: 0
+                                                                                FuncCallParamsNode
+                                                                                    Id	name: arr	scope: 2	type: int array
+                                                                                        ExprStmtNode
+                                                                                            IntegerLiteral	value: 5	type: int
+                                                                    FuncCallNode	funcName: func5	 funcType: int(int)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            Id	name: arr	scope: 2	type: int array
+                                                                                ExprStmtNode
+                                                                                    IntegerLiteral	value: 6	type: int
+                                                            Id	name: arr	scope: 2	type: int array
+                                                                ExprStmtNode
+                                                                    IntegerLiteral	value: 7	type: int
+                                                            FuncCallNode	funcName: func7	 funcType: int(int)	scope: 0
+                                                                FuncCallParamsNode
+                                                                    Id	name: arr	scope: 2	type: int array
+                                                                        ExprStmtNode
+                                                                            IntegerLiteral	value: 8	type: int
+                                                    FuncCallNode	funcName: func5	 funcType: int(int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            Id	name: arr	scope: 2	type: int array
+                                                                ExprStmtNode
+                                                                    IntegerLiteral	value: 9	type: int
+                                            Id	name: i1	scope: 2	type: int
+                    ReturnStmt
+                        Id	name: a	scope: 2	type: int

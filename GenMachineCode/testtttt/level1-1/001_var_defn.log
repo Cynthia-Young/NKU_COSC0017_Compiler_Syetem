@@ -1,0 +1,49 @@
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 3	type: i32
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @b	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 5	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                BinaryExpr	op: add     type:i32
+                    Id	name: @a	scope: 0	type: i32	size: 4
+                    Id	name: @b	scope: 0	type: i32	size: 4
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 3	type: i32
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @b	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 5	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                BinaryExpr	op: add     type:i32
+                    Id	name: @a	scope: 0	type: i32	size: 4
+                    Id	name: @b	scope: 0	type: i32	size: 4
+DeclStmt::genCode
+new StoreInstruction src:-1084664160
+DeclStmt::genCode
+new StoreInstruction src:-1084664160
+ReturnStmt::genCode
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+#0
+#0

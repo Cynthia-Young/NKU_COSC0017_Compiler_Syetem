@@ -1,0 +1,72 @@
+typecheck fin
+program
+    FunctionDefine function name: @ifElseIf, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: b	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 10	type: i32
+            IfElseStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: eq     type:i1
+                        Id	name: a	scope: 2	type: i32	size: 4
+                        IntegerLiteral	value: 6	type: i32
+                    BinaryExpr	op: eq     type:i1
+                        Id	name: b	scope: 2	type: i32	size: 4
+                        IntegerLiteral	value: 11	type: i32
+                CompoundStmt
+                    ReturnStmt
+                        Id	name: a	scope: 2	type: i32	size: 4
+                CompoundStmt
+                    IfElseStmt
+                        BinaryExpr	op: and     type:i1
+                            BinaryExpr	op: eq     type:i1
+                                Id	name: b	scope: 2	type: i32	size: 4
+                                IntegerLiteral	value: 10	type: i32
+                            BinaryExpr	op: eq     type:i1
+                                Id	name: a	scope: 2	type: i32	size: 4
+                                IntegerLiteral	value: 1	type: i32
+                        AssignStmt
+                            Id	name: a	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 25	type: i32
+                        IfElseStmt
+                            BinaryExpr	op: and     type:i1
+                                BinaryExpr	op: eq     type:i1
+                                    Id	name: b	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 10	type: i32
+                                BinaryExpr	op: eq     type:i1
+                                    Id	name: a	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: -5	type: i32
+                            AssignStmt
+                                Id	name: a	scope: 2	type: i32	size: 4
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: a	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 15	type: i32
+                            AssignStmt
+                                Id	name: a	scope: 2	type: i32	size: 4
+                                SingleExpr	op: sub     type:i32
+                                    Id	name: a	scope: 2	type: i32	size: 4
+            ReturnStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        FuncCallNode	funcName: @ifElseIf	 funcType: i32	scope: 0
+                            FuncCallParamsNode NULL
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

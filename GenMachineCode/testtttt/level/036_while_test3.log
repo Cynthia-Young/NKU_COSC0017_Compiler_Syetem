@@ -1,0 +1,198 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @g	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @h	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @f	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @e	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    FunctionDefine function name: @EightWhile, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: c	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: b	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 6	type: i32
+            AssignStmt
+                Id	name: c	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 7	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: d	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: d	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 10	type: i32
+            WhileStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: a	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 20	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: a	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: a	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 3	type: i32
+                    WhileStmt
+                        BinaryExpr	op: less     type:i1
+                            Id	name: b	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 10	type: i32
+                        CompoundStmt
+                            AssignStmt
+                                Id	name: b	scope: 2	type: i32	size: 4
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: b	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 1	type: i32
+                            WhileStmt
+                                BinaryExpr	op: eq     type:i1
+                                    Id	name: c	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 7	type: i32
+                                CompoundStmt
+                                    AssignStmt
+                                        Id	name: c	scope: 2	type: i32	size: 4
+                                        BinaryExpr	op: sub     type:i32
+                                            Id	name: c	scope: 2	type: i32	size: 4
+                                            IntegerLiteral	value: 1	type: i32
+                                    WhileStmt
+                                        BinaryExpr	op: less     type:i1
+                                            Id	name: d	scope: 2	type: i32	size: 4
+                                            IntegerLiteral	value: 20	type: i32
+                                        CompoundStmt
+                                            AssignStmt
+                                                Id	name: d	scope: 2	type: i32	size: 4
+                                                BinaryExpr	op: add     type:i32
+                                                    Id	name: d	scope: 2	type: i32	size: 4
+                                                    IntegerLiteral	value: 3	type: i32
+                                            WhileStmt
+                                                BinaryExpr	op: great     type:i1
+                                                    Id	name: @e	scope: 0	type: i32	size: 4
+                                                    IntegerLiteral	value: 1	type: i32
+                                                CompoundStmt
+                                                    AssignStmt
+                                                        Id	name: @e	scope: 0	type: i32	size: 4
+                                                        BinaryExpr	op: sub     type:i32
+                                                            Id	name: @e	scope: 0	type: i32	size: 4
+                                                            IntegerLiteral	value: 1	type: i32
+                                                    WhileStmt
+                                                        BinaryExpr	op: great     type:i1
+                                                            Id	name: @f	scope: 0	type: i32	size: 4
+                                                            IntegerLiteral	value: 2	type: i32
+                                                        CompoundStmt
+                                                            AssignStmt
+                                                                Id	name: @f	scope: 0	type: i32	size: 4
+                                                                BinaryExpr	op: sub     type:i32
+                                                                    Id	name: @f	scope: 0	type: i32	size: 4
+                                                                    IntegerLiteral	value: 2	type: i32
+                                                            WhileStmt
+                                                                BinaryExpr	op: less     type:i1
+                                                                    Id	name: @g	scope: 0	type: i32	size: 4
+                                                                    IntegerLiteral	value: 3	type: i32
+                                                                CompoundStmt
+                                                                    AssignStmt
+                                                                        Id	name: @g	scope: 0	type: i32	size: 4
+                                                                        BinaryExpr	op: add     type:i32
+                                                                            Id	name: @g	scope: 0	type: i32	size: 4
+                                                                            IntegerLiteral	value: 10	type: i32
+                                                                    WhileStmt
+                                                                        BinaryExpr	op: less     type:i1
+                                                                            Id	name: @h	scope: 0	type: i32	size: 4
+                                                                            IntegerLiteral	value: 10	type: i32
+                                                                        CompoundStmt
+                                                                            AssignStmt
+                                                                                Id	name: @h	scope: 0	type: i32	size: 4
+                                                                                BinaryExpr	op: add     type:i32
+                                                                                    Id	name: @h	scope: 0	type: i32	size: 4
+                                                                                    IntegerLiteral	value: 8	type: i32
+                                                                    AssignStmt
+                                                                        Id	name: @h	scope: 0	type: i32	size: 4
+                                                                        BinaryExpr	op: sub     type:i32
+                                                                            Id	name: @h	scope: 0	type: i32	size: 4
+                                                                            IntegerLiteral	value: 1	type: i32
+                                                            AssignStmt
+                                                                Id	name: @g	scope: 0	type: i32	size: 4
+                                                                BinaryExpr	op: sub     type:i32
+                                                                    Id	name: @g	scope: 0	type: i32	size: 4
+                                                                    IntegerLiteral	value: 8	type: i32
+                                                    AssignStmt
+                                                        Id	name: @f	scope: 0	type: i32	size: 4
+                                                        BinaryExpr	op: add     type:i32
+                                                            Id	name: @f	scope: 0	type: i32	size: 4
+                                                            IntegerLiteral	value: 1	type: i32
+                                            AssignStmt
+                                                Id	name: @e	scope: 0	type: i32	size: 4
+                                                BinaryExpr	op: add     type:i32
+                                                    Id	name: @e	scope: 0	type: i32	size: 4
+                                                    IntegerLiteral	value: 1	type: i32
+                                    AssignStmt
+                                        Id	name: d	scope: 2	type: i32	size: 4
+                                        BinaryExpr	op: sub     type:i32
+                                            Id	name: d	scope: 2	type: i32	size: 4
+                                            IntegerLiteral	value: 1	type: i32
+                            AssignStmt
+                                Id	name: c	scope: 2	type: i32	size: 4
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: c	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 1	type: i32
+                    AssignStmt
+                        Id	name: b	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: b	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 2	type: i32
+            ReturnStmt
+                BinaryExpr	op: sub     type:i32
+                    BinaryExpr	op: add     type:i32
+                        BinaryExpr	op: add     type:i32
+                            Id	name: a	scope: 2	type: i32	size: 4
+                            BinaryExpr	op: add     type:i32
+                                Id	name: b	scope: 2	type: i32	size: 4
+                                Id	name: d	scope: 2	type: i32	size: 4
+                        Id	name: c	scope: 2	type: i32	size: 4
+                    BinaryExpr	op: add     type:i32
+                        BinaryExpr	op: sub     type:i32
+                            BinaryExpr	op: add     type:i32
+                                Id	name: @e	scope: 0	type: i32	size: 4
+                                Id	name: d	scope: 2	type: i32	size: 4
+                            Id	name: @g	scope: 0	type: i32	size: 4
+                        Id	name: @h	scope: 0	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            AssignStmt
+                Id	name: @g	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: @h	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 2	type: i32
+            AssignStmt
+                Id	name: @e	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 4	type: i32
+            AssignStmt
+                Id	name: @f	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 6	type: i32
+            ReturnStmt
+                FuncCallNode	funcName: @EightWhile	 funcType: i32	scope: 0
+                    FuncCallParamsNode NULL

@@ -1,0 +1,74 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 1	type: i32
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @b	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 0	type: i32
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @c	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 1	type: i32
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @d	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 2	type: i32
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @e	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 4	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: flag	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: eq     type:i1
+                            BinaryExpr	op: div     type:i32
+                                BinaryExpr	op: mul     type:i32
+                                    Id	name: @a	scope: 0	type: i32	size: 4
+                                    Id	name: @b	scope: 0	type: i32	size: 4
+                                Id	name: @c	scope: 0	type: i32	size: 4
+                            BinaryExpr	op: add     type:i32
+                                Id	name: @e	scope: 0	type: i32	size: 4
+                                Id	name: @d	scope: 0	type: i32	size: 4
+                        BinaryExpr	op: lesseq     type:i1
+                            BinaryExpr	op: add     type:i32
+                                BinaryExpr	op: mul     type:i32
+                                    Id	name: @a	scope: 0	type: i32	size: 4
+                                    BinaryExpr	op: add     type:i32
+                                        Id	name: @a	scope: 0	type: i32	size: 4
+                                        Id	name: @b	scope: 0	type: i32	size: 4
+                                Id	name: @c	scope: 0	type: i32	size: 4
+                            BinaryExpr	op: add     type:i32
+                                Id	name: @d	scope: 0	type: i32	size: 4
+                                Id	name: @e	scope: 0	type: i32	size: 4
+                    BinaryExpr	op: eq     type:i1
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: @a	scope: 0	type: i32	size: 4
+                            BinaryExpr	op: mul     type:i32
+                                Id	name: @b	scope: 0	type: i32	size: 4
+                                Id	name: @c	scope: 0	type: i32	size: 4
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: @d	scope: 0	type: i32	size: 4
+                            BinaryExpr	op: div     type:i32
+                                Id	name: @a	scope: 0	type: i32	size: 4
+                                Id	name: @c	scope: 0	type: i32	size: 4
+                CompoundStmt
+                    AssignStmt
+                        Id	name: flag	scope: 2	type: i32	size: 4
+                        IntegerLiteral	value: 1	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: flag	scope: 2	type: i32	size: 4
+            ReturnStmt
+                Id	name: flag	scope: 2	type: i32	size: 4
+TOTAL: 0H-0M-0S-0us

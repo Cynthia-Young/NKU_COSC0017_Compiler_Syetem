@@ -1,0 +1,227 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    DeclStmt
+                    DefNode	Const	NonArray
+                        Id	name: TAPE_LEN	scope: 0	type: const int
+                        IntegerLiteral	value: 65536	type: int
+                    DefNode	Const	NonArray
+                        Id	name: BUFFER_LEN	scope: 0	type: const int
+                        IntegerLiteral	value: 32768	type: int
+                    DeclStmt
+                    DefNode	Variable	Array
+                        Id	name: tape	scope: 0	type: int array
+                            ExprStmtNode
+                                Id	name: TAPE_LEN	scope: 0	type: const int
+                        null
+                    DefNode	Variable	Array
+                        Id	name: program	scope: 0	type: int array
+                            ExprStmtNode
+                                Id	name: BUFFER_LEN	scope: 0	type: const int
+                        null
+                    DefNode	Variable	NonArray
+                        Id	name: ptr	scope: 0	type: int
+                        IntegerLiteral	value: 0	type: int
+                FunctionDefine function name: read_program, type: void()
+                    FuncDefParamsNode NULL
+                    CompoundStmt
+                        Sequence
+                            Sequence
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: i	scope: 2	type: int
+                                    IntegerLiteral	value: 0	type: int
+                                DefNode	Variable	NonArray
+                                    Id	name: len	scope: 2	type: int
+                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                        FuncCallParamsNode NULL
+                                WhileStmt
+                                    BinaryExpr	op: less
+                                        Id	name: i	scope: 2	type: int
+                                        Id	name: len	scope: 2	type: int
+                                    CompoundStmt
+                                        Sequence
+                                            AssignStmt
+                                                Id	name: program	scope: 0	type: int array
+                                                    ExprStmtNode
+                                                        Id	name: i	scope: 2	type: int
+                                                FuncCallNode	funcName: getch	 funcType: int()	scope: 0
+                                                    FuncCallParamsNode NULL
+                                            AssignStmt
+                                                Id	name: i	scope: 2	type: int
+                                                BinaryExpr	op: add
+                                                    Id	name: i	scope: 2	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                            AssignStmt
+                                Id	name: program	scope: 0	type: int array
+                                    ExprStmtNode
+                                        Id	name: i	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+            FunctionDefine function name: interpret, type: void(int array)
+                FuncDefParamsNode
+                    Id	name: input	scope: 1	type: int array
+                CompoundStmt
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: cur_char	scope: 2	type: int
+                            null
+                        DefNode	Variable	NonArray
+                            Id	name: loop	scope: 2	type: int
+                            null
+                        DefNode	Variable	NonArray
+                            Id	name: i	scope: 2	type: int
+                            IntegerLiteral	value: 0	type: int
+                        WhileStmt
+                            Id	name: input	scope: 1	type: int array
+                                ExprStmtNode
+                                    Id	name: i	scope: 2	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        AssignStmt
+                                            Id	name: cur_char	scope: 2	type: int
+                                            Id	name: input	scope: 1	type: int array
+                                                ExprStmtNode
+                                                    Id	name: i	scope: 2	type: int
+                                        IfElseStmt
+                                            BinaryExpr	op: equal
+                                                Id	name: cur_char	scope: 2	type: int
+                                                IntegerLiteral	value: 62	type: int
+                                            CompoundStmt
+                                                AssignStmt
+                                                    Id	name: ptr	scope: 0	type: int
+                                                    BinaryExpr	op: add
+                                                        Id	name: ptr	scope: 0	type: int
+                                                        IntegerLiteral	value: 1	type: int
+                                            IfElseStmt
+                                                BinaryExpr	op: equal
+                                                    Id	name: cur_char	scope: 2	type: int
+                                                    IntegerLiteral	value: 60	type: int
+                                                CompoundStmt
+                                                    AssignStmt
+                                                        Id	name: ptr	scope: 0	type: int
+                                                        BinaryExpr	op: sub
+                                                            Id	name: ptr	scope: 0	type: int
+                                                            IntegerLiteral	value: 1	type: int
+                                                IfElseStmt
+                                                    BinaryExpr	op: equal
+                                                        Id	name: cur_char	scope: 2	type: int
+                                                        IntegerLiteral	value: 43	type: int
+                                                    CompoundStmt
+                                                        AssignStmt
+                                                            Id	name: tape	scope: 0	type: int array
+                                                                ExprStmtNode
+                                                                    Id	name: ptr	scope: 0	type: int
+                                                            BinaryExpr	op: add
+                                                                Id	name: tape	scope: 0	type: int array
+                                                                    ExprStmtNode
+                                                                        Id	name: ptr	scope: 0	type: int
+                                                                IntegerLiteral	value: 1	type: int
+                                                    IfElseStmt
+                                                        BinaryExpr	op: equal
+                                                            Id	name: cur_char	scope: 2	type: int
+                                                            IntegerLiteral	value: 45	type: int
+                                                        CompoundStmt
+                                                            AssignStmt
+                                                                Id	name: tape	scope: 0	type: int array
+                                                                    ExprStmtNode
+                                                                        Id	name: ptr	scope: 0	type: int
+                                                                BinaryExpr	op: sub
+                                                                    Id	name: tape	scope: 0	type: int array
+                                                                        ExprStmtNode
+                                                                            Id	name: ptr	scope: 0	type: int
+                                                                    IntegerLiteral	value: 1	type: int
+                                                        IfElseStmt
+                                                            BinaryExpr	op: equal
+                                                                Id	name: cur_char	scope: 2	type: int
+                                                                IntegerLiteral	value: 46	type: int
+                                                            CompoundStmt
+                                                                ExprStmtNode
+                                                                    FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                                        FuncCallParamsNode
+                                                                            Id	name: tape	scope: 0	type: int array
+                                                                                ExprStmtNode
+                                                                                    Id	name: ptr	scope: 0	type: int
+                                                            IfElseStmt
+                                                                BinaryExpr	op: equal
+                                                                    Id	name: cur_char	scope: 2	type: int
+                                                                    IntegerLiteral	value: 44	type: int
+                                                                CompoundStmt
+                                                                    AssignStmt
+                                                                        Id	name: tape	scope: 0	type: int array
+                                                                            ExprStmtNode
+                                                                                Id	name: ptr	scope: 0	type: int
+                                                                        FuncCallNode	funcName: getch	 funcType: int()	scope: 0
+                                                                            FuncCallParamsNode NULL
+                                                                IfStmt
+                                                                    BinaryExpr	op: and
+                                                                        BinaryExpr	op: equal
+                                                                            Id	name: cur_char	scope: 2	type: int
+                                                                            IntegerLiteral	value: 93	type: int
+                                                                        Id	name: tape	scope: 0	type: int array
+                                                                            ExprStmtNode
+                                                                                Id	name: ptr	scope: 0	type: int
+                                                                    CompoundStmt
+                                                                        Sequence
+                                                                            AssignStmt
+                                                                                Id	name: loop	scope: 2	type: int
+                                                                                IntegerLiteral	value: 1	type: int
+                                                                            WhileStmt
+                                                                                BinaryExpr	op: greater
+                                                                                    Id	name: loop	scope: 2	type: int
+                                                                                    IntegerLiteral	value: 0	type: int
+                                                                                CompoundStmt
+                                                                                    Sequence
+                                                                                        Sequence
+                                                                                            AssignStmt
+                                                                                                Id	name: i	scope: 2	type: int
+                                                                                                BinaryExpr	op: sub
+                                                                                                    Id	name: i	scope: 2	type: int
+                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                            AssignStmt
+                                                                                                Id	name: cur_char	scope: 2	type: int
+                                                                                                Id	name: input	scope: 1	type: int array
+                                                                                                    ExprStmtNode
+                                                                                                        Id	name: i	scope: 2	type: int
+                                                                                        IfElseStmt
+                                                                                            BinaryExpr	op: equal
+                                                                                                Id	name: cur_char	scope: 2	type: int
+                                                                                                IntegerLiteral	value: 91	type: int
+                                                                                            CompoundStmt
+                                                                                                AssignStmt
+                                                                                                    Id	name: loop	scope: 2	type: int
+                                                                                                    BinaryExpr	op: sub
+                                                                                                        Id	name: loop	scope: 2	type: int
+                                                                                                        IntegerLiteral	value: 1	type: int
+                                                                                            IfStmt
+                                                                                                BinaryExpr	op: equal
+                                                                                                    Id	name: cur_char	scope: 2	type: int
+                                                                                                    IntegerLiteral	value: 93	type: int
+                                                                                                CompoundStmt
+                                                                                                    AssignStmt
+                                                                                                        Id	name: loop	scope: 2	type: int
+                                                                                                        BinaryExpr	op: add
+                                                                                                            Id	name: loop	scope: 2	type: int
+                                                                                                            IntegerLiteral	value: 1	type: int
+                                    AssignStmt
+                                        Id	name: i	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: i	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        ExprStmtNode
+                            FuncCallNode	funcName: read_program	 funcType: void()	scope: 0
+                                FuncCallParamsNode NULL
+                        ExprStmtNode
+                            FuncCallNode	funcName: interpret	 funcType: void(int array)	scope: 0
+                                FuncCallParamsNode
+                                    Id	name: program	scope: 0	type: int array
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

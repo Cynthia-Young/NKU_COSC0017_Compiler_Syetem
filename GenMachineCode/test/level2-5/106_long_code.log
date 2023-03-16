@@ -1,0 +1,3 @@
+test/level2-5/106_long_code.s: Assembler messages:
+test/level2-5/106_long_code.s:506: 错误： invalid constant (fb4) after fixup
+test/level2-5/106_long_code.s:608: 错误： invalid constant (fb4) after fixup

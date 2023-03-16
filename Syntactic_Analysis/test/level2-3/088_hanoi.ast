@@ -1,0 +1,110 @@
+program
+    Sequence
+        Sequence
+            FunctionDefine function name: move, type: void(int, int)
+                FuncDefParamsNode
+                    Id	name: x	scope: 1	type: int
+                    Id	name: y	scope: 1	type: int
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: x	scope: 1	type: int
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                            FuncCallParamsNode
+                                                IntegerLiteral	value: 32	type: int
+                                ExprStmtNode
+                                    FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                        FuncCallParamsNode
+                                            Id	name: y	scope: 1	type: int
+                            ExprStmtNode
+                                FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 44	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    IntegerLiteral	value: 32	type: int
+            FunctionDefine function name: hanoi, type: void(int, int, int, int)
+                FuncDefParamsNode
+                    Id	name: n	scope: 1	type: int
+                    Id	name: one	scope: 1	type: int
+                    Id	name: two	scope: 1	type: int
+                    Id	name: three	scope: 1	type: int
+                CompoundStmt
+                    IfElseStmt
+                        BinaryExpr	op: equal
+                            Id	name: n	scope: 1	type: int
+                            IntegerLiteral	value: 1	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: move	 funcType: void(int, int)	scope: 0
+                                FuncCallParamsNode
+                                    Id	name: one	scope: 1	type: int
+                                    Id	name: three	scope: 1	type: int
+                        CompoundStmt
+                            Sequence
+                                Sequence
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: hanoi	 funcType: void(int, int, int, int)	scope: 0
+                                            FuncCallParamsNode
+                                                BinaryExpr	op: sub
+                                                    Id	name: n	scope: 1	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                                                Id	name: one	scope: 1	type: int
+                                                Id	name: three	scope: 1	type: int
+                                                Id	name: two	scope: 1	type: int
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: move	 funcType: void(int, int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: one	scope: 1	type: int
+                                                Id	name: three	scope: 1	type: int
+                                ExprStmtNode
+                                    FuncCallNode	funcName: hanoi	 funcType: void(int, int, int, int)	scope: 0
+                                        FuncCallParamsNode
+                                            BinaryExpr	op: sub
+                                                Id	name: n	scope: 1	type: int
+                                                IntegerLiteral	value: 1	type: int
+                                            Id	name: two	scope: 1	type: int
+                                            Id	name: one	scope: 1	type: int
+                                            Id	name: three	scope: 1	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: n	scope: 2	type: int
+                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                FuncCallParamsNode NULL
+                        WhileStmt
+                            BinaryExpr	op: greater
+                                Id	name: n	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: hanoi	 funcType: void(int, int, int, int)	scope: 0
+                                                FuncCallParamsNode
+                                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                        FuncCallParamsNode NULL
+                                                    IntegerLiteral	value: 1	type: int
+                                                    IntegerLiteral	value: 2	type: int
+                                                    IntegerLiteral	value: 3	type: int
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                FuncCallParamsNode
+                                                    IntegerLiteral	value: 10	type: int
+                                    AssignStmt
+                                        Id	name: n	scope: 2	type: int
+                                        BinaryExpr	op: sub
+                                            Id	name: n	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

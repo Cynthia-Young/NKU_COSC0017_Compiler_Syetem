@@ -1,0 +1,14 @@
+typecheck fin
+program
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            ReturnStmt
+                Id	name: a	scope: 2	type: i32	size: 4

@@ -1,0 +1,360 @@
+program
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: c	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: d	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: result	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            AssignStmt
+                Id	name: b	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            AssignStmt
+                Id	name: c	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: d	scope: 2	type: i32	size: 4
+                SingleExpr	op: sub     type:i32
+                    IntegerLiteral	value: 2	type: i32
+            AssignStmt
+                Id	name: result	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 2	type: i32
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: less     type:i1
+                        BinaryExpr	op: div     type:i32
+                            BinaryExpr	op: mul     type:i32
+                                Id	name: d	scope: 2	type: i32	size: 4
+                                IntegerLiteral	value: 1	type: i32
+                            IntegerLiteral	value: 2	type: i32
+                        IntegerLiteral	value: 0	type: i32
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: neq     type:i1
+                            BinaryExpr	op: sub     type:i32
+                                Id	name: a	scope: 2	type: i32	size: 4
+                                Id	name: b	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 0	type: i32
+                        BinaryExpr	op: neq     type:i1
+                            BinaryExpr	op: mod     type:i32
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: c	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 3	type: i32
+                                IntegerLiteral	value: 2	type: i32
+                            IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: result	scope: 2	type: i32	size: 4
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: less     type:i1
+                        BinaryExpr	op: add     type:i32
+                            BinaryExpr	op: mod     type:i32
+                                Id	name: d	scope: 2	type: i32	size: 4
+                                IntegerLiteral	value: 2	type: i32
+                            IntegerLiteral	value: 67	type: i32
+                        IntegerLiteral	value: 0	type: i32
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: neq     type:i1
+                            BinaryExpr	op: sub     type:i32
+                                Id	name: a	scope: 2	type: i32	size: 4
+                                Id	name: b	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 0	type: i32
+                        BinaryExpr	op: neq     type:i1
+                            BinaryExpr	op: mod     type:i32
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: c	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 2	type: i32
+                                IntegerLiteral	value: 2	type: i32
+                            IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: result	scope: 2	type: i32	size: 4
+                        IntegerLiteral	value: 4	type: i32
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: result	scope: 2	type: i32	size: 4
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+program
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: a	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: c	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: d	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: result	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: a	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            AssignStmt
+                Id	name: b	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            AssignStmt
+                Id	name: c	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: d	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: -2	type: i32
+            AssignStmt
+                Id	name: result	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 2	type: i32
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: less     type:i1
+                        BinaryExpr	op: div     type:i32
+                            BinaryExpr	op: mul     type:i32
+                                Id	name: d	scope: 2	type: i32	size: 4
+                                IntegerLiteral	value: 1	type: i32
+                            IntegerLiteral	value: 2	type: i32
+                        IntegerLiteral	value: 0	type: i32
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: neq     type:i1
+                            BinaryExpr	op: sub     type:i32
+                                Id	name: a	scope: 2	type: i32	size: 4
+                                Id	name: b	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 0	type: i32
+                        BinaryExpr	op: neq     type:i1
+                            BinaryExpr	op: mod     type:i32
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: c	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 3	type: i32
+                                IntegerLiteral	value: 2	type: i32
+                            IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: result	scope: 2	type: i32	size: 4
+            IfStmt
+                BinaryExpr	op: or     type:i1
+                    BinaryExpr	op: less     type:i1
+                        BinaryExpr	op: add     type:i32
+                            BinaryExpr	op: mod     type:i32
+                                Id	name: d	scope: 2	type: i32	size: 4
+                                IntegerLiteral	value: 2	type: i32
+                            IntegerLiteral	value: 67	type: i32
+                        IntegerLiteral	value: 0	type: i32
+                    BinaryExpr	op: and     type:i1
+                        BinaryExpr	op: neq     type:i1
+                            BinaryExpr	op: sub     type:i32
+                                Id	name: a	scope: 2	type: i32	size: 4
+                                Id	name: b	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 0	type: i32
+                        BinaryExpr	op: neq     type:i1
+                            BinaryExpr	op: mod     type:i32
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: c	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 2	type: i32
+                                IntegerLiteral	value: 2	type: i32
+                            IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: result	scope: 2	type: i32	size: 4
+                        IntegerLiteral	value: 4	type: i32
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: result	scope: 2	type: i32	size: 4
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+DeclStmt::genCode
+DeclStmt::genCode
+DeclStmt::genCode
+DeclStmt::genCode
+DeclStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+ReturnStmt::genCode
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+#20
+#-20
+#-16
+#-12
+#-8
+#-4
+#-8
+#1
+#0
+#-4
+#-8
+#67
+#1
+#0
+#-20
+#-16
+#1
+#0
+#-12
+#3
+#1
+#0
+#-4
+#-4
+#0
+#-20
+#-16
+#1
+#0
+#-12
+#2
+#1
+#0
+#20
+TOTAL: 0H-0M-0S-0us

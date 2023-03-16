@@ -1,0 +1,3 @@
+test/array/106_long_code.s: Assembler messages:
+test/array/106_long_code.s:506: 错误： invalid constant (fb4) after fixup
+test/array/106_long_code.s:608: 错误： invalid constant (fb4) after fixup

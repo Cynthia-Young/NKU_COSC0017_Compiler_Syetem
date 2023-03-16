@@ -1,0 +1,18 @@
+program
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                IntegerLiteral	value: 3	type: i32
+program
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ReturnStmt
+                IntegerLiteral	value: 3	type: i32
+ReturnStmt::genCode
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+#0
+#3
+#0

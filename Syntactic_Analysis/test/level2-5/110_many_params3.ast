@@ -1,0 +1,542 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                FunctionDefine function name: testParam8, type: int(int, int, int, int, int, int, int, int)
+                    FuncDefParamsNode
+                        Id	name: a0	scope: 1	type: int
+                        Id	name: a1	scope: 1	type: int
+                        Id	name: a2	scope: 1	type: int
+                        Id	name: a3	scope: 1	type: int
+                        Id	name: a4	scope: 1	type: int
+                        Id	name: a5	scope: 1	type: int
+                        Id	name: a6	scope: 1	type: int
+                        Id	name: a7	scope: 1	type: int
+                    CompoundStmt
+                        ReturnStmt
+                            BinaryExpr	op: add
+                                BinaryExpr	op: add
+                                    BinaryExpr	op: sub
+                                        BinaryExpr	op: sub
+                                            BinaryExpr	op: sub
+                                                BinaryExpr	op: add
+                                                    BinaryExpr	op: sub
+                                                        Id	name: a0	scope: 1	type: int
+                                                        Id	name: a1	scope: 1	type: int
+                                                    Id	name: a2	scope: 1	type: int
+                                                Id	name: a3	scope: 1	type: int
+                                            Id	name: a4	scope: 1	type: int
+                                        Id	name: a5	scope: 1	type: int
+                                    Id	name: a6	scope: 1	type: int
+                                Id	name: a7	scope: 1	type: int
+                FunctionDefine function name: testParam16, type: int(int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int)
+                    FuncDefParamsNode
+                        Id	name: a0	scope: 1	type: int
+                        Id	name: a1	scope: 1	type: int
+                        Id	name: a2	scope: 1	type: int
+                        Id	name: a3	scope: 1	type: int
+                        Id	name: a4	scope: 1	type: int
+                        Id	name: a5	scope: 1	type: int
+                        Id	name: a6	scope: 1	type: int
+                        Id	name: a7	scope: 1	type: int
+                        Id	name: a8	scope: 1	type: int
+                        Id	name: a9	scope: 1	type: int
+                        Id	name: a10	scope: 1	type: int
+                        Id	name: a11	scope: 1	type: int
+                        Id	name: a12	scope: 1	type: int
+                        Id	name: a13	scope: 1	type: int
+                        Id	name: a14	scope: 1	type: int
+                        Id	name: a15	scope: 1	type: int
+                    CompoundStmt
+                        ReturnStmt
+                            BinaryExpr	op: add
+                                BinaryExpr	op: add
+                                    BinaryExpr	op: add
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: sub
+                                                    BinaryExpr	op: add
+                                                        BinaryExpr	op: sub
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: add
+                                                                    BinaryExpr	op: add
+                                                                        BinaryExpr	op: sub
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: add
+                                                                                    BinaryExpr	op: add
+                                                                                        Id	name: a0	scope: 1	type: int
+                                                                                        Id	name: a1	scope: 1	type: int
+                                                                                    Id	name: a2	scope: 1	type: int
+                                                                                Id	name: a3	scope: 1	type: int
+                                                                            Id	name: a4	scope: 1	type: int
+                                                                        Id	name: a5	scope: 1	type: int
+                                                                    Id	name: a6	scope: 1	type: int
+                                                                Id	name: a7	scope: 1	type: int
+                                                            Id	name: a8	scope: 1	type: int
+                                                        Id	name: a9	scope: 1	type: int
+                                                    Id	name: a10	scope: 1	type: int
+                                                Id	name: a11	scope: 1	type: int
+                                            Id	name: a12	scope: 1	type: int
+                                        Id	name: a13	scope: 1	type: int
+                                    Id	name: a14	scope: 1	type: int
+                                Id	name: a15	scope: 1	type: int
+            FunctionDefine function name: testParam32, type: int(int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int)
+                FuncDefParamsNode
+                    Id	name: a0	scope: 1	type: int
+                    Id	name: a1	scope: 1	type: int
+                    Id	name: a2	scope: 1	type: int
+                    Id	name: a3	scope: 1	type: int
+                    Id	name: a4	scope: 1	type: int
+                    Id	name: a5	scope: 1	type: int
+                    Id	name: a6	scope: 1	type: int
+                    Id	name: a7	scope: 1	type: int
+                    Id	name: a8	scope: 1	type: int
+                    Id	name: a9	scope: 1	type: int
+                    Id	name: a10	scope: 1	type: int
+                    Id	name: a11	scope: 1	type: int
+                    Id	name: a12	scope: 1	type: int
+                    Id	name: a13	scope: 1	type: int
+                    Id	name: a14	scope: 1	type: int
+                    Id	name: a15	scope: 1	type: int
+                    Id	name: a16	scope: 1	type: int
+                    Id	name: a17	scope: 1	type: int
+                    Id	name: a18	scope: 1	type: int
+                    Id	name: a19	scope: 1	type: int
+                    Id	name: a20	scope: 1	type: int
+                    Id	name: a21	scope: 1	type: int
+                    Id	name: a22	scope: 1	type: int
+                    Id	name: a23	scope: 1	type: int
+                    Id	name: a24	scope: 1	type: int
+                    Id	name: a25	scope: 1	type: int
+                    Id	name: a26	scope: 1	type: int
+                    Id	name: a27	scope: 1	type: int
+                    Id	name: a28	scope: 1	type: int
+                    Id	name: a29	scope: 1	type: int
+                    Id	name: a30	scope: 1	type: int
+                    Id	name: a31	scope: 1	type: int
+                CompoundStmt
+                    ReturnStmt
+                        BinaryExpr	op: add
+                            BinaryExpr	op: add
+                                BinaryExpr	op: add
+                                    BinaryExpr	op: add
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: add
+                                                    BinaryExpr	op: add
+                                                        BinaryExpr	op: add
+                                                            BinaryExpr	op: add
+                                                                BinaryExpr	op: sub
+                                                                    BinaryExpr	op: sub
+                                                                        BinaryExpr	op: sub
+                                                                            BinaryExpr	op: sub
+                                                                                BinaryExpr	op: sub
+                                                                                    BinaryExpr	op: sub
+                                                                                        BinaryExpr	op: sub
+                                                                                            BinaryExpr	op: sub
+                                                                                                BinaryExpr	op: sub
+                                                                                                    BinaryExpr	op: sub
+                                                                                                        BinaryExpr	op: add
+                                                                                                            BinaryExpr	op: add
+                                                                                                                BinaryExpr	op: add
+                                                                                                                    BinaryExpr	op: add
+                                                                                                                        BinaryExpr	op: add
+                                                                                                                            BinaryExpr	op: add
+                                                                                                                                BinaryExpr	op: add
+                                                                                                                                    BinaryExpr	op: add
+                                                                                                                                        BinaryExpr	op: add
+                                                                                                                                            BinaryExpr	op: add
+                                                                                                                                                Id	name: a0	scope: 1	type: int
+                                                                                                                                                BinaryExpr	op: multi
+                                                                                                                                                    Id	name: a1	scope: 1	type: int
+                                                                                                                                                    Id	name: a2	scope: 1	type: int
+                                                                                                                                            Id	name: a3	scope: 1	type: int
+                                                                                                                                        Id	name: a4	scope: 1	type: int
+                                                                                                                                    Id	name: a5	scope: 1	type: int
+                                                                                                                                Id	name: a6	scope: 1	type: int
+                                                                                                                            Id	name: a7	scope: 1	type: int
+                                                                                                                        Id	name: a8	scope: 1	type: int
+                                                                                                                    Id	name: a9	scope: 1	type: int
+                                                                                                                Id	name: a10	scope: 1	type: int
+                                                                                                            Id	name: a11	scope: 1	type: int
+                                                                                                        Id	name: a12	scope: 1	type: int
+                                                                                                    Id	name: a13	scope: 1	type: int
+                                                                                                Id	name: a14	scope: 1	type: int
+                                                                                            Id	name: a15	scope: 1	type: int
+                                                                                        Id	name: a16	scope: 1	type: int
+                                                                                    Id	name: a17	scope: 1	type: int
+                                                                                Id	name: a18	scope: 1	type: int
+                                                                            Id	name: a19	scope: 1	type: int
+                                                                        Id	name: a20	scope: 1	type: int
+                                                                    Id	name: a21	scope: 1	type: int
+                                                                Id	name: a22	scope: 1	type: int
+                                                            Id	name: a23	scope: 1	type: int
+                                                        Id	name: a24	scope: 1	type: int
+                                                    Id	name: a25	scope: 1	type: int
+                                                Id	name: a26	scope: 1	type: int
+                                            Id	name: a27	scope: 1	type: int
+                                        Id	name: a28	scope: 1	type: int
+                                    Id	name: a29	scope: 1	type: int
+                                Id	name: a30	scope: 1	type: int
+                            Id	name: a31	scope: 1	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            Sequence
+                                                                Sequence
+                                                                    Sequence
+                                                                        Sequence
+                                                                            Sequence
+                                                                                Sequence
+                                                                                    Sequence
+                                                                                        Sequence
+                                                                                            Sequence
+                                                                                                Sequence
+                                                                                                    Sequence
+                                                                                                        Sequence
+                                                                                                            Sequence
+                                                                                                                Sequence
+                                                                                                                    Sequence
+                                                                                                                        Sequence
+                                                                                                                            Sequence
+                                                                                                                                Sequence
+                                                                                                                                    Sequence
+                                                                                                                                        Sequence
+                                                                                                                                            Sequence
+                                                                                                                                                Sequence
+                                                                                                                                                    Sequence
+                                                                                                                                                        Sequence
+                                                                                                                                                            Sequence
+                                                                                                                                                                Sequence
+                                                                                                                                                                    Sequence
+                                                                                                                                                                        Sequence
+                                                                                                                                                                            Sequence
+                                                                                                                                                                                Sequence
+                                                                                                                                                                                    Sequence
+                                                                                                                                                                                        Sequence
+                                                                                                                                                                                            Sequence
+                                                                                                                                                                                                Sequence
+                                                                                                                                                                                                    Sequence
+                                                                                                                                                                                                        Sequence
+                                                                                                                                                                                                            Sequence
+                                                                                                                                                                                                                Sequence
+                                                                                                                                                                                                                    Sequence
+                                                                                                                                                                                                                        Sequence
+                                                                                                                                                                                                                            Sequence
+                                                                                                                                                                                                                                Sequence
+                                                                                                                                                                                                                                    Sequence
+                                                                                                                                                                                                                                        Sequence
+                                                                                                                                                                                                                                            Sequence
+                                                                                                                                                                                                                                                Sequence
+                                                                                                                                                                                                                                                    Sequence
+                                                                                                                                                                                                                                                        Sequence
+                                                                                                                                                                                                                                                            Sequence
+                                                                                                                                                                                                                                                                Sequence
+                                                                                                                                                                                                                                                                    Sequence
+                                                                                                                                                                                                                                                                        Sequence
+                                                                                                                                                                                                                                                                            Sequence
+                                                                                                                                                                                                                                                                                Sequence
+                                                                                                                                                                                                                                                                                    Sequence
+                                                                                                                                                                                                                                                                                        DeclStmt
+                                                                                                                                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                                            Id	name: a0	scope: 2	type: int
+                                                                                                                                                                                                                                                                                            null
+                                                                                                                                                                                                                                                                                        DeclStmt
+                                                                                                                                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                                            Id	name: a1	scope: 2	type: int
+                                                                                                                                                                                                                                                                                            null
+                                                                                                                                                                                                                                                                                    DeclStmt
+                                                                                                                                                                                                                                                                                    DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                                        Id	name: a2	scope: 2	type: int
+                                                                                                                                                                                                                                                                                        null
+                                                                                                                                                                                                                                                                                DeclStmt
+                                                                                                                                                                                                                                                                                DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                                    Id	name: a3	scope: 2	type: int
+                                                                                                                                                                                                                                                                                    null
+                                                                                                                                                                                                                                                                            DeclStmt
+                                                                                                                                                                                                                                                                            DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                                Id	name: a4	scope: 2	type: int
+                                                                                                                                                                                                                                                                                null
+                                                                                                                                                                                                                                                                        DeclStmt
+                                                                                                                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                            Id	name: a5	scope: 2	type: int
+                                                                                                                                                                                                                                                                            null
+                                                                                                                                                                                                                                                                    DeclStmt
+                                                                                                                                                                                                                                                                    DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                        Id	name: a6	scope: 2	type: int
+                                                                                                                                                                                                                                                                        null
+                                                                                                                                                                                                                                                                DeclStmt
+                                                                                                                                                                                                                                                                DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                    Id	name: a7	scope: 2	type: int
+                                                                                                                                                                                                                                                                    null
+                                                                                                                                                                                                                                                            DeclStmt
+                                                                                                                                                                                                                                                            DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                                Id	name: a8	scope: 2	type: int
+                                                                                                                                                                                                                                                                null
+                                                                                                                                                                                                                                                        DeclStmt
+                                                                                                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                            Id	name: a9	scope: 2	type: int
+                                                                                                                                                                                                                                                            null
+                                                                                                                                                                                                                                                    DeclStmt
+                                                                                                                                                                                                                                                    DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                        Id	name: a10	scope: 2	type: int
+                                                                                                                                                                                                                                                        null
+                                                                                                                                                                                                                                                DeclStmt
+                                                                                                                                                                                                                                                DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                    Id	name: a11	scope: 2	type: int
+                                                                                                                                                                                                                                                    null
+                                                                                                                                                                                                                                            DeclStmt
+                                                                                                                                                                                                                                            DefNode	Variable	NonArray
+                                                                                                                                                                                                                                                Id	name: a12	scope: 2	type: int
+                                                                                                                                                                                                                                                null
+                                                                                                                                                                                                                                        DeclStmt
+                                                                                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                                                                                            Id	name: a13	scope: 2	type: int
+                                                                                                                                                                                                                                            null
+                                                                                                                                                                                                                                    DeclStmt
+                                                                                                                                                                                                                                    DefNode	Variable	NonArray
+                                                                                                                                                                                                                                        Id	name: a14	scope: 2	type: int
+                                                                                                                                                                                                                                        null
+                                                                                                                                                                                                                                DeclStmt
+                                                                                                                                                                                                                                DefNode	Variable	NonArray
+                                                                                                                                                                                                                                    Id	name: a15	scope: 2	type: int
+                                                                                                                                                                                                                                    null
+                                                                                                                                                                                                                            DeclStmt
+                                                                                                                                                                                                                            DefNode	Variable	NonArray
+                                                                                                                                                                                                                                Id	name: a16	scope: 2	type: int
+                                                                                                                                                                                                                                null
+                                                                                                                                                                                                                        DeclStmt
+                                                                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                                                                            Id	name: a17	scope: 2	type: int
+                                                                                                                                                                                                                            null
+                                                                                                                                                                                                                    DeclStmt
+                                                                                                                                                                                                                    DefNode	Variable	NonArray
+                                                                                                                                                                                                                        Id	name: a18	scope: 2	type: int
+                                                                                                                                                                                                                        null
+                                                                                                                                                                                                                DeclStmt
+                                                                                                                                                                                                                DefNode	Variable	NonArray
+                                                                                                                                                                                                                    Id	name: a19	scope: 2	type: int
+                                                                                                                                                                                                                    null
+                                                                                                                                                                                                            DeclStmt
+                                                                                                                                                                                                            DefNode	Variable	NonArray
+                                                                                                                                                                                                                Id	name: a20	scope: 2	type: int
+                                                                                                                                                                                                                null
+                                                                                                                                                                                                        DeclStmt
+                                                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                                                            Id	name: a21	scope: 2	type: int
+                                                                                                                                                                                                            null
+                                                                                                                                                                                                    DeclStmt
+                                                                                                                                                                                                    DefNode	Variable	NonArray
+                                                                                                                                                                                                        Id	name: a22	scope: 2	type: int
+                                                                                                                                                                                                        null
+                                                                                                                                                                                                DeclStmt
+                                                                                                                                                                                                DefNode	Variable	NonArray
+                                                                                                                                                                                                    Id	name: a23	scope: 2	type: int
+                                                                                                                                                                                                    null
+                                                                                                                                                                                            DeclStmt
+                                                                                                                                                                                            DefNode	Variable	NonArray
+                                                                                                                                                                                                Id	name: a24	scope: 2	type: int
+                                                                                                                                                                                                null
+                                                                                                                                                                                        DeclStmt
+                                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                                            Id	name: a25	scope: 2	type: int
+                                                                                                                                                                                            null
+                                                                                                                                                                                    DeclStmt
+                                                                                                                                                                                    DefNode	Variable	NonArray
+                                                                                                                                                                                        Id	name: a26	scope: 2	type: int
+                                                                                                                                                                                        null
+                                                                                                                                                                                DeclStmt
+                                                                                                                                                                                DefNode	Variable	NonArray
+                                                                                                                                                                                    Id	name: a27	scope: 2	type: int
+                                                                                                                                                                                    null
+                                                                                                                                                                            DeclStmt
+                                                                                                                                                                            DefNode	Variable	NonArray
+                                                                                                                                                                                Id	name: a28	scope: 2	type: int
+                                                                                                                                                                                null
+                                                                                                                                                                        DeclStmt
+                                                                                                                                                                        DefNode	Variable	NonArray
+                                                                                                                                                                            Id	name: a29	scope: 2	type: int
+                                                                                                                                                                            null
+                                                                                                                                                                    DeclStmt
+                                                                                                                                                                    DefNode	Variable	NonArray
+                                                                                                                                                                        Id	name: a30	scope: 2	type: int
+                                                                                                                                                                        null
+                                                                                                                                                                DeclStmt
+                                                                                                                                                                DefNode	Variable	NonArray
+                                                                                                                                                                    Id	name: a31	scope: 2	type: int
+                                                                                                                                                                    null
+                                                                                                                                                            AssignStmt
+                                                                                                                                                                Id	name: a0	scope: 2	type: int
+                                                                                                                                                                IntegerLiteral	value: 0	type: int
+                                                                                                                                                        AssignStmt
+                                                                                                                                                            Id	name: a1	scope: 2	type: int
+                                                                                                                                                            IntegerLiteral	value: 1	type: int
+                                                                                                                                                    AssignStmt
+                                                                                                                                                        Id	name: a2	scope: 2	type: int
+                                                                                                                                                        IntegerLiteral	value: 2	type: int
+                                                                                                                                                AssignStmt
+                                                                                                                                                    Id	name: a3	scope: 2	type: int
+                                                                                                                                                    IntegerLiteral	value: 3	type: int
+                                                                                                                                            AssignStmt
+                                                                                                                                                Id	name: a4	scope: 2	type: int
+                                                                                                                                                IntegerLiteral	value: 4	type: int
+                                                                                                                                        AssignStmt
+                                                                                                                                            Id	name: a5	scope: 2	type: int
+                                                                                                                                            IntegerLiteral	value: 5	type: int
+                                                                                                                                    AssignStmt
+                                                                                                                                        Id	name: a6	scope: 2	type: int
+                                                                                                                                        IntegerLiteral	value: 6	type: int
+                                                                                                                                AssignStmt
+                                                                                                                                    Id	name: a7	scope: 2	type: int
+                                                                                                                                    IntegerLiteral	value: 7	type: int
+                                                                                                                            AssignStmt
+                                                                                                                                Id	name: a8	scope: 2	type: int
+                                                                                                                                IntegerLiteral	value: 8	type: int
+                                                                                                                        AssignStmt
+                                                                                                                            Id	name: a9	scope: 2	type: int
+                                                                                                                            IntegerLiteral	value: 9	type: int
+                                                                                                                    AssignStmt
+                                                                                                                        Id	name: a10	scope: 2	type: int
+                                                                                                                        IntegerLiteral	value: 0	type: int
+                                                                                                                AssignStmt
+                                                                                                                    Id	name: a11	scope: 2	type: int
+                                                                                                                    IntegerLiteral	value: 1	type: int
+                                                                                                            AssignStmt
+                                                                                                                Id	name: a12	scope: 2	type: int
+                                                                                                                IntegerLiteral	value: 2	type: int
+                                                                                                        AssignStmt
+                                                                                                            Id	name: a13	scope: 2	type: int
+                                                                                                            IntegerLiteral	value: 3	type: int
+                                                                                                    AssignStmt
+                                                                                                        Id	name: a14	scope: 2	type: int
+                                                                                                        IntegerLiteral	value: 4	type: int
+                                                                                                AssignStmt
+                                                                                                    Id	name: a15	scope: 2	type: int
+                                                                                                    IntegerLiteral	value: 5	type: int
+                                                                                            AssignStmt
+                                                                                                Id	name: a16	scope: 2	type: int
+                                                                                                IntegerLiteral	value: 6	type: int
+                                                                                        AssignStmt
+                                                                                            Id	name: a17	scope: 2	type: int
+                                                                                            IntegerLiteral	value: 7	type: int
+                                                                                    AssignStmt
+                                                                                        Id	name: a18	scope: 2	type: int
+                                                                                        IntegerLiteral	value: 8	type: int
+                                                                                AssignStmt
+                                                                                    Id	name: a19	scope: 2	type: int
+                                                                                    IntegerLiteral	value: 9	type: int
+                                                                            AssignStmt
+                                                                                Id	name: a20	scope: 2	type: int
+                                                                                IntegerLiteral	value: 0	type: int
+                                                                        AssignStmt
+                                                                            Id	name: a21	scope: 2	type: int
+                                                                            IntegerLiteral	value: 1	type: int
+                                                                    AssignStmt
+                                                                        Id	name: a22	scope: 2	type: int
+                                                                        IntegerLiteral	value: 2	type: int
+                                                                AssignStmt
+                                                                    Id	name: a23	scope: 2	type: int
+                                                                    IntegerLiteral	value: 3	type: int
+                                                            AssignStmt
+                                                                Id	name: a24	scope: 2	type: int
+                                                                IntegerLiteral	value: 4	type: int
+                                                        AssignStmt
+                                                            Id	name: a25	scope: 2	type: int
+                                                            IntegerLiteral	value: 5	type: int
+                                                    AssignStmt
+                                                        Id	name: a26	scope: 2	type: int
+                                                        IntegerLiteral	value: 6	type: int
+                                                AssignStmt
+                                                    Id	name: a27	scope: 2	type: int
+                                                    IntegerLiteral	value: 7	type: int
+                                            AssignStmt
+                                                Id	name: a28	scope: 2	type: int
+                                                IntegerLiteral	value: 8	type: int
+                                        AssignStmt
+                                            Id	name: a29	scope: 2	type: int
+                                            IntegerLiteral	value: 9	type: int
+                                    AssignStmt
+                                        Id	name: a30	scope: 2	type: int
+                                        IntegerLiteral	value: 0	type: int
+                                AssignStmt
+                                    Id	name: a31	scope: 2	type: int
+                                    IntegerLiteral	value: 1	type: int
+                            AssignStmt
+                                Id	name: a0	scope: 2	type: int
+                                FuncCallNode	funcName: testParam32	 funcType: int(int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int)	scope: 0
+                                    FuncCallParamsNode
+                                        FuncCallNode	funcName: testParam16	 funcType: int(int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int)	scope: 0
+                                            FuncCallParamsNode
+                                                FuncCallNode	funcName: testParam8	 funcType: int(int, int, int, int, int, int, int, int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: a0	scope: 2	type: int
+                                                        Id	name: a1	scope: 2	type: int
+                                                        Id	name: a2	scope: 2	type: int
+                                                        Id	name: a3	scope: 2	type: int
+                                                        Id	name: a4	scope: 2	type: int
+                                                        Id	name: a5	scope: 2	type: int
+                                                        Id	name: a6	scope: 2	type: int
+                                                        Id	name: a7	scope: 2	type: int
+                                                Id	name: a1	scope: 2	type: int
+                                                Id	name: a2	scope: 2	type: int
+                                                Id	name: a3	scope: 2	type: int
+                                                Id	name: a4	scope: 2	type: int
+                                                Id	name: a5	scope: 2	type: int
+                                                Id	name: a6	scope: 2	type: int
+                                                Id	name: a7	scope: 2	type: int
+                                                Id	name: a8	scope: 2	type: int
+                                                Id	name: a9	scope: 2	type: int
+                                                Id	name: a10	scope: 2	type: int
+                                                Id	name: a11	scope: 2	type: int
+                                                Id	name: a12	scope: 2	type: int
+                                                Id	name: a13	scope: 2	type: int
+                                                Id	name: a14	scope: 2	type: int
+                                                Id	name: a15	scope: 2	type: int
+                                        Id	name: a1	scope: 2	type: int
+                                        Id	name: a2	scope: 2	type: int
+                                        Id	name: a3	scope: 2	type: int
+                                        Id	name: a4	scope: 2	type: int
+                                        Id	name: a5	scope: 2	type: int
+                                        Id	name: a6	scope: 2	type: int
+                                        Id	name: a7	scope: 2	type: int
+                                        Id	name: a8	scope: 2	type: int
+                                        Id	name: a9	scope: 2	type: int
+                                        Id	name: a10	scope: 2	type: int
+                                        Id	name: a11	scope: 2	type: int
+                                        Id	name: a12	scope: 2	type: int
+                                        Id	name: a13	scope: 2	type: int
+                                        Id	name: a14	scope: 2	type: int
+                                        Id	name: a15	scope: 2	type: int
+                                        Id	name: a16	scope: 2	type: int
+                                        Id	name: a17	scope: 2	type: int
+                                        Id	name: a18	scope: 2	type: int
+                                        Id	name: a19	scope: 2	type: int
+                                        Id	name: a20	scope: 2	type: int
+                                        Id	name: a21	scope: 2	type: int
+                                        Id	name: a22	scope: 2	type: int
+                                        Id	name: a23	scope: 2	type: int
+                                        Id	name: a24	scope: 2	type: int
+                                        Id	name: a25	scope: 2	type: int
+                                        Id	name: a26	scope: 2	type: int
+                                        Id	name: a27	scope: 2	type: int
+                                        Id	name: a28	scope: 2	type: int
+                                        Id	name: a29	scope: 2	type: int
+                                        Id	name: a30	scope: 2	type: int
+                                        Id	name: a31	scope: 2	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    Id	name: a0	scope: 2	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

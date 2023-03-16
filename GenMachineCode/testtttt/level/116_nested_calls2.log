@@ -1,0 +1,55 @@
+typecheck fin
+program
+    FunctionDefine function name: @f, type: i32
+        FuncDefParamsNode
+            Id	name: %a	scope: 1	type: i32	size: 4
+            Id	name: %b	scope: 1	type: i32	size: 4
+        CompoundStmt
+            ReturnStmt
+                BinaryExpr	op: mul     type:i32
+                    Id	name: %a	scope: 1	type: i32	size: 4
+                    Id	name: %b	scope: 1	type: i32	size: 4
+    FunctionDefine function name: @g, type: i32
+        FuncDefParamsNode
+            Id	name: %a	scope: 1	type: i32	size: 4
+            Id	name: %b	scope: 1	type: i32	size: 4
+        CompoundStmt
+            ReturnStmt
+                BinaryExpr	op: mod     type:i32
+                    Id	name: %a	scope: 1	type: i32	size: 4
+                    Id	name: %b	scope: 1	type: i32	size: 4
+    FunctionDefine function name: @h, type: i32
+        FuncDefParamsNode
+            Id	name: %a	scope: 1	type: i32	size: 4
+            Id	name: %b	scope: 1	type: i32	size: 4
+        CompoundStmt
+            ReturnStmt
+                FuncCallNode	funcName: @f	 funcType: i32	scope: 0
+                    FuncCallParamsNode
+                        FuncCallNode	funcName: @f	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 2	type: i32
+                                FuncCallNode	funcName: @g	 funcType: i32	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: %a	scope: 1	type: i32	size: 4
+                                        Id	name: %b	scope: 1	type: i32	size: 4
+                        FuncCallNode	funcName: @g	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                FuncCallNode	funcName: @f	 funcType: i32	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: %a	scope: 1	type: i32	size: 4
+                                        Id	name: %b	scope: 1	type: i32	size: 4
+                                IntegerLiteral	value: 4	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        FuncCallNode	funcName: @h	 funcType: i32	scope: 0
+                            FuncCallParamsNode
+                                IntegerLiteral	value: 11	type: i32
+                                IntegerLiteral	value: 3	type: i32
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

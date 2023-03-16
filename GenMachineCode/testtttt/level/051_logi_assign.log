@@ -1,0 +1,44 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @b	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            AssignStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+                FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                    FuncCallParamsNode NULL
+            AssignStmt
+                Id	name: @b	scope: 0	type: i32	size: 4
+                FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                    FuncCallParamsNode NULL
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: c	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            IfElseStmt
+                BinaryExpr	op: and     type:i1
+                    BinaryExpr	op: eq     type:i1
+                        Id	name: @a	scope: 0	type: i32	size: 4
+                        Id	name: @b	scope: 0	type: i32	size: 4
+                    BinaryExpr	op: neq     type:i1
+                        Id	name: @a	scope: 0	type: i32	size: 4
+                        IntegerLiteral	value: 3	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: c	scope: 2	type: i32	size: 4
+                        IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: c	scope: 2	type: i32	size: 4
+                        IntegerLiteral	value: 0	type: i32
+            ReturnStmt
+                Id	name: c	scope: 2	type: i32	size: 4
+TOTAL: 0H-0M-0S-0us

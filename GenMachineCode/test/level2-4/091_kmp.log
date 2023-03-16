@@ -1,0 +1,10 @@
+test/level2-4/091_kmp.s: Assembler messages:
+test/level2-4/091_kmp.s:110: 错误： invalid constant (4010) after fixup
+test/level2-4/091_kmp.s:116: 错误： bad immediate value for offset (16400)
+test/level2-4/091_kmp.s:120: 错误： invalid constant (ffffffffffffbff8) after fixup
+test/level2-4/091_kmp.s:132: 错误： bad immediate value for offset (16396)
+test/level2-4/091_kmp.s:145: 错误： bad immediate value for offset (16400)
+test/level2-4/091_kmp.s:151: 错误： bad immediate value for offset (16396)
+test/level2-4/091_kmp.s:171: 错误： bad immediate value for offset (16400)
+test/level2-4/091_kmp.s:198: 错误： invalid constant (ffffffffffffbff8) after fixup
+test/level2-4/091_kmp.s:226: 错误： invalid constant (4010) after fixup

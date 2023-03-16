@@ -1,0 +1,57 @@
+program
+    Sequence
+        FunctionDefine function name: reverse, type: void(int)
+            FuncDefParamsNode
+                Id	name: n	scope: 1	type: int
+            CompoundStmt
+                Sequence
+                    DeclStmt
+                    DefNode	Variable	NonArray
+                        Id	name: next	scope: 2	type: int
+                        null
+                    IfElseStmt
+                        BinaryExpr	op: lessorequal
+                            Id	name: n	scope: 1	type: int
+                            IntegerLiteral	value: 1	type: int
+                        CompoundStmt
+                            Sequence
+                                AssignStmt
+                                    Id	name: next	scope: 2	type: int
+                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                        FuncCallParamsNode NULL
+                                ExprStmtNode
+                                    FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                        FuncCallParamsNode
+                                            Id	name: next	scope: 2	type: int
+                        CompoundStmt
+                            Sequence
+                                Sequence
+                                    AssignStmt
+                                        Id	name: next	scope: 2	type: int
+                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                            FuncCallParamsNode NULL
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: reverse	 funcType: void(int)	scope: 0
+                                            FuncCallParamsNode
+                                                BinaryExpr	op: sub
+                                                    Id	name: n	scope: 1	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                                ExprStmtNode
+                                    FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                        FuncCallParamsNode
+                                            Id	name: next	scope: 2	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: i	scope: 2	type: int
+                            IntegerLiteral	value: 200	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: reverse	 funcType: void(int)	scope: 0
+                                FuncCallParamsNode
+                                    Id	name: i	scope: 2	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

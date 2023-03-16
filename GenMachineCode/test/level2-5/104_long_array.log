@@ -1,0 +1,20 @@
+test/level2-5/104_long_array.s: Assembler messages:
+test/level2-5/104_long_array.s:11: 错误： invalid constant (1d4d4) after fixup
+test/level2-5/104_long_array.s:37: 错误： invalid constant (fffffffffffe2b30) after fixup
+test/level2-5/104_long_array.s:62: 错误： invalid constant (fffffffffffe2b30) after fixup
+test/level2-5/104_long_array.s:68: 错误： invalid constant (fffffffffffe2b30) after fixup
+test/level2-5/104_long_array.s:79: 错误： invalid constant (fffffffffffec770) after fixup
+test/level2-5/104_long_array.s:104: 错误： invalid constant (fffffffffffec770) after fixup
+test/level2-5/104_long_array.s:110: 错误： invalid constant (fffffffffffec770) after fixup
+test/level2-5/104_long_array.s:121: 错误： invalid constant (fffffffffffe2b30) after fixup
+test/level2-5/104_long_array.s:128: 错误： invalid constant (ffffffffffff63b0) after fixup
+test/level2-5/104_long_array.s:166: 错误： invalid constant (ffffffffffff63b0) after fixup
+test/level2-5/104_long_array.s:228: 错误： invalid constant (ffffffffffff63b0) after fixup
+test/level2-5/104_long_array.s:235: 错误： invalid constant (fffffffffffe2b30) after fixup
+test/level2-5/104_long_array.s:270: 错误： invalid constant (ffffffffffff63b0) after fixup
+test/level2-5/104_long_array.s:273: 错误： bad immediate value for offset (120020)
+test/level2-5/104_long_array.s:301: 错误： invalid constant (fffffffffffec770) after fixup
+test/level2-5/104_long_array.s:308: 错误： invalid constant (fffffffffffe2b30) after fixup
+test/level2-5/104_long_array.s:331: 错误： invalid constant (fffffffffffe2b30) after fixup
+test/level2-5/104_long_array.s:338: 错误： invalid constant (ffffffffffff63b0) after fixup
+test/level2-5/104_long_array.s:352: 错误： invalid constant (1d4d4) after fixup

@@ -1,0 +1,541 @@
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @b	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 1	type: i32
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        SingleExpr	op: sub     type:i32
+            IntegerLiteral	value: 1	type: i32
+    FunctionDefine function name: @inc_a, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                Id	name: @a	scope: 0	type: i32	size: 4
+            AssignStmt
+                Id	name: b	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    Id	name: b	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+                Id	name: b	scope: 2	type: i32	size: 4
+            ReturnStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: k	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            WhileStmt
+                BinaryExpr	op: greateq     type:i1
+                    Id	name: k	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    IfStmt
+                        BinaryExpr	op: and     type:i1
+                            BinaryExpr	op: and     type:i1
+                                FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                                FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                            FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                FuncCallParamsNode NULL
+                        CompoundStmt
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: @a	scope: 0	type: i32	size: 4
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 32	type: i32
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: @b	scope: 0	type: i32	size: 4
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 10	type: i32
+                    IfElseStmt
+                        BinaryExpr	op: or     type:i1
+                            BinaryExpr	op: less     type:i1
+                                FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                                IntegerLiteral	value: 14	type: i32
+                            BinaryExpr	op: and     type:i1
+                                FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                                BinaryExpr	op: add     type:i32
+                                    BinaryExpr	op: sub     type:i32
+                                        FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                            FuncCallParamsNode NULL
+                                        FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                            FuncCallParamsNode NULL
+                                    IntegerLiteral	value: 1	type: i32
+                        CompoundStmt
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: @a	scope: 0	type: i32	size: 4
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 10	type: i32
+                            AssignStmt
+                                Id	name: @b	scope: 0	type: i32	size: 4
+                                BinaryExpr	op: mul     type:i32
+                                    Id	name: @b	scope: 0	type: i32	size: 4
+                                    IntegerLiteral	value: 2	type: i32
+                        CompoundStmt
+                            ExprStmtNode
+                                FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                    AssignStmt
+                        Id	name: k	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: k	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @a	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 32	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @b	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 10	type: i32
+            ReturnStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @b	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 1	type: i32
+    DefNode	Variable	NonArray
+        Id	name: @a	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: -1	type: i32
+    FunctionDefine function name: @inc_a, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: b	scope: 2	type: i32	size: 4
+                Id	name: @a	scope: 0	type: i32	size: 4
+            AssignStmt
+                Id	name: b	scope: 2	type: i32	size: 4
+                BinaryExpr	op: add     type:i32
+                    Id	name: b	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+                Id	name: b	scope: 2	type: i32	size: 4
+            ReturnStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: k	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 5	type: i32
+            WhileStmt
+                BinaryExpr	op: greateq     type:i1
+                    Id	name: k	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 0	type: i32
+                CompoundStmt
+                    IfStmt
+                        BinaryExpr	op: and     type:i1
+                            BinaryExpr	op: and     type:i1
+                                BinaryExpr	op: neq     type:i1
+                                    IntegerLiteral	value: 0	type: i32
+                                    FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                        FuncCallParamsNode NULL
+                                BinaryExpr	op: neq     type:i1
+                                    IntegerLiteral	value: 0	type: i32
+                                    FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                        FuncCallParamsNode NULL
+                            BinaryExpr	op: neq     type:i1
+                                IntegerLiteral	value: 0	type: i32
+                                FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                        CompoundStmt
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: @a	scope: 0	type: i32	size: 4
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 32	type: i32
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: @b	scope: 0	type: i32	size: 4
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 10	type: i32
+                    IfElseStmt
+                        BinaryExpr	op: or     type:i1
+                            BinaryExpr	op: less     type:i1
+                                FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                                IntegerLiteral	value: 14	type: i32
+                            BinaryExpr	op: and     type:i1
+                                BinaryExpr	op: neq     type:i1
+                                    IntegerLiteral	value: 0	type: i32
+                                    FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                        FuncCallParamsNode NULL
+                                BinaryExpr	op: neq     type:i1
+                                    IntegerLiteral	value: 0	type: i32
+                                    BinaryExpr	op: add     type:i32
+                                        BinaryExpr	op: sub     type:i32
+                                            FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                                FuncCallParamsNode NULL
+                                            FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                                FuncCallParamsNode NULL
+                                        IntegerLiteral	value: 1	type: i32
+                        CompoundStmt
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        Id	name: @a	scope: 0	type: i32	size: 4
+                            ExprStmtNode
+                                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                                    FuncCallParamsNode
+                                        IntegerLiteral	value: 10	type: i32
+                            AssignStmt
+                                Id	name: @b	scope: 0	type: i32	size: 4
+                                BinaryExpr	op: mul     type:i32
+                                    Id	name: @b	scope: 0	type: i32	size: 4
+                                    IntegerLiteral	value: 2	type: i32
+                        CompoundStmt
+                            ExprStmtNode
+                                FuncCallNode	funcName: @inc_a	 funcType: i32	scope: 0
+                                    FuncCallParamsNode NULL
+                    AssignStmt
+                        Id	name: k	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: k	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @a	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 32	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @b	scope: 0	type: i32	size: 4
+            ExprStmtNode
+                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        IntegerLiteral	value: 10	type: i32
+            ReturnStmt
+                Id	name: @a	scope: 0	type: i32	size: 4
+DeclStmt::genCode
+new StoreInstruction src:1743500960
+new StoreInstruction src:1743500960
+DeclStmt::genCode
+new StoreInstruction src:1743500960
+AssignStmt::genCode
+AssignStmt::genCode
+ReturnStmt::genCode
+DeclStmt::genCode
+new StoreInstruction src:1743500960
+WhileStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+ReturnStmt::genCode
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+AllocaInstruction::genMachineCode
+AllocaInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode1
+CallInstruction::genMachineCode2
+CallInstruction::genMachineCode3
+CallInstruction::genMachineCode4
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode3
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode5
+CallInstruction::genMachineCode6
+CallInstruction::genMachineCode7
+CallInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+#4
+#-4
+#-4
+#1
+#-4
+#-4
+#4
+#4
+#-4
+#-4
+#1
+#0
+#1
+#0
+#32
+#10
+#32
+#10
+#1
+#0
+#1
+#0
+#1
+#0
+#10
+#-4
+#1
+#-4
+#1
+#0
+#1
+#1
+#0
+#4
+TOTAL: 0H-0M-0S-0us

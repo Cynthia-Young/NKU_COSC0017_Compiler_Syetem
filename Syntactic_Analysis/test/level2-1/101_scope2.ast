@@ -1,0 +1,87 @@
+program
+    Sequence
+        DeclStmt
+        DefNode	Variable	NonArray
+            Id	name: k	scope: 0	type: int
+            null
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        AssignStmt
+                            Id	name: k	scope: 0	type: int
+                            IntegerLiteral	value: 3389	type: int
+                        IfStmt
+                            BinaryExpr	op: less
+                                Id	name: k	scope: 0	type: int
+                                IntegerLiteral	value: 10000	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            AssignStmt
+                                                Id	name: k	scope: 0	type: int
+                                                BinaryExpr	op: add
+                                                    Id	name: k	scope: 0	type: int
+                                                    IntegerLiteral	value: 1	type: int
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: k	scope: 3	type: int
+                                                IntegerLiteral	value: 112	type: int
+                                        WhileStmt
+                                            BinaryExpr	op: greater
+                                                Id	name: k	scope: 3	type: int
+                                                IntegerLiteral	value: 10	type: int
+                                            CompoundStmt
+                                                Sequence
+                                                    AssignStmt
+                                                        Id	name: k	scope: 3	type: int
+                                                        BinaryExpr	op: sub
+                                                            Id	name: k	scope: 3	type: int
+                                                            IntegerLiteral	value: 88	type: int
+                                                    IfStmt
+                                                        BinaryExpr	op: less
+                                                            Id	name: k	scope: 3	type: int
+                                                            IntegerLiteral	value: 1000	type: int
+                                                        CompoundStmt
+                                                            Sequence
+                                                                DeclStmt
+                                                                DefNode	Variable	NonArray
+                                                                    Id	name: g	scope: 5	type: int
+                                                                    IntegerLiteral	value: 9	type: int
+                                                                CompoundStmt
+                                                                    Sequence
+                                                                        DeclStmt
+                                                                        DefNode	Variable	NonArray
+                                                                            Id	name: l	scope: 6	type: int
+                                                                            IntegerLiteral	value: 11	type: int
+                                                                        CompoundStmt
+                                                                            Sequence
+                                                                                Sequence
+                                                                                    Sequence
+                                                                                        AssignStmt
+                                                                                            Id	name: g	scope: 5	type: int
+                                                                                            IntegerLiteral	value: 10	type: int
+                                                                                        AssignStmt
+                                                                                            Id	name: k	scope: 3	type: int
+                                                                                            BinaryExpr	op: sub
+                                                                                                Id	name: k	scope: 3	type: int
+                                                                                                Id	name: g	scope: 5	type: int
+                                                                                    DeclStmt
+                                                                                    DefNode	Variable	NonArray
+                                                                                        Id	name: g	scope: 7	type: int
+                                                                                        IntegerLiteral	value: 11	type: int
+                                                                                AssignStmt
+                                                                                    Id	name: k	scope: 3	type: int
+                                                                                    BinaryExpr	op: add
+                                                                                        BinaryExpr	op: add
+                                                                                            Id	name: k	scope: 3	type: int
+                                                                                            Id	name: g	scope: 7	type: int
+                                                                                        Id	name: l	scope: 6	type: int
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                            FuncCallParamsNode
+                                                Id	name: k	scope: 3	type: int
+                    ReturnStmt
+                        Id	name: k	scope: 0	type: int

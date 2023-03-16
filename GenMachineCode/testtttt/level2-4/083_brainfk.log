@@ -1,0 +1,1079 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Const	NonArray
+        Id	name: 65536	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 65536	type: i32
+    DefNode	Const	NonArray
+        Id	name: 32768	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 32768	type: i32
+    DeclStmt
+    DefNode	Variable	Array
+        Id	name: @tape	scope: 0	type: int array	size: 262144
+            ArrayDimensions
+            ArrDim
+                IntegerLiteral	value: 65536	type: i32
+        This variable/constant is not assigned
+    DefNode	Variable	Array
+        Id	name: @program	scope: 0	type: int array	size: 131072
+            ArrayDimensions
+            ArrDim
+                IntegerLiteral	value: 32768	type: i32
+        This variable/constant is not assigned
+    DefNode	Variable	NonArray
+        Id	name: @ptr	scope: 0	type: i32	size: 4
+        IntegerLiteral	value: 0	type: i32
+    FunctionDefine function name: @read_program, type: void
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            DefNode	Variable	NonArray
+                Id	name: len	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                    FuncCallParamsNode NULL
+            WhileStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    Id	name: len	scope: 2	type: i32	size: 4
+                CompoundStmt
+                    AssignStmt
+                        Id	name: @program	scope: 0	type: int array	size: 131072
+                            ArrayDimensions
+                            ArrDim
+                                Id	name: i	scope: 2	type: i32	size: 4
+                        FuncCallNode	funcName: @getch	 funcType: i32	scope: 0
+                            FuncCallParamsNode NULL
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: i	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            AssignStmt
+                Id	name: @program	scope: 0	type: int array	size: 131072
+                    ArrayDimensions
+                    ArrDim
+                        Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+    FunctionDefine function name: @interpret, type: void
+        FuncDefParamsNode
+            Id	name: %input	scope: 1	type: int array	size: 4
+                ArrayDimensions
+                ArrDim
+                    IntegerLiteral	value: -1	type: i32
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: cur_char	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DefNode	Variable	NonArray
+                Id	name: loop	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            WhileStmt
+                BinaryExpr	op: neq     type:i1
+                    IntegerLiteral	value: 0	type: i32
+                    Id	name: %input	scope: 1	type: int array	size: 4
+                        ArrayDimensions
+                        ArrDim
+                            Id	name: i	scope: 2	type: i32	size: 4
+                CompoundStmt
+                    AssignStmt
+                        Id	name: cur_char	scope: 2	type: i32	size: 4
+                        Id	name: %input	scope: 1	type: int array	size: 4
+                            ArrayDimensions
+                            ArrDim
+                                Id	name: i	scope: 2	type: i32	size: 4
+                    IfElseStmt
+                        BinaryExpr	op: eq     type:i1
+                            Id	name: cur_char	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 62	type: i32
+                        CompoundStmt
+                            AssignStmt
+                                Id	name: @ptr	scope: 0	type: i32	size: 4
+                                BinaryExpr	op: add     type:i32
+                                    Id	name: @ptr	scope: 0	type: i32	size: 4
+                                    IntegerLiteral	value: 1	type: i32
+                        IfElseStmt
+                            BinaryExpr	op: eq     type:i1
+                                Id	name: cur_char	scope: 2	type: i32	size: 4
+                                IntegerLiteral	value: 60	type: i32
+                            CompoundStmt
+                                AssignStmt
+                                    Id	name: @ptr	scope: 0	type: i32	size: 4
+                                    BinaryExpr	op: sub     type:i32
+                                        Id	name: @ptr	scope: 0	type: i32	size: 4
+                                        IntegerLiteral	value: 1	type: i32
+                            IfElseStmt
+                                BinaryExpr	op: eq     type:i1
+                                    Id	name: cur_char	scope: 2	type: i32	size: 4
+                                    IntegerLiteral	value: 43	type: i32
+                                CompoundStmt
+                                    AssignStmt
+                                        Id	name: @tape	scope: 0	type: int array	size: 262144
+                                            ArrayDimensions
+                                            ArrDim
+                                                Id	name: @ptr	scope: 0	type: i32	size: 4
+                                        BinaryExpr	op: add     type:i32
+                                            Id	name: @tape	scope: 0	type: int array	size: 262144
+                                                ArrayDimensions
+                                                ArrDim
+                                                    Id	name: @ptr	scope: 0	type: i32	size: 4
+                                            IntegerLiteral	value: 1	type: i32
+                                IfElseStmt
+                                    BinaryExpr	op: eq     type:i1
+                                        Id	name: cur_char	scope: 2	type: i32	size: 4
+                                        IntegerLiteral	value: 45	type: i32
+                                    CompoundStmt
+                                        AssignStmt
+                                            Id	name: @tape	scope: 0	type: int array	size: 262144
+                                                ArrayDimensions
+                                                ArrDim
+                                                    Id	name: @ptr	scope: 0	type: i32	size: 4
+                                            BinaryExpr	op: sub     type:i32
+                                                Id	name: @tape	scope: 0	type: int array	size: 262144
+                                                    ArrayDimensions
+                                                    ArrDim
+                                                        Id	name: @ptr	scope: 0	type: i32	size: 4
+                                                IntegerLiteral	value: 1	type: i32
+                                    IfElseStmt
+                                        BinaryExpr	op: eq     type:i1
+                                            Id	name: cur_char	scope: 2	type: i32	size: 4
+                                            IntegerLiteral	value: 46	type: i32
+                                        CompoundStmt
+                                            ExprStmtNode
+                                                FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: @tape	scope: 0	type: int array	size: 262144
+                                                            ArrayDimensions
+                                                            ArrDim
+                                                                Id	name: @ptr	scope: 0	type: i32	size: 4
+                                        IfElseStmt
+                                            BinaryExpr	op: eq     type:i1
+                                                Id	name: cur_char	scope: 2	type: i32	size: 4
+                                                IntegerLiteral	value: 44	type: i32
+                                            CompoundStmt
+                                                AssignStmt
+                                                    Id	name: @tape	scope: 0	type: int array	size: 262144
+                                                        ArrayDimensions
+                                                        ArrDim
+                                                            Id	name: @ptr	scope: 0	type: i32	size: 4
+                                                    FuncCallNode	funcName: @getch	 funcType: i32	scope: 0
+                                                        FuncCallParamsNode NULL
+                                            IfStmt
+                                                BinaryExpr	op: and     type:i1
+                                                    BinaryExpr	op: eq     type:i1
+                                                        Id	name: cur_char	scope: 2	type: i32	size: 4
+                                                        IntegerLiteral	value: 93	type: i32
+                                                    BinaryExpr	op: neq     type:i1
+                                                        IntegerLiteral	value: 0	type: i32
+                                                        Id	name: @tape	scope: 0	type: int array	size: 262144
+                                                            ArrayDimensions
+                                                            ArrDim
+                                                                Id	name: @ptr	scope: 0	type: i32	size: 4
+                                                CompoundStmt
+                                                    AssignStmt
+                                                        Id	name: loop	scope: 2	type: i32	size: 4
+                                                        IntegerLiteral	value: 1	type: i32
+                                                    WhileStmt
+                                                        BinaryExpr	op: great     type:i1
+                                                            Id	name: loop	scope: 2	type: i32	size: 4
+                                                            IntegerLiteral	value: 0	type: i32
+                                                        CompoundStmt
+                                                            AssignStmt
+                                                                Id	name: i	scope: 2	type: i32	size: 4
+                                                                BinaryExpr	op: sub     type:i32
+                                                                    Id	name: i	scope: 2	type: i32	size: 4
+                                                                    IntegerLiteral	value: 1	type: i32
+                                                            AssignStmt
+                                                                Id	name: cur_char	scope: 2	type: i32	size: 4
+                                                                Id	name: %input	scope: 1	type: int array	size: 4
+                                                                    ArrayDimensions
+                                                                    ArrDim
+                                                                        Id	name: i	scope: 2	type: i32	size: 4
+                                                            IfElseStmt
+                                                                BinaryExpr	op: eq     type:i1
+                                                                    Id	name: cur_char	scope: 2	type: i32	size: 4
+                                                                    IntegerLiteral	value: 91	type: i32
+                                                                CompoundStmt
+                                                                    AssignStmt
+                                                                        Id	name: loop	scope: 2	type: i32	size: 4
+                                                                        BinaryExpr	op: sub     type:i32
+                                                                            Id	name: loop	scope: 2	type: i32	size: 4
+                                                                            IntegerLiteral	value: 1	type: i32
+                                                                IfStmt
+                                                                    BinaryExpr	op: eq     type:i1
+                                                                        Id	name: cur_char	scope: 2	type: i32	size: 4
+                                                                        IntegerLiteral	value: 93	type: i32
+                                                                    CompoundStmt
+                                                                        AssignStmt
+                                                                            Id	name: loop	scope: 2	type: i32	size: 4
+                                                                            BinaryExpr	op: add     type:i32
+                                                                                Id	name: loop	scope: 2	type: i32	size: 4
+                                                                                IntegerLiteral	value: 1	type: i32
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: i	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            ExprStmtNode
+                FuncCallNode	funcName: @read_program	 funcType: void	scope: 0
+                    FuncCallParamsNode NULL
+            ExprStmtNode
+                FuncCallNode	funcName: @interpret	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: @program	scope: 0	type: int array	size: 131072
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+DeclStmt::genCode
+new StoreInstruction src:2012468896
+new StoreInstruction src:2012468896
+DeclStmt::genCode
+new StoreInstruction src:2012468896
+DeclStmt::genCode
+new StoreInstruction src:2012468896
+new StoreInstruction src:2012468896
+WhileStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+ReturnStmt::genCode
+DeclStmt::genCode
+new StoreInstruction src:2012468896
+WhileStmt::genCode
+Id::ArrgenCode
+AssignStmt::genCode
+Id::ArrgenCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+Id::ArrgenCode
+AssignStmt::genCode
+Id::ArrgenCode
+Id::ArrgenCode
+callParams[0]->getexprkind() == ExprNode::CONSTANT  is 0
+AssignStmt::genCode
+Id::ArrgenCode
+AssignStmt::genCode
+WhileStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+Id::ArrgenCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+ReturnStmt::genCode
+Id::ArrgenCode
+callParams[0]->getexprkind() == ExprNode::CONSTANT  is 0
+ReturnStmt::genCode
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode1
+StoreInstruction::genMachineCode  end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode int
+CallInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+	.arch armv8-a
+	.fpu vfpv3-d16
+	.arch_extension crc
+	.arm
+	.data
+	.comm	tape,262144,4
+	.comm	program,131072,4
+	.global ptr
+	.align 4
+	.size ptr, 4
+ptr:
+	.word 0
+	.text
+	.global read_program
+	.type read_program , %function
+read_program:
+	push {r7, r8, r9, r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #8
+.L29:
+	ldr r10, =0
+	str r10, [fp, #-8]
+	bl  getint
+	mov r10, r0
+	str r10, [fp, #-4]
+	b .L32
+.L32:
+	ldr r10, [fp, #-8]
+	ldr r9, [fp, #-4]
+	cmp r10, r9
+	movlt r10, #1
+	movge r10, #0
+	blt .L33
+	b .L38
+.L33:
+	bl  getch
+	mov r10, r0
+	ldr r9, [fp, #-8]
+	ldr r8, =4
+BinaryMInstruction::output() 
+	mul r7, r9, r8
+	ldr r9, addr_rogram_0
+BinaryMInstruction::output() 
+	add r8, r7, r9
+BinaryMInstruction::output() 
+	add r9, fp, r8
+	str r10, [r9]
+	ldr r10, [fp, #-8]
+BinaryMInstruction::output() 
+	add r9, r10, #1
+	str r9, [fp, #-8]
+	b .L32
+.L34:
+	ldr r10, [fp, #-8]
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r8, r10, r9
+	ldr r10, addr_rogram_0
+BinaryMInstruction::output() 
+	add r9, r8, r10
+	ldr r10, =0
+BinaryMInstruction::output() 
+	add r8, fp, r9
+	str r10, [r8]
+	b .Lread_program_END
+.L37:
+.L38:
+	b .L34
+.L39:
+.Lread_program_END:
+BinaryMInstruction::output() 
+	add sp, sp, #8
+	pop {r7, r8, r9, r10, fp, lr}
+	bx  lr
+
+	.global interpret
+	.type interpret , %function
+interpret:
+	push {r7, r8, r9, r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #16
+.L49:
+	str r0, [fp, #-16]
+	ldr r10, =0
+	str r10, [fp, #-4]
+	b .L54
+.L54:
+	ldr r10, [fp, #-4]
+	ldr r9, [fp, #-16]
+	ldr r8, =4
+BinaryMInstruction::output() 
+	mul r7, r10, r8
+BinaryMInstruction::output() 
+	add r10, r7, r9
+	ldr r9, [r10]
+	ldr r10, =0
+	cmp r10, r9
+	movne r10, #1
+	moveq r10, #0
+	bne .L55
+	b .L63
+.L55:
+	ldr r10, [fp, #-4]
+	ldr r9, [fp, #-16]
+	ldr r8, =4
+BinaryMInstruction::output() 
+	mul r7, r10, r8
+BinaryMInstruction::output() 
+	add r10, r7, r9
+	ldr r9, [r10]
+	str r9, [fp, #-12]
+	ldr r10, [fp, #-12]
+	ldr r9, =62
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L70
+	b .L75
+.L56:
+	b .Linterpret_END
+.L62:
+.L63:
+	b .L56
+.L64:
+.L70:
+	ldr r10, addr_tr_0
+	ldr r9, [r10]
+BinaryMInstruction::output() 
+	add r10, r9, #1
+	ldr r9, addr_tr_0
+	str r10, [r9]
+	b .L71
+.L71:
+	ldr r10, [fp, #-4]
+BinaryMInstruction::output() 
+	add r9, r10, #1
+	str r9, [fp, #-4]
+	b .L54
+.L72:
+	ldr r10, [fp, #-12]
+	ldr r9, =60
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L78
+	b .L83
+.L74:
+.L75:
+	b .L72
+.L76:
+.L78:
+	ldr r10, addr_tr_0
+	ldr r9, [r10]
+BinaryMInstruction::output() 
+	sub r10, r9, #1
+	ldr r9, addr_tr_0
+	str r10, [r9]
+	b .L79
+.L79:
+	b .L71
+.L80:
+	ldr r10, [fp, #-12]
+	ldr r9, =43
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L86
+	b .L91
+.L82:
+.L83:
+	b .L80
+.L84:
+.L86:
+	ldr r10, addr_tr_0
+	ldr r9, [r10]
+	ldr r10, =4
+BinaryMInstruction::output() 
+	mul r8, r9, r10
+	ldr r10, addr_ape_0
+BinaryMInstruction::output() 
+	add r9, r8, r10
+	ldr r10, [r9]
+BinaryMInstruction::output() 
+	add r9, r10, #1
+	ldr r10, addr_tr_0
+	ldr r8, [r10]
+	ldr r10, =4
+BinaryMInstruction::output() 
+	mul r7, r8, r10
+	ldr r10, addr_ape_0
+BinaryMInstruction::output() 
+	add r8, r7, r10
+BinaryMInstruction::output() 
+	add r10, fp, r8
+	str r9, [r10]
+	b .L87
+.L87:
+	b .L79
+.L88:
+	ldr r10, [fp, #-12]
+	ldr r9, =45
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L102
+	b .L107
+.L90:
+.L91:
+	b .L88
+.L92:
+.L102:
+	ldr r10, addr_tr_0
+	ldr r9, [r10]
+	ldr r10, =4
+BinaryMInstruction::output() 
+	mul r8, r9, r10
+	ldr r10, addr_ape_0
+BinaryMInstruction::output() 
+	add r9, r8, r10
+	ldr r10, [r9]
+BinaryMInstruction::output() 
+	sub r9, r10, #1
+	ldr r10, addr_tr_0
+	ldr r8, [r10]
+	ldr r10, =4
+BinaryMInstruction::output() 
+	mul r7, r8, r10
+	ldr r10, addr_ape_0
+BinaryMInstruction::output() 
+	add r8, r7, r10
+BinaryMInstruction::output() 
+	add r10, fp, r8
+	str r9, [r10]
+	b .L103
+.L103:
+	b .L87
+.L104:
+	ldr r10, [fp, #-12]
+	ldr r9, =46
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L118
+	b .L123
+.L106:
+.L107:
+	b .L104
+.L108:
+.L118:
+	ldr r10, addr_tr_0
+	ldr r9, [r10]
+	ldr r10, =4
+BinaryMInstruction::output() 
+	mul r8, r9, r10
+	ldr r10, addr_ape_0
+BinaryMInstruction::output() 
+	add r9, r8, r10
+	ldr r10, [r9]
+	mov r0, r10
+	bl  putch
+	b .L119
+.L119:
+	b .L103
+.L120:
+	ldr r10, [fp, #-12]
+	ldr r9, =44
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L130
+	b .L135
+.L122:
+.L123:
+	b .L120
+.L124:
+.L130:
+	bl  getch
+	mov r10, r0
+	ldr r9, addr_tr_0
+	ldr r8, [r9]
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r7, r8, r9
+	ldr r9, addr_ape_0
+BinaryMInstruction::output() 
+	add r8, r7, r9
+BinaryMInstruction::output() 
+	add r9, fp, r8
+	str r10, [r9]
+	b .L131
+.L131:
+	b .L119
+.L132:
+	ldr r10, [fp, #-12]
+	ldr r9, =93
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L143
+	b .L146
+.L134:
+.L135:
+	b .L132
+.L136:
+.L141:
+	ldr r10, =1
+	str r10, [fp, #-8]
+	b .L156
+.L142:
+	b .L131
+.L143:
+	ldr r10, addr_tr_0
+	ldr r9, [r10]
+	ldr r10, =4
+BinaryMInstruction::output() 
+	mul r8, r9, r10
+	ldr r10, addr_ape_0
+BinaryMInstruction::output() 
+	add r9, r8, r10
+	ldr r10, [r9]
+	ldr r9, =0
+	cmp r9, r10
+	movne r10, #1
+	moveq r10, #0
+	bne .L141
+	b .L154
+.L145:
+.L146:
+	b .L142
+.L147:
+.L153:
+.L154:
+	b .L142
+.L155:
+.L156:
+	ldr r10, [fp, #-8]
+	ldr r9, =0
+	cmp r10, r9
+	movgt r10, #1
+	movle r10, #0
+	bgt .L157
+	b .L161
+.L157:
+	ldr r10, [fp, #-4]
+BinaryMInstruction::output() 
+	sub r9, r10, #1
+	str r9, [fp, #-4]
+	ldr r10, [fp, #-4]
+	ldr r9, [fp, #-16]
+	ldr r8, =4
+BinaryMInstruction::output() 
+	mul r7, r10, r8
+BinaryMInstruction::output() 
+	add r10, r7, r9
+	ldr r9, [r10]
+	str r9, [fp, #-12]
+	ldr r10, [fp, #-12]
+	ldr r9, =91
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L169
+	b .L174
+.L158:
+	b .L142
+.L160:
+.L161:
+	b .L158
+.L162:
+.L169:
+	ldr r10, [fp, #-8]
+BinaryMInstruction::output() 
+	sub r9, r10, #1
+	str r9, [fp, #-8]
+	b .L170
+.L170:
+	b .L156
+.L171:
+	ldr r10, [fp, #-12]
+	ldr r9, =93
+	cmp r10, r9
+	moveq r10, #1
+	movne r10, #0
+	beq .L177
+	b .L181
+.L173:
+.L174:
+	b .L171
+.L175:
+.L177:
+	ldr r10, [fp, #-8]
+BinaryMInstruction::output() 
+	add r9, r10, #1
+	str r9, [fp, #-8]
+	b .L178
+.L178:
+	b .L170
+.L180:
+.L181:
+	b .L178
+.L182:
+.Linterpret_END:
+BinaryMInstruction::output() 
+	add sp, sp, #16
+	pop {r7, r8, r9, r10, fp, lr}
+	bx  lr
+
+	.global main
+	.type main , %function
+main:
+	push {r8, r9, r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #0
+.L185:
+	bl  read_program
+	ldr r10, addr_rogram_0
+	ldr r9, =0
+BinaryMInstruction::output() 
+	add r8, r9, r10
+	mov r0, r8
+	bl  interpret
+	ldr r10, =0
+	mov r0, r10
+	b .Lmain_END
+.Lmain_END:
+BinaryMInstruction::output() 
+	add sp, sp, #0
+	pop {r8, r9, r10, fp, lr}
+	bx  lr
+
+addr_tape_0:
+	.word tape
+addr_program_0:
+	.word program
+addr_ptr_0:
+	.word ptr
+qemu: uncaught target signal 11 (Segmentation fault) - core dumped
+timeout: 监视的命令已核心转储
+Segmentation fault

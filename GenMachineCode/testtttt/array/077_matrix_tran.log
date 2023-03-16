@@ -1,0 +1,3 @@
+qemu: uncaught target signal 11 (Segmentation fault) - core dumped
+timeout: 监视的命令已核心转储
+Segmentation fault

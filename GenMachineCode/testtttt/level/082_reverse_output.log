@@ -1,0 +1,52 @@
+typecheck fin
+program
+    FunctionDefine function name: @reverse, type: void
+        FuncDefParamsNode
+            Id	name: %n	scope: 1	type: i32	size: 4
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: next	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            IfElseStmt
+                BinaryExpr	op: lesseq     type:i1
+                    Id	name: %n	scope: 1	type: i32	size: 4
+                    IntegerLiteral	value: 1	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: next	scope: 2	type: i32	size: 4
+                        FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                            FuncCallParamsNode NULL
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: next	scope: 2	type: i32	size: 4
+                CompoundStmt
+                    AssignStmt
+                        Id	name: next	scope: 2	type: i32	size: 4
+                        FuncCallNode	funcName: @getint	 funcType: i32	scope: 0
+                            FuncCallParamsNode NULL
+                    ExprStmtNode
+                        FuncCallNode	funcName: @reverse	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                BinaryExpr	op: sub     type:i32
+                                    Id	name: %n	scope: 1	type: i32	size: 4
+                                    IntegerLiteral	value: 1	type: i32
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: next	scope: 2	type: i32	size: 4
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 200	type: i32
+            ExprStmtNode
+                FuncCallNode	funcName: @reverse	 funcType: void	scope: 0
+                    FuncCallParamsNode
+                        Id	name: i	scope: 2	type: i32	size: 4
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+TOTAL: 0H-0M-0S-0us

@@ -1,0 +1,421 @@
+typecheck fin
+program
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @N	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    DeclStmt
+    DefNode	Variable	NonArray
+        Id	name: @newline	scope: 0	type: i32	size: 4
+        This variable/constant is not assigned
+    FunctionDefine function name: @split, type: i32
+        FuncDefParamsNode
+            Id	name: %n	scope: 1	type: i32	size: 4
+            Id	name: %a	scope: 1	type: int array	size: 4
+                ArrayDimensions
+                ArrDim
+                    IntegerLiteral	value: -1	type: i32
+        CompoundStmt
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: i	scope: 2	type: i32	size: 4
+                BinaryExpr	op: sub     type:i32
+                    Id	name: @N	scope: 0	type: i32	size: 4
+                    IntegerLiteral	value: 1	type: i32
+            WhileStmt
+                BinaryExpr	op: neq     type:i1
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: -1	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: %a	scope: 1	type: int array	size: 4
+                            ArrayDimensions
+                            ArrDim
+                                Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: mod     type:i32
+                            Id	name: %n	scope: 1	type: i32	size: 4
+                            IntegerLiteral	value: 10	type: i32
+                    AssignStmt
+                        Id	name: %n	scope: 1	type: i32	size: 4
+                        BinaryExpr	op: div     type:i32
+                            Id	name: %n	scope: 1	type: i32	size: 4
+                            IntegerLiteral	value: 10	type: i32
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: sub     type:i32
+                            Id	name: i	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+    FunctionDefine function name: @main, type: i32
+        FuncDefParamsNode NULL
+        CompoundStmt
+            AssignStmt
+                Id	name: @N	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 4	type: i32
+            AssignStmt
+                Id	name: @newline	scope: 0	type: i32	size: 4
+                IntegerLiteral	value: 10	type: i32
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: i	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: m	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            DeclStmt
+            DefNode	Variable	Array
+                Id	name: b	scope: 2	type: int array	size: 16
+                    ArrayDimensions
+                    ArrDim
+                        IntegerLiteral	value: 4	type: i32
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: m	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 1478	type: i32
+            AssignStmt
+                Id	name: m	scope: 2	type: i32	size: 4
+                FuncCallNode	funcName: @split	 funcType: i32	scope: 0
+                    FuncCallParamsNode
+                        Id	name: m	scope: 2	type: i32	size: 4
+                        Id	name: b	scope: 2	type: int array	size: 16
+            DeclStmt
+            DefNode	Variable	NonArray
+                Id	name: t	scope: 2	type: i32	size: 4
+                This variable/constant is not assigned
+            AssignStmt
+                Id	name: i	scope: 2	type: i32	size: 4
+                IntegerLiteral	value: 0	type: i32
+            WhileStmt
+                BinaryExpr	op: less     type:i1
+                    Id	name: i	scope: 2	type: i32	size: 4
+                    IntegerLiteral	value: 4	type: i32
+                CompoundStmt
+                    AssignStmt
+                        Id	name: t	scope: 2	type: i32	size: 4
+                        Id	name: b	scope: 2	type: int array	size: 16
+                            ArrayDimensions
+                            ArrDim
+                                Id	name: i	scope: 2	type: i32	size: 4
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putint	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: t	scope: 2	type: i32	size: 4
+                    ExprStmtNode
+                        FuncCallNode	funcName: @putch	 funcType: void	scope: 0
+                            FuncCallParamsNode
+                                Id	name: @newline	scope: 0	type: i32	size: 4
+                    AssignStmt
+                        Id	name: i	scope: 2	type: i32	size: 4
+                        BinaryExpr	op: add     type:i32
+                            Id	name: i	scope: 2	type: i32	size: 4
+                            IntegerLiteral	value: 1	type: i32
+            ReturnStmt
+                IntegerLiteral	value: 0	type: i32
+DeclStmt::genCode
+DeclStmt::genCode
+DeclStmt::genCode
+AssignStmt::genCode
+WhileStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+ReturnStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+DeclStmt::genCode
+DeclStmt::genCode
+DeclStmt::genCode
+AssignStmt::genCode
+AssignStmt::genCode
+Id::ArrgenCode
+callParams[0]->getexprkind() == ExprNode::CONSTANT  is 0
+callParams[1]->getexprkind() == ExprNode::CONSTANT  is 0
+DeclStmt::genCode
+AssignStmt::genCode
+WhileStmt::genCode
+AssignStmt::genCode
+Id::ArrgenCode
+callParams[0]->getexprkind() == ExprNode::CONSTANT  is 0
+callParams[0]->getexprkind() == ExprNode::CONSTANT  is 0
+AssignStmt::genCode
+ReturnStmt::genCode
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode1
+StoreInstruction::genMachineCode  end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode1
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode int
+CallInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CmpInstruction::genMachineCode
+CmpInstruction::genMachineCode end
+CondBrInstruction::genMachineCode
+CondBrInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+if(opcode == MUL || opcode == DI
+BinaryInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode7
+LoadInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode int
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+CallInstruction::genMachineCode
+CallInstruction::genMachineCode int
+CallInstruction::genMachineCode end
+LoadInstruction::genMachineCode
+LoadInstruction::genMachineCode end
+BinaryInstruction::genMachineCode
+BinaryInstruction::genMachineCode end
+StoreInstruction::genMachineCode
+StoreInstruction::genMachineCode  end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+RetInstruction::genMachineCode
+RetInstruction::genMachineCode end
+UncondBrInstruction::genMachineCode
+UncondBrInstruction::genMachineCode end
+	.arch armv8-a
+	.fpu vfpv3-d16
+	.arch_extension crc
+	.arm
+	.data
+	.global N
+	.align 4
+	.size N, 4
+N:
+	.word 0
+	.global newline
+	.align 4
+	.size newline, 4
+newline:
+	.word 0
+	.text
+	.global split
+	.type split , %function
+split:
+	push {r6, r7, r8, r9, r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #12
+.L11:
+	str r0, [fp, #-12]
+	str r1, [fp, #-8]
+	ldr r10, addr__0
+	ldr r9, [r10]
+BinaryMInstruction::output() 
+	sub r10, r9, #1
+	str r10, [fp, #-4]
+	b .L16
+.L16:
+	ldr r10, [fp, #-4]
+	ldr r9, =-1
+	cmp r10, r9
+	movne r10, #1
+	moveq r10, #0
+	bne .L17
+	b .L21
+.L17:
+	ldr r10, [fp, #-12]
+	ldr r9, =10
+BinaryMInstruction::output() 
+	sdiv r8, r10, r9
+BinaryMInstruction::output() 
+	mul r8, r8, r9
+BinaryMInstruction::output() 
+	sub r9, r10, r8
+	ldr r10, [fp, #-4]
+	ldr r8, [fp, #-8]
+	ldr r7, =4
+BinaryMInstruction::output() 
+	mul r6, r10, r7
+BinaryMInstruction::output() 
+	add r10, r6, r8
+	str r9, [r10]
+	ldr r10, [fp, #-12]
+	ldr r9, =10
+BinaryMInstruction::output() 
+	sdiv r8, r10, r9
+	str r8, [fp, #-12]
+	ldr r10, [fp, #-4]
+BinaryMInstruction::output() 
+	sub r9, r10, #1
+	str r9, [fp, #-4]
+	b .L16
+.L18:
+	ldr r10, =0
+	mov r0, r10
+	b .Lsplit_END
+.L20:
+.L21:
+	b .L18
+.L22:
+.Lsplit_END:
+BinaryMInstruction::output() 
+	add sp, sp, #12
+	pop {r6, r7, r8, r9, r10, fp, lr}
+	bx  lr
+
+	.global main
+	.type main , %function
+main:
+	push {r8, r9, r10, fp, lr}
+	mov fp, sp
+BinaryMInstruction::output() 
+	sub sp, sp, #28
+.L30:
+	ldr r10, =4
+	ldr r9, addr__0
+	str r10, [r9]
+	ldr r10, =10
+	ldr r9, addr_ewline_0
+	str r10, [r9]
+	ldr r10, =1478
+	str r10, [fp, #-24]
+	ldr r10, [fp, #-24]
+	ldr r9, =0
+BinaryMInstruction::output() 
+	add r8, r9, #-20
+BinaryMInstruction::output() 
+	add r9, fp, r8
+	mov r1, r9
+	mov r0, r10
+	bl  split
+	mov r10, r0
+	str r10, [fp, #-24]
+	ldr r10, =0
+	str r10, [fp, #-28]
+	b .L38
+.L38:
+	ldr r10, [fp, #-28]
+	ldr r9, =4
+	cmp r10, r9
+	movlt r10, #1
+	movge r10, #0
+	blt .L39
+	b .L43
+.L39:
+	ldr r10, [fp, #-28]
+	ldr r9, =4
+BinaryMInstruction::output() 
+	mul r8, r10, r9
+BinaryMInstruction::output() 
+	add r10, r8, #-20
+BinaryMInstruction::output() 
+	add r9, fp, r10
+	ldr r10, [r9]
+	str r10, [fp, #-4]
+	ldr r10, [fp, #-4]
+	mov r0, r10
+	bl  putint
+	ldr r10, addr_ewline_0
+	ldr r9, [r10]
+	mov r0, r9
+	bl  putch
+	ldr r10, [fp, #-28]
+BinaryMInstruction::output() 
+	add r9, r10, #1
+	str r9, [fp, #-28]
+	b .L38
+.L40:
+	ldr r10, =0
+	mov r0, r10
+	b .Lmain_END
+.L42:
+.L43:
+	b .L40
+.L44:
+.Lmain_END:
+BinaryMInstruction::output() 
+	add sp, sp, #28
+	pop {r8, r9, r10, fp, lr}
+	bx  lr
+
+addr_N_0:
+	.word N
+addr_newline_0:
+	.word newline
+TOTAL: 0H-0M-0S-0us

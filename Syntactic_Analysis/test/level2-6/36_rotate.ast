@@ -1,0 +1,470 @@
+program
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                DeclStmt
+                                                DefNode	Const	NonArray
+                                                    Id	name: MAX_WIDTH	scope: 0	type: const int
+                                                    IntegerLiteral	value: 1024	type: int
+                                                DefNode	Const	NonArray
+                                                    Id	name: MAX_HEIGHT	scope: 0	type: const int
+                                                    IntegerLiteral	value: 1024	type: int
+                                                DeclStmt
+                                                DefNode	Variable	Array
+                                                    Id	name: image	scope: 0	type: int array
+                                                        ExprStmtNode
+                                                            BinaryExpr	op: multi
+                                                                Id	name: MAX_WIDTH	scope: 0	type: const int
+                                                                Id	name: MAX_HEIGHT	scope: 0	type: const int
+                                                    null
+                                                DefNode	Variable	NonArray
+                                                    Id	name: width	scope: 0	type: int
+                                                    null
+                                                DefNode	Variable	NonArray
+                                                    Id	name: height	scope: 0	type: int
+                                                    null
+                                            DeclStmt
+                                            DefNode	Const	NonArray
+                                                Id	name: PI	scope: 0	type: const float
+                                                IntegerLiteral	value: 3	type: float
+                                            DefNode	Const	NonArray
+                                                Id	name: TWO_PI	scope: 0	type: const float
+                                                IntegerLiteral	value: 6	type: float
+                                            DefNode	Const	NonArray
+                                                Id	name: EPSILON	scope: 0	type: const float
+                                                IntegerLiteral	value: 0	type: float
+                                        FunctionDefine function name: my_fabs, type: float(float)
+                                            FuncDefParamsNode
+                                                Id	name: x	scope: 1	type: float
+                                            CompoundStmt
+                                                Sequence
+                                                    IfStmt
+                                                        BinaryExpr	op: greater
+                                                            Id	name: x	scope: 1	type: float
+                                                            IntegerLiteral	value: 0	type: int
+                                                        ReturnStmt
+                                                            Id	name: x	scope: 1	type: float
+                                                    ReturnStmt
+                                                        SingleExpr	op: sub
+                                                            Id	name: x	scope: 1	type: float
+                                    FunctionDefine function name: p, type: float(float)
+                                        FuncDefParamsNode
+                                            Id	name: x	scope: 1	type: float
+                                        CompoundStmt
+                                            ReturnStmt
+                                                BinaryExpr	op: sub
+                                                    BinaryExpr	op: multi
+                                                        IntegerLiteral	value: 3	type: int
+                                                        Id	name: x	scope: 1	type: float
+                                                    BinaryExpr	op: multi
+                                                        BinaryExpr	op: multi
+                                                            BinaryExpr	op: multi
+                                                                IntegerLiteral	value: 4	type: int
+                                                                Id	name: x	scope: 1	type: float
+                                                            Id	name: x	scope: 1	type: float
+                                                        Id	name: x	scope: 1	type: float
+                                FunctionDefine function name: my_sin_impl, type: float(float)
+                                    FuncDefParamsNode
+                                        Id	name: x	scope: 1	type: float
+                                    CompoundStmt
+                                        Sequence
+                                            IfStmt
+                                                BinaryExpr	op: lessorequal
+                                                    FuncCallNode	funcName: my_fabs	 funcType: float(float)	scope: 0
+                                                        FuncCallParamsNode
+                                                            Id	name: x	scope: 1	type: float
+                                                    Id	name: EPSILON	scope: 0	type: const float
+                                                ReturnStmt
+                                                    Id	name: x	scope: 1	type: float
+                                            ReturnStmt
+                                                FuncCallNode	funcName: p	 funcType: float(float)	scope: 0
+                                                    FuncCallParamsNode
+                                                        FuncCallNode	funcName: my_sin_impl	 funcType: float(float)	scope: 0
+                                                            FuncCallParamsNode
+                                                                BinaryExpr	op: divide
+                                                                    Id	name: x	scope: 1	type: float
+                                                                    IntegerLiteral	value: 3	type: float
+                            FunctionDefine function name: my_sin, type: float(float)
+                                FuncDefParamsNode
+                                    Id	name: x	scope: 1	type: float
+                                CompoundStmt
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                IfStmt
+                                                    BinaryExpr	op: or
+                                                        BinaryExpr	op: greater
+                                                            Id	name: x	scope: 1	type: float
+                                                            Id	name: TWO_PI	scope: 0	type: const float
+                                                        BinaryExpr	op: less
+                                                            Id	name: x	scope: 1	type: float
+                                                            SingleExpr	op: sub
+                                                                Id	name: TWO_PI	scope: 0	type: const float
+                                                    CompoundStmt
+                                                        Sequence
+                                                            DeclStmt
+                                                            DefNode	Variable	NonArray
+                                                                Id	name: xx	scope: 3	type: int
+                                                                BinaryExpr	op: divide
+                                                                    Id	name: x	scope: 1	type: float
+                                                                    Id	name: TWO_PI	scope: 0	type: const float
+                                                            AssignStmt
+                                                                Id	name: x	scope: 1	type: float
+                                                                BinaryExpr	op: sub
+                                                                    Id	name: x	scope: 1	type: float
+                                                                    BinaryExpr	op: multi
+                                                                        Id	name: xx	scope: 3	type: int
+                                                                        Id	name: TWO_PI	scope: 0	type: const float
+                                                IfStmt
+                                                    BinaryExpr	op: greater
+                                                        Id	name: x	scope: 1	type: float
+                                                        Id	name: PI	scope: 0	type: const float
+                                                    AssignStmt
+                                                        Id	name: x	scope: 1	type: float
+                                                        BinaryExpr	op: sub
+                                                            Id	name: x	scope: 1	type: float
+                                                            Id	name: TWO_PI	scope: 0	type: const float
+                                            IfStmt
+                                                BinaryExpr	op: less
+                                                    Id	name: x	scope: 1	type: float
+                                                    SingleExpr	op: sub
+                                                        Id	name: PI	scope: 0	type: const float
+                                                AssignStmt
+                                                    Id	name: x	scope: 1	type: float
+                                                    BinaryExpr	op: add
+                                                        Id	name: x	scope: 1	type: float
+                                                        Id	name: TWO_PI	scope: 0	type: const float
+                                        ReturnStmt
+                                            FuncCallNode	funcName: my_sin_impl	 funcType: float(float)	scope: 0
+                                                FuncCallParamsNode
+                                                    Id	name: x	scope: 1	type: float
+                        FunctionDefine function name: my_cos, type: float(float)
+                            FuncDefParamsNode
+                                Id	name: x	scope: 1	type: float
+                            CompoundStmt
+                                ReturnStmt
+                                    FuncCallNode	funcName: my_sin	 funcType: float(float)	scope: 0
+                                        FuncCallParamsNode
+                                            BinaryExpr	op: add
+                                                Id	name: x	scope: 1	type: float
+                                                BinaryExpr	op: divide
+                                                    Id	name: PI	scope: 0	type: const float
+                                                    IntegerLiteral	value: 2	type: int
+                    FunctionDefine function name: read_image, type: int()
+                        FuncDefParamsNode NULL
+                        CompoundStmt
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    IfStmt
+                                                        BinaryExpr	op: or
+                                                            BinaryExpr	op: unequal
+                                                                FuncCallNode	funcName: getch	 funcType: int()	scope: 0
+                                                                    FuncCallParamsNode NULL
+                                                                IntegerLiteral	value: 80	type: int
+                                                            BinaryExpr	op: unequal
+                                                                FuncCallNode	funcName: getch	 funcType: int()	scope: 0
+                                                                    FuncCallParamsNode NULL
+                                                                IntegerLiteral	value: 50	type: int
+                                                        ReturnStmt
+                                                            SingleExpr	op: sub
+                                                                IntegerLiteral	value: 1	type: int
+                                                    AssignStmt
+                                                        Id	name: width	scope: 0	type: int
+                                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                            FuncCallParamsNode NULL
+                                                AssignStmt
+                                                    Id	name: height	scope: 0	type: int
+                                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                        FuncCallParamsNode NULL
+                                            IfStmt
+                                                BinaryExpr	op: or
+                                                    BinaryExpr	op: or
+                                                        BinaryExpr	op: greater
+                                                            Id	name: width	scope: 0	type: int
+                                                            Id	name: MAX_WIDTH	scope: 0	type: const int
+                                                        BinaryExpr	op: greater
+                                                            Id	name: height	scope: 0	type: int
+                                                            Id	name: MAX_HEIGHT	scope: 0	type: const int
+                                                    BinaryExpr	op: unequal
+                                                        FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                            FuncCallParamsNode NULL
+                                                        IntegerLiteral	value: 255	type: int
+                                                ReturnStmt
+                                                    SingleExpr	op: sub
+                                                        IntegerLiteral	value: 1	type: int
+                                        DeclStmt
+                                        DefNode	Variable	NonArray
+                                            Id	name: y	scope: 2	type: int
+                                            IntegerLiteral	value: 0	type: int
+                                    WhileStmt
+                                        BinaryExpr	op: less
+                                            Id	name: y	scope: 2	type: int
+                                            Id	name: height	scope: 0	type: int
+                                        CompoundStmt
+                                            Sequence
+                                                Sequence
+                                                    DeclStmt
+                                                    DefNode	Variable	NonArray
+                                                        Id	name: x	scope: 3	type: int
+                                                        IntegerLiteral	value: 0	type: int
+                                                    WhileStmt
+                                                        BinaryExpr	op: less
+                                                            Id	name: x	scope: 3	type: int
+                                                            Id	name: width	scope: 0	type: int
+                                                        CompoundStmt
+                                                            Sequence
+                                                                AssignStmt
+                                                                    Id	name: image	scope: 0	type: int array
+                                                                        ExprStmtNode
+                                                                            BinaryExpr	op: add
+                                                                                BinaryExpr	op: multi
+                                                                                    Id	name: y	scope: 2	type: int
+                                                                                    Id	name: width	scope: 0	type: int
+                                                                                Id	name: x	scope: 3	type: int
+                                                                    FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                                        FuncCallParamsNode NULL
+                                                                AssignStmt
+                                                                    Id	name: x	scope: 3	type: int
+                                                                    BinaryExpr	op: add
+                                                                        Id	name: x	scope: 3	type: int
+                                                                        IntegerLiteral	value: 1	type: int
+                                                AssignStmt
+                                                    Id	name: y	scope: 2	type: int
+                                                    BinaryExpr	op: add
+                                                        Id	name: y	scope: 2	type: int
+                                                        IntegerLiteral	value: 1	type: int
+                                ReturnStmt
+                                    IntegerLiteral	value: 0	type: int
+                FunctionDefine function name: rotate, type: int(int, int, float)
+                    FuncDefParamsNode
+                        Id	name: x	scope: 1	type: int
+                        Id	name: y	scope: 1	type: int
+                        Id	name: rad	scope: 1	type: float
+                    CompoundStmt
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: sinma	scope: 2	type: float
+                                                FuncCallNode	funcName: my_sin	 funcType: float(float)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: rad	scope: 1	type: float
+                                            DefNode	Variable	NonArray
+                                                Id	name: cosma	scope: 2	type: float
+                                                FuncCallNode	funcName: my_cos	 funcType: float(float)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: rad	scope: 1	type: float
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: hwidth	scope: 2	type: int
+                                                BinaryExpr	op: divide
+                                                    Id	name: width	scope: 0	type: int
+                                                    IntegerLiteral	value: 2	type: int
+                                            DefNode	Variable	NonArray
+                                                Id	name: hheight	scope: 2	type: int
+                                                BinaryExpr	op: divide
+                                                    Id	name: height	scope: 0	type: int
+                                                    IntegerLiteral	value: 2	type: int
+                                        DeclStmt
+                                        DefNode	Variable	NonArray
+                                            Id	name: xt	scope: 2	type: int
+                                            BinaryExpr	op: sub
+                                                Id	name: x	scope: 1	type: int
+                                                Id	name: hwidth	scope: 2	type: int
+                                        DefNode	Variable	NonArray
+                                            Id	name: yt	scope: 2	type: int
+                                            BinaryExpr	op: sub
+                                                Id	name: y	scope: 1	type: int
+                                                Id	name: hheight	scope: 2	type: int
+                                    DeclStmt
+                                    DefNode	Variable	NonArray
+                                        Id	name: src_x	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: sub
+                                                BinaryExpr	op: multi
+                                                    Id	name: xt	scope: 2	type: int
+                                                    Id	name: cosma	scope: 2	type: float
+                                                BinaryExpr	op: multi
+                                                    Id	name: yt	scope: 2	type: int
+                                                    Id	name: sinma	scope: 2	type: float
+                                            Id	name: hwidth	scope: 2	type: int
+                                    DefNode	Variable	NonArray
+                                        Id	name: src_y	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: add
+                                                BinaryExpr	op: multi
+                                                    Id	name: xt	scope: 2	type: int
+                                                    Id	name: sinma	scope: 2	type: float
+                                                BinaryExpr	op: multi
+                                                    Id	name: yt	scope: 2	type: int
+                                                    Id	name: cosma	scope: 2	type: float
+                                            Id	name: hheight	scope: 2	type: int
+                                IfStmt
+                                    BinaryExpr	op: or
+                                        BinaryExpr	op: or
+                                            BinaryExpr	op: or
+                                                BinaryExpr	op: less
+                                                    Id	name: src_x	scope: 2	type: int
+                                                    IntegerLiteral	value: 0	type: int
+                                                BinaryExpr	op: greaterorequal
+                                                    Id	name: src_x	scope: 2	type: int
+                                                    Id	name: width	scope: 0	type: int
+                                            BinaryExpr	op: less
+                                                Id	name: src_y	scope: 2	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                        BinaryExpr	op: greaterorequal
+                                            Id	name: src_y	scope: 2	type: int
+                                            Id	name: height	scope: 0	type: int
+                                    ReturnStmt
+                                        IntegerLiteral	value: 0	type: int
+                            ReturnStmt
+                                Id	name: image	scope: 0	type: int array
+                                    ExprStmtNode
+                                        BinaryExpr	op: add
+                                            BinaryExpr	op: multi
+                                                Id	name: src_y	scope: 2	type: int
+                                                Id	name: width	scope: 0	type: int
+                                            Id	name: src_x	scope: 2	type: int
+            FunctionDefine function name: write_pgm, type: void(float)
+                FuncDefParamsNode
+                    Id	name: rad	scope: 1	type: float
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            Sequence
+                                                Sequence
+                                                    Sequence
+                                                        Sequence
+                                                            ExprStmtNode
+                                                                FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                                    FuncCallParamsNode
+                                                                        IntegerLiteral	value: 80	type: int
+                                                            ExprStmtNode
+                                                                FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                                    FuncCallParamsNode
+                                                                        IntegerLiteral	value: 50	type: int
+                                                        ExprStmtNode
+                                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                                FuncCallParamsNode
+                                                                    IntegerLiteral	value: 10	type: int
+                                                    ExprStmtNode
+                                                        FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                                            FuncCallParamsNode
+                                                                Id	name: width	scope: 0	type: int
+                                                ExprStmtNode
+                                                    FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                        FuncCallParamsNode
+                                                            IntegerLiteral	value: 32	type: int
+                                            ExprStmtNode
+                                                FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        Id	name: height	scope: 0	type: int
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                FuncCallParamsNode
+                                                    IntegerLiteral	value: 32	type: int
+                                    ExprStmtNode
+                                        FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                            FuncCallParamsNode
+                                                IntegerLiteral	value: 255	type: int
+                                ExprStmtNode
+                                    FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                        FuncCallParamsNode
+                                            IntegerLiteral	value: 10	type: int
+                            DeclStmt
+                            DefNode	Variable	NonArray
+                                Id	name: y	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                        WhileStmt
+                            BinaryExpr	op: less
+                                Id	name: y	scope: 2	type: int
+                                Id	name: height	scope: 0	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: x	scope: 3	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                            WhileStmt
+                                                BinaryExpr	op: less
+                                                    Id	name: x	scope: 3	type: int
+                                                    Id	name: width	scope: 0	type: int
+                                                CompoundStmt
+                                                    Sequence
+                                                        Sequence
+                                                            ExprStmtNode
+                                                                FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                                                    FuncCallParamsNode
+                                                                        FuncCallNode	funcName: rotate	 funcType: int(int, int, float)	scope: 0
+                                                                            FuncCallParamsNode
+                                                                                Id	name: x	scope: 3	type: int
+                                                                                Id	name: y	scope: 2	type: int
+                                                                                Id	name: rad	scope: 1	type: float
+                                                            ExprStmtNode
+                                                                FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                                    FuncCallParamsNode
+                                                                        IntegerLiteral	value: 32	type: int
+                                                        AssignStmt
+                                                            Id	name: x	scope: 3	type: int
+                                                            BinaryExpr	op: add
+                                                                Id	name: x	scope: 3	type: int
+                                                                IntegerLiteral	value: 1	type: int
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                FuncCallParamsNode
+                                                    IntegerLiteral	value: 10	type: int
+                                    AssignStmt
+                                        Id	name: y	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: y	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                DeclStmt
+                                DefNode	Variable	NonArray
+                                    Id	name: rad	scope: 2	type: float
+                                    FuncCallNode	funcName: getfloat	 funcType: float()	scope: 0
+                                        FuncCallParamsNode NULL
+                                ExprStmtNode
+                                    FuncCallNode	funcName: getch	 funcType: int()	scope: 0
+                                        FuncCallParamsNode NULL
+                            IfStmt
+                                BinaryExpr	op: less
+                                    FuncCallNode	funcName: read_image	 funcType: int()	scope: 0
+                                        FuncCallParamsNode NULL
+                                    IntegerLiteral	value: 0	type: int
+                                ReturnStmt
+                                    SingleExpr	op: sub
+                                        IntegerLiteral	value: 1	type: int
+                        ExprStmtNode
+                            FuncCallNode	funcName: write_pgm	 funcType: void(float)	scope: 0
+                                FuncCallParamsNode
+                                    Id	name: rad	scope: 2	type: float
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

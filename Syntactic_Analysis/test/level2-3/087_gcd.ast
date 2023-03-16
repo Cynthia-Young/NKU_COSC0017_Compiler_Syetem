@@ -1,0 +1,67 @@
+program
+    Sequence
+        FunctionDefine function name: gcd, type: int(int, int)
+            FuncDefParamsNode
+                Id	name: m	scope: 1	type: int
+                Id	name: n	scope: 1	type: int
+            CompoundStmt
+                Sequence
+                    IfStmt
+                        BinaryExpr	op: equal
+                            Id	name: n	scope: 1	type: int
+                            IntegerLiteral	value: 0	type: int
+                        CompoundStmt
+                            ReturnStmt
+                                Id	name: m	scope: 1	type: int
+                    ReturnStmt
+                        FuncCallNode	funcName: gcd	 funcType: int(int, int)	scope: 0
+                            FuncCallParamsNode
+                                Id	name: n	scope: 1	type: int
+                                BinaryExpr	op: mod
+                                    Id	name: m	scope: 1	type: int
+                                    Id	name: n	scope: 1	type: int
+        FunctionDefine function name: main, type: int()
+            FuncDefParamsNode NULL
+            CompoundStmt
+                Sequence
+                    Sequence
+                        DeclStmt
+                        DefNode	Variable	NonArray
+                            Id	name: k	scope: 2	type: int
+                            FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                FuncCallParamsNode NULL
+                        WhileStmt
+                            BinaryExpr	op: greater
+                                Id	name: k	scope: 2	type: int
+                                IntegerLiteral	value: 0	type: int
+                            CompoundStmt
+                                Sequence
+                                    Sequence
+                                        Sequence
+                                            DeclStmt
+                                            DefNode	Variable	NonArray
+                                                Id	name: a	scope: 3	type: int
+                                                FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                    FuncCallParamsNode NULL
+                                            DefNode	Variable	NonArray
+                                                Id	name: b	scope: 3	type: int
+                                                FuncCallNode	funcName: getint	 funcType: int()	scope: 0
+                                                    FuncCallParamsNode NULL
+                                            ExprStmtNode
+                                                FuncCallNode	funcName: putint	 funcType: void(int)	scope: 0
+                                                    FuncCallParamsNode
+                                                        FuncCallNode	funcName: gcd	 funcType: int(int, int)	scope: 0
+                                                            FuncCallParamsNode
+                                                                Id	name: a	scope: 3	type: int
+                                                                Id	name: b	scope: 3	type: int
+                                        ExprStmtNode
+                                            FuncCallNode	funcName: putch	 funcType: void(int)	scope: 0
+                                                FuncCallParamsNode
+                                                    IntegerLiteral	value: 10	type: int
+                                    AssignStmt
+                                        Id	name: k	scope: 2	type: int
+                                        BinaryExpr	op: sub
+                                            Id	name: k	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                    ReturnStmt
+                        IntegerLiteral	value: 0	type: int

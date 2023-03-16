@@ -1,0 +1,5 @@
+test/level2-6/196_float.s: Assembler messages:
+test/level2-6/196_float.s:340: 错误： VFP single, double or Neon quad precision register expected -- `vcvt.f32.s32 r10,s31'
+test/level2-6/196_float.s:343: 错误： ARM register expected -- `mov r-1,r10'
+test/level2-6/196_float.s:374: 错误： garbage following instruction -- `vadd.f32 s30,r10,s31'
+test/level2-6/196_float.s:408: 错误： ARM register expected -- `mov r-1,r10'
